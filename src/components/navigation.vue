@@ -73,14 +73,28 @@ name:'navi-tvgs'
     background-color:indigo;
     margin-top: 10px;
 }
+.nav-tvgs{
+  position: relative;
+  display: inline-block;
+}
+.nav-tvgs:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-menu {
+   display: none;
+   position: absolute;
+   background-color: #fff;
+   z-index: 1;
+   list-style: none;
+}
 .nav-tvgs > .btn-secondary {
-    background-color: indigo;
+  background-color: indigo;
   color: #fff;
   border: none;
   margin-left: 20px;
 }
 .page-home > .btn-secondary {
-    background-color: indigo;
+  background-color: indigo;
   color: #fff;
   border: none;
   margin-left: 5px;
