@@ -1,164 +1,67 @@
 <template>
+  <div class="home-page">
   <div class="col">
-    <div class="row">
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">1480</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            <a
-              class="text-secondary"
-              >Nghiệm thu công việc</a
-            >
-          </p>
-        </div>
-      </div>
+  <b-card no-body>
+    <b-tabs card>
+      <b-tab title="Tab 1" active>
+        <b-card-text>Tab contents 1</b-card-text>
+      </b-tab>
+      <b-tab title="Tab 2">
+        <b-card-text>Tab contents 2</b-card-text>
+      </b-tab>
+    </b-tabs>
+  </b-card>
+</div>
 
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">7201</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            <a
-              class="text-secondary"
-              >Theo dõi thi công</a
-            >
-          </p>
-        </div>
-      </div>
+<div class="col">
+    <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card .This is a wider card .This is a wider card .This is a wider card .This is a wider card .This is a wider card .
+      </b-card-text>
+    </b-card>
+     <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card .
+      </b-card-text>
+    </b-card> 
+    <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card .
+      </b-card-text>
+    </b-card> 
+    <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card .
+      </b-card-text>
+    </b-card>
+        <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card .
+      </b-card-text>
+    </b-card>
+        <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card .
+      </b-card-text>
+    </b-card>
+        <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card .
+      </b-card-text>
+    </b-card>
+        <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card .
+      </b-card-text>
+    </b-card>
+        <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card .
+      </b-card-text>
+    </b-card>
 
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">645</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            <a
-              class="text-secondary"
-              >Giám sát vật liệu</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">311</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            <a
-              class="text-secondary"
-              >Giám sát thí nghiệm</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">11</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            <a
-              class="text-secondary"
-              >Giám sát thiết bị</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">66</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            <a
-              class="text-secondary"
-              >Giám sát nhân lực</a
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">60</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1"></p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">2</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            LÀNG VIỆT KIỀU QUỐC TẾ
-          </p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">1</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">CEN - HIBRAND</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">1</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">Homeland N023</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">1</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            Tư vấn kiểm tra xác định khối lượng và giá trị thanh toán, quyết
-            toán
-          </p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">2</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            Công trình hỗn hợp nhà ở kết hợp dịch vụ thương mại và cây xanh
-            thuộc khu Dolphin Plaza
-          </p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">1</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">vườn sen</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">1</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            TỔ HỢP THƯƠNG MẠI MELINH PLAZA THANH HÓA
-          </p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">1</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            Khu dân cư phức hợp đa chức năng EVERGREEN
-          </p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="text-center">
-          <h3><span data-plugin="counterup">1</span></h3>
-          <p class="text-muted font-15 mb-0 sp-line-1">
-            CHUNG CƯ NHÀ Ở XÃ HỘI LÔ B4-1 THUỘC KĐT XANH BÀU TRÀM LAKESIDE
-          </p>
-        </div>
-      </div>
-    </div>
+</div>
+     
 
     <div class="col-md-4">
       <div class="card-box">
@@ -230,7 +133,10 @@ export default {};
   padding-left: 8px;
   padding-right: 8px;
 }
-.row {
+.home-page{
+	position: relative;
+}
+.col {
   width: 70%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -238,10 +144,7 @@ export default {};
   background-clip: content-box;
   background-color: #fff;
 }
-.col {
-  position: relative;
-  display: inline-block;
-}
+
 .col-md-4 {
   width: 30%;
   position: absolute;
@@ -265,9 +168,16 @@ export default {};
 }
 .text-muted {
     color: #000 !important;
+     -webkit-line-clamp: 1 !important;  
 	
 }
-.sp-line-1 {
-    -webkit-line-clamp: 2 !important;
+.card-tvgs{
+  width: 15%;
+  height: 150px;
+  float: left;
+  margin: 7.5px
+}
+.nav{
+	background-color:#fff;
 }
 </style>

@@ -33,8 +33,8 @@ export default {
 
 <style>
 #app{
-	background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg");
-	background-repeat: repeat;
+	/* background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg");
+	background-repeat: repeat; */
 }
 	
 </style>
