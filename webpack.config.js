@@ -8,7 +8,7 @@ module.exports = {
     publicPath: '/public/',
     filename: 'build.js'
   },
-  module: {
+  module: {  
     rules: [
       {
         test: /\.css$/,

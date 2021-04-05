@@ -1,13 +1,10 @@
 <template>
 	<div id="app">
-		<!-- <CompHeader></CompHeader> -->
-		<!-- <CompHeader /> -->
-		<!-- <comp-header />
-		<img src="./assets/logo.png">
-		<h1>{{ msg }}</h1> -->
 		<CompHeader />
 		<CompNavi />
 		<CompFooter/>
+		<BreadCrumb />
+		<Homepage />
 	</div>
 </template>
 
@@ -15,6 +12,8 @@
 import CompHeader from './components/header'
 import CompNavi from './components/navigation'
 import CompFooter from './components/footer'
+import BreadCrumb from './pages/Breadcrumb'
+import Homepage from './pages/homePage'
 export default {
 	name: 'app',
 	data () {
@@ -25,12 +24,17 @@ export default {
 	components: {
 		CompHeader,
 		CompNavi,
-		CompFooter
+		CompFooter,
+		BreadCrumb,
+		Homepage
 	}
 }
 </script>
 
 <style>
-	
+#app{
+	background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg");
+	background-repeat: repeat;
+}
 	
 </style>
