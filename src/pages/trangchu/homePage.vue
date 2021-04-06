@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
   <div class="col">
-  <b-card no-body>
+  <b-card >
     <b-tabs card>
       <b-tab title="Tab 1" active>
         <b-card-text>Tab contents 1</b-card-text>
@@ -14,9 +14,29 @@
 </div>
 
 <div class="col">
+   <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card
+      </b-card-text>
+    </b-card>
+     <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card
+      </b-card-text>
+    </b-card>
+     <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card
+      </b-card-text>
+    </b-card>
+     <b-card title="Title" class="card-tvgs">
+      <b-card-text>
+        This is a wider card
+      </b-card-text>
+    </b-card>
     <b-card title="Title" class="card-tvgs">
       <b-card-text>
-        This is a wider card .This is a wider card .This is a wider card .This is a wider card .This is a wider card .This is a wider card .
+        This is a wider card
       </b-card-text>
     </b-card>
      <b-card title="Title" class="card-tvgs">
@@ -59,6 +79,8 @@
         This is a wider card .
       </b-card-text>
     </b-card>
+    
+    
 
 </div>
      
@@ -110,6 +132,35 @@
       <!-- end card-box-->
       <div class="card-box">
         <b-card
+          header="featured"
+          header-tag="header"
+          footer-tag="footer"
+          title="Title"
+        >
+          <b-card-text>Header and footers using props.</b-card-text>
+        </b-card>
+            <b-card
+          header="featured"
+          header-tag="header"
+          footer-tag="footer"
+          title="Title"
+        >
+          <b-card-text>Header and footers using props.</b-card-text>
+        </b-card>    <b-card
+          header="featured"
+          header-tag="header"
+          footer-tag="footer"
+          title="Title"
+        >
+          <b-card-text>Header and footers using props.</b-card-text>
+        </b-card>    <b-card
+          header="featured"
+          header-tag="header"
+          footer-tag="footer"
+          title="Title"
+        >
+          <b-card-text>Header and footers using props.</b-card-text>
+        </b-card>    <b-card
           header="featured"
           header-tag="header"
           footer-tag="footer"
@@ -172,12 +223,12 @@ export default {};
 	
 }
 .card-tvgs{
-  width: 15%;
+  width: calc(70%/3.9);
   height: 150px;
   float: left;
-  margin: 7.5px
+  margin: 1%
 }
-.nav{
+.nav-tabs{
 	background-color:#fff;
 }
 </style>

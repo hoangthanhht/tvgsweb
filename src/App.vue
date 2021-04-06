@@ -4,7 +4,9 @@
 		<CompNavi />
 		<CompFooter/>
 		<BreadCrumb />
-		<Homepage />
+		<!-- <Homepage /> -->
+		<CongViecGiao />
+		<!-- <ThemCongViec /> -->
 	</div>
 </template>
 
@@ -12,8 +14,10 @@
 import CompHeader from './components/header'
 import CompNavi from './components/navigation'
 import CompFooter from './components/footer'
-import BreadCrumb from './pages/Breadcrumb'
-import Homepage from './pages/homePage'
+import BreadCrumb from './pages/components/Breadcrumb'
+import Homepage from './pages/trangchu/homePage'
+import CongViecGiao from './pages/congviec/congviecgiao'
+import ThemCongViec from './pages/congviec/themcv'
 export default {
 	name: 'app',
 	data () {
@@ -26,15 +30,17 @@ export default {
 		CompNavi,
 		CompFooter,
 		BreadCrumb,
-		Homepage
+		Homepage,
+		CongViecGiao,
+		ThemCongViec
 	}
 }
 </script>
 
 <style>
-#app{
-	/* background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg");
-	background-repeat: repeat; */
+#app,html{
+	background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg");
+	background-repeat: repeat;
 }
 	
 </style>

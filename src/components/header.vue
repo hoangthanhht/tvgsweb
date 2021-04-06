@@ -14,10 +14,6 @@
 			</b-dropdown>
 			<div class="input-group">
 				<input
-					v-bind:value="strSearch"
-					v-on:input="handleSearch"
-					type="text"
-					class="form-control"
 					placeholder="Search for..."
 				/>
 				<span class="input-group-append">
@@ -90,5 +86,9 @@ cursor: pointer;
 }
 .b-icon.bi:hover {
 	cursor: pointer;
+}
+.comp-header{
+
+
 }
 </style>
