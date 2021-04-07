@@ -92,7 +92,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .btn-secondary:hover {
   color: #fff;
   background-color: red;
@@ -105,6 +105,8 @@ export default {
 }
 .header-page-giaocv{
 	position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .btn-add-cv{
 	position: absolute;

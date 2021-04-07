@@ -13,12 +13,12 @@
 				<b-dropdown-item>Item 3</b-dropdown-item>
 			</b-dropdown>
 			<div class="input-group">
-				<input
+				<input style="width: 70%;"
 					placeholder="Search for..."
 				/>
 				<span class="input-group-append">
-					<button v-on:click="handleClear" class="btn btn-info" type="button">
-						Clear!
+					<button  class="btn btn-info" type="button">
+						Search!
 					</button>
 				</span>
 			</div>
@@ -43,7 +43,7 @@ export default {
 };
 </script>
 
-<style>
+<style >
 .acount > .btn-secondary {
 	background-color: #fff;
 	color: #000;
@@ -74,9 +74,11 @@ cursor: pointer;
 .btn-toolbar {
 	position: relative;
 }
-.btn-toolbar > .input-group {
-	width: 40%;
-	right: 30%;
+.btn-toolbar> .input-group {
+	width: auto;
+	left: 30%;
+	right: 20%;
+
 	position: absolute;
 }
 .b-icon.bi {
@@ -88,7 +90,6 @@ cursor: pointer;
 	cursor: pointer;
 }
 .comp-header{
-
 
 }
 </style>

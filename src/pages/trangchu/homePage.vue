@@ -178,7 +178,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .columnb {
   float: left;
   padding-left: 8px;

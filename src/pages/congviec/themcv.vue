@@ -221,7 +221,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .add-gr {
   position: relative;
   padding-left: 20px;

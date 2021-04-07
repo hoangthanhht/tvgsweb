@@ -1,5 +1,8 @@
 <template>
-  <b-breadcrumb :items="items"></b-breadcrumb>
+<div class="brc-comp">
+ <b-breadcrumb :items="items"></b-breadcrumb>
+</div>
+ 
 </template>
 
 <script>
@@ -24,3 +27,8 @@
     }
   }
 </script>
+<style scoped>
+.brc-comp{
+}
+
+</style>

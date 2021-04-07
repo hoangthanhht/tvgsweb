@@ -1,12 +1,18 @@
 <template>
 	<div id="app">
 		<CompHeader />
-		<CompNavi />
+		<CompNavi 
+		class="navi-app"
+		/>
 		<CompFooter/>
-		<BreadCrumb />
+		<BreadCrumb
+		class="brc"
+		 />
 		<!-- <Homepage /> -->
-		<CongViecGiao />
+		<!-- <CongViecGiao />	 -->
 		<!-- <ThemCongViec /> -->
+		<!-- <BcTongHop /> -->
+		<TheoDoiCtrg />
 	</div>
 </template>
 
@@ -18,6 +24,8 @@ import BreadCrumb from './pages/components/Breadcrumb'
 import Homepage from './pages/trangchu/homePage'
 import CongViecGiao from './pages/congviec/congviecgiao'
 import ThemCongViec from './pages/congviec/themcv'
+import BcTongHop from './pages/baocao/baochoatdongctrg/bc_tonghop'
+import TheoDoiCtrg from './pages/baocao/baochoatdongctrg/theodoithicong'
 export default {
 	name: 'app',
 	data () {
@@ -32,7 +40,9 @@ export default {
 		BreadCrumb,
 		Homepage,
 		CongViecGiao,
-		ThemCongViec
+		ThemCongViec,
+		BcTongHop,
+		TheoDoiCtrg
 	}
 }
 </script>
@@ -41,6 +51,7 @@ export default {
 #app,html{
 	background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg");
 	background-repeat: repeat;
+	position: relative;
 }
-	
+
 </style>

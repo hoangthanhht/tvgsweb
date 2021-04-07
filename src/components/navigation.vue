@@ -68,7 +68,7 @@ name:'navi-tvgs'
 }
 </script>
 
-<style>
+<style >
 .nav{
     background-color:indigo;
     margin-top: 10px;
