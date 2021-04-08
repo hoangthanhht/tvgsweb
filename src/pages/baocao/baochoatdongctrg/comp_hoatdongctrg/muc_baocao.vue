@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mucbc">
     <div class="btn-mucbc">
         <b-button size="sm" class="mb-2 add-cv">
           Báo Cáo Tổng Hợp 
@@ -41,6 +41,7 @@
           Giám Sát Thí Nghiệm
       </b-button>
     </div>
+    <div class="clear"></div>
   </div>
 </template>
 
@@ -51,10 +52,17 @@ export default {
 </script>
 
 <style scoped>
+.clear{
+  clear: both;
+}
+.mucbc{
 
+}
 .btn-mucbc{
     float: left;
     margin-left: 3%;
+    /* overflow: hidden;
+    width: calc(100%/7); */
 }
 
 </style>

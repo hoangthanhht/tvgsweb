@@ -149,47 +149,43 @@ export default {
   data() {
     return {
       fields: [
-        "Nội_dung_công_việc",
+        "Đối_tượng_nghiệm_thu",
         "Ảnh",
         "Thời_điểm_thực_hiện",
         "Đánh_giá",
-        "Thời_gian_làm_việc",
-        "Người_thực_hiện",
+        "Người_nghiệm_thu",
         " "
       ],
       items: [
         {
           isActive: false,
-          Nội_dung_công_việc: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Đối_tượng_nghiệm_thu: "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
           Ảnh:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Thời_điểm_thực_hiện:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
-          Thời_gian_làm_việc: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Người_nghiệm_thu: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
       {
           isActive: false,
-          Nội_dung_công_việc: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Đối_tượng_nghiệm_thu: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
           Ảnh:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Thời_điểm_thực_hiện:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
-          Thời_gian_làm_việc: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Người_nghiệm_thu: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
-        {
+      {
           isActive: false,
-          Nội_dung_công_việc: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Đối_tượng_nghiệm_thu: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
           Ảnh:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Thời_điểm_thực_hiện:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
-          Thời_gian_làm_việc: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Người_nghiệm_thu: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
       ],
       selected: ["b"], // Array reference

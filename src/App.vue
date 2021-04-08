@@ -12,7 +12,8 @@
 		<!-- <CongViecGiao />	 -->
 		<!-- <ThemCongViec /> -->
 		<!-- <BcTongHop /> -->
-		<TheoDoiCtrg />
+		<!-- <TheoDoiCtrg /> -->
+		<NtCongViec/>
 	</div>
 </template>
 
@@ -26,6 +27,7 @@ import CongViecGiao from './pages/congviec/congviecgiao'
 import ThemCongViec from './pages/congviec/themcv'
 import BcTongHop from './pages/baocao/baochoatdongctrg/bc_tonghop'
 import TheoDoiCtrg from './pages/baocao/baochoatdongctrg/theodoithicong'
+import NtCongViec from './pages/baocao/baochoatdongctrg/nghiemthucongviec'
 export default {
 	name: 'app',
 	data () {
@@ -42,7 +44,8 @@ export default {
 		CongViecGiao,
 		ThemCongViec,
 		BcTongHop,
-		TheoDoiCtrg
+		TheoDoiCtrg,
+		NtCongViec
 	}
 }
 </script>
