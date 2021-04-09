@@ -36,7 +36,6 @@
           <b-card-text> This is a wider card </b-card-text>
         </b-card>
       </div>
-      <div class="clear"></div>
     </div>
     <!-- block 3 -->
     <div class="block-select">
@@ -46,24 +45,7 @@
         </b-button>
       </div>
 
-      <div class="theodoi-thicong">
-        <b-form-datepicker
-        class="icon-date"
-          v-model="value"
-          :date-disabled-fn="dateDisabled"
-          locale="en"
-        ></b-form-datepicker>
-      </div>
-
-      <div class="theodoi-thicong">
-        <b-form-datepicker
-          v-model="value"
-          :date-disabled-fn="dateDisabled"
-          locale="en"
-        ></b-form-datepicker>
-      </div>
-
-      <div class="select-nhansu theodoi-thicong">
+      <div class="mb-2 select-nhansu theodoi-thicong">
         <b-dropdown id="dropdown-form" text="Theo nhân sự" ref="dropdown">
           <b-dropdown-form>
             <b-form-group>
@@ -81,7 +63,7 @@
         </b-dropdown>
       </div>
 
-      <div class="select-duan theodoi-thicong">
+      <div class="mb-2 select-duan theodoi-thicong">
         <b-dropdown id="dropdown-form" text="Theo dự án" ref="dropdown">
           <b-dropdown-form>
             <b-form-group>
@@ -99,7 +81,7 @@
         </b-dropdown>
       </div>
 
-      <div class="select-loai theodoi-thicong">
+      <div class="mb-2 select-loai theodoi-thicong">
         <b-dropdown id="dropdown-form" text="Theo dự án" ref="dropdown">
           <b-dropdown-form>
             <b-form-group>
@@ -215,25 +197,44 @@ export default {
   clear: both;
 } */
 
+.gr-card{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .card-tvgs {
-  float: left;
-  width: calc(100%/6);
+
   overflow: hidden;
   margin-bottom: 10px;
 }
-
+.card-tvgs .card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .icon-tvgs .b-icon.bi {
   position: relative;
   left: 0.5px;
   top: auto;
 }
-.theodoi-thicong {
-  float: left;
-  padding: 3px;
-  margin-bottom: 20px;
+.btn-add-cv{
+  height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.b-icon.bi {
-  left: 0.5px !important;
+.block-select{
+  display: flex;
+  justify-content: space-between;
+}
+.icon-tvgs{
+  height: 38px;
+}
+/* .search-baoc .form-control{
+  height: 38px;
+} */
+.search-baoc input[type="search"]{
+  height: 38px;
 }
 .baoc-theodoi{
    margin-right: 10px;

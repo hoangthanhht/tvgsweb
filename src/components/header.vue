@@ -8,9 +8,11 @@
 			  alt="">
             </div>
 			<b-dropdown class="ultilyti" right text="Tiện ich">
-				<b-dropdown-item>Item 1</b-dropdown-item>
-				<b-dropdown-item>Item 2</b-dropdown-item>
-				<b-dropdown-item>Item 3</b-dropdown-item>
+				<b-dropdown-item>Thêm việc mới</b-dropdown-item>
+				<b-dropdown-item>Báo cáo công trình</b-dropdown-item>
+				<b-dropdown-item>Chấm công</b-dropdown-item>
+				<b-dropdown-item>Gmail</b-dropdown-item>
+				<b-dropdown-item>Dân trí</b-dropdown-item>
 			</b-dropdown>
 			<div class="input-group">
 				<input style="width: 70%;"
@@ -25,10 +27,10 @@
 			<div>
 				<b-icon icon="bell-fill" variant="info" font-scale="1.5"></b-icon>
 			</div>
-			<b-dropdown class="acount" right text="Nguyễn Hồng Quang">
-				<b-dropdown-item>Item 1</b-dropdown-item>
-				<b-dropdown-item>Item 2</b-dropdown-item>
-				<b-dropdown-item>Item 3</b-dropdown-item>
+			<b-dropdown class="acount" right text="Nguyễn Thế Anh">
+				<b-dropdown-item>Tài khoản</b-dropdown-item>
+				<b-dropdown-item>Cá nhân</b-dropdown-item>
+				<b-dropdown-item>Đăng xuất</b-dropdown-item>
 			</b-dropdown>
 		</b-button-toolbar>
 	</div>
@@ -90,6 +92,6 @@ cursor: pointer;
 	cursor: pointer;
 }
 .comp-header{
-
+margin-top: 10px;
 }
 </style>

@@ -5,7 +5,7 @@
     </div>
 
     <div>
-      <div>
+      <div class="block-select">
         <div class="select-datecv baocao-congviec">
           <b-form-select v-model="selected" :options="options"></b-form-select>
         </div>
@@ -148,11 +148,15 @@ export default {
   left: 0.5px;
   top: auto;
 }
-.baocao-congviec {
-  float: left;
-  margin-left: 40px;
-  margin-bottom: 20px;
+
+.search-baoc input[type="search"]{
+  height: 38px;
+}
+.block-select{
+  display: flex;
+  justify-content: space-between;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 .bcao-cv {
   margin-right: 20px;

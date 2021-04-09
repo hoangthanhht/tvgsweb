@@ -2,7 +2,6 @@
 	<div id="app">
 		<CompHeader />
 		<CompNavi 
-		class="navi-app"
 		/>
 		<CompFooter/>
 		<BreadCrumb

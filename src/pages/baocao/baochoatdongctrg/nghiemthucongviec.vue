@@ -7,36 +7,35 @@
     <!-- block 2 -->
     <div class="gr-card">
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="315">
+          <b-card-text>Móng + Tầng hầm</b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="501">
+          <b-card-text> Kết cấu thân </b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="457">
+          <b-card-text> Hoàn thiện kiến trúc </b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="174">
+          <b-card-text> Hoàn thiện ME </b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="27">
+          <b-card-text> Hạ tầng cảnh quan </b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="14">
+          <b-card-text> Khác </b-card-text>
         </b-card>
       </div>
-      <div class="clear"></div>
     </div>
     <!-- block 3 -->
     <div class="block-select">
@@ -46,23 +45,26 @@
         </b-button>
       </div>
 
-      <div class="theodoi-thicong">
-        <b-form-datepicker
-        class="icon-date"
-          v-model="value"
-          :date-disabled-fn="dateDisabled"
-          locale="en"
-        ></b-form-datepicker>
+      <div>
+        <form action="">
+          <input
+            style="height: 38px"
+            type="date"
+            id="birthday"
+            name="birthday"
+          />
+        </form>
       </div>
-
-      <div class="theodoi-thicong">
-        <b-form-datepicker
-          v-model="value"
-          :date-disabled-fn="dateDisabled"
-          locale="en"
-        ></b-form-datepicker>
+      <div>
+        <form action="">
+          <input
+            style="height: 38px"
+            type="date"
+            id="birthday"
+            name="birthday"
+          />
+        </form>
       </div>
-
       <div class="select-nhansu theodoi-thicong">
         <b-dropdown id="dropdown-form" text="Theo nhân sự" ref="dropdown">
           <b-dropdown-form>
@@ -132,14 +134,8 @@
     </div>
     <!-- block 4 -->
     <div class="table-theodoitc">
-        <b-table
-          striped
-          hover
-          bordered
-          :items="items"
-          :fields="fields"
-        ></b-table>
-      </div>
+      <b-table striped hover bordered :items="items" :fields="fields"></b-table>
+    </div>
   </div>
 </template>
 
@@ -154,34 +150,32 @@ export default {
         "Thời_điểm_thực_hiện",
         "Đánh_giá",
         "Người_nghiệm_thu",
-        " "
+        " ",
       ],
       items: [
         {
           isActive: false,
-          Đối_tượng_nghiệm_thu: "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Ảnh:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Đối_tượng_nghiệm_thu:
+            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Ảnh: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Thời_điểm_thực_hiện:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
           Người_nghiệm_thu: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
-      {
+        {
           isActive: false,
           Đối_tượng_nghiệm_thu: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Ảnh:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ảnh: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Thời_điểm_thực_hiện:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
           Người_nghiệm_thu: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
-      {
+        {
           isActive: false,
           Đối_tượng_nghiệm_thu: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Ảnh:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ảnh: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Thời_điểm_thực_hiện:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
@@ -211,28 +205,50 @@ export default {
   clear: both;
 } */
 
-.card-tvgs {
-  float: left;
-  width: calc(100%/6);
-  overflow: hidden;
+.gr-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-clip: border-box;
+  background-color: #fff;
   margin-bottom: 10px;
 }
-
+.card {
+  border: none;
+}
+.card-tvgs {
+  overflow: hidden;
+}
+.card-tvgs .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .icon-tvgs .b-icon.bi {
   position: relative;
   left: 0.5px;
   top: auto;
 }
-.theodoi-thicong {
-  float: left;
-  padding: 3px;
-  margin-bottom: 20px;
+.btn-add-cv {
+  height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.b-icon.bi {
-  left: 0.5px !important;
+.block-select {
+  display: flex;
+  justify-content: space-between;
 }
-.baoc-theodoi{
-   margin-right: 10px;
+.icon-tvgs {
+  height: 38px;
+}
+/* .search-baoc .form-control{
+  height: 38px;
+} */
+.search-baoc input[type="search"] {
+  height: 38px;
+}
+.baoc-theodoi {
+  margin-right: 10px;
   margin-left: 10px;
 }
 </style>
