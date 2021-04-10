@@ -7,33 +7,33 @@
     <!-- block 2 -->
     <div class="gr-card">
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="315">
+          <b-card-text>Móng + Tầng hầm</b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="501">
+          <b-card-text> Kết cấu thân </b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="457">
+          <b-card-text> Hoàn thiện kiến trúc </b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="174">
+          <b-card-text> Hoàn thiện ME </b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="27">
+          <b-card-text> Hạ tầng cảnh quan </b-card-text>
         </b-card>
       </div>
       <div class="card-tvgs">
-        <b-card title="Title">
-          <b-card-text> This is a wider card </b-card-text>
+        <b-card title="14">
+          <b-card-text> Khác </b-card-text>
         </b-card>
       </div>
     </div>
@@ -44,11 +44,17 @@
           <b-icon icon="plus" aria-hidden="true"></b-icon> Thêm
         </b-button>
       </div>
+      <div>
+        <input type="text" placeholder="Thông số kỹ thuật" style="height: 38px;width :140px"/>
+      </div>
 
+      <div>
+        <input type="text" placeholder="Tên nhà thầu" style="height: 38px;width :140px"/>
+      </div>
       <div>
         <form action="">
           <input
-            style="height: 38px"
+            style="height: 38px;width :140px"
             type="date"
             id="birthday"
             name="birthday"
@@ -58,15 +64,14 @@
       <div>
         <form action="">
           <input
-            style="height: 38px"
+            style="height: 38px;width :140px"
             type="date"
             id="birthday"
             name="birthday"
           />
         </form>
       </div>
-
-      <div class="mb-2 select-nhansu theodoi-thicong">
+      <div class="select-nhansu theodoi-thicong">
         <b-dropdown id="dropdown-form" text="Theo nhân sự" ref="dropdown">
           <b-dropdown-form>
             <b-form-group>
@@ -84,7 +89,7 @@
         </b-dropdown>
       </div>
 
-      <div class="mb-2 select-duan theodoi-thicong">
+      <div class="select-duan theodoi-thicong">
         <b-dropdown id="dropdown-form" text="Theo dự án" ref="dropdown">
           <b-dropdown-form>
             <b-form-group>
@@ -102,7 +107,7 @@
         </b-dropdown>
       </div>
 
-      <div class="mb-2 select-loai theodoi-thicong">
+      <div class="select-loai theodoi-thicong">
         <b-dropdown id="dropdown-form" text="Theo dự án" ref="dropdown">
           <b-dropdown-form>
             <b-form-group>
@@ -146,43 +151,64 @@ export default {
   data() {
     return {
       fields: [
-        "Nội_dung_công_việc",
-        "Ảnh",
-        "Thời_điểm_thực_hiện",
+        "Tên_vật_liệu",
+        "Loại_vật_liệu",
+        "Thông_số_kỹ_thuật",
+        "Ngày_nhập",
+        "Đơn_vị",
+        "Khối_lượng",
+        "Lấy_mẫu",
         "Đánh_giá",
-        "Thời_gian_làm_việc",
         "Người_thực_hiện",
         " ",
       ],
       items: [
         {
           isActive: false,
-          Nội_dung_công_việc: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Ảnh: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Thời_điểm_thực_hiện:
+          Tên_vật_liệu:
+            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Loại_vật_liệu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Thông_số_kỹ_thuật:
+            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ngày_nhập: "Nguyễn Như Tùng",
+
+          Đơn_vị: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Khối_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Lấy_mẫu:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
-          Thời_gian_làm_việc: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
           Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
         {
           isActive: false,
-          Nội_dung_công_việc: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Ảnh: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Thời_điểm_thực_hiện:
+          Tên_vật_liệu:
+            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Loại_vật_liệu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Thông_số_kỹ_thuật:
+            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ngày_nhập: "Nguyễn Như Tùng",
+
+          Đơn_vị: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Khối_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Lấy_mẫu:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
-          Thời_gian_làm_việc: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
           Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
         {
           isActive: false,
-          Nội_dung_công_việc: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Ảnh: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Thời_điểm_thực_hiện:
+          Tên_vật_liệu:
+            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Loại_vật_liệu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Thông_số_kỹ_thuật:
+            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ngày_nhập: "Nguyễn Như Tùng",
+
+          Đơn_vị: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Khối_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Lấy_mẫu:
             "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
-          Thời_gian_làm_việc: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
           Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
       ],
@@ -213,11 +239,15 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-clip: border-box;
+  background-color: #fff;
+  margin-bottom: 10px;
 }
-
+.card {
+  border: none;
+}
 .card-tvgs {
   overflow: hidden;
-  margin-bottom: 10px;
 }
 .card-tvgs .card-body {
   display: flex;

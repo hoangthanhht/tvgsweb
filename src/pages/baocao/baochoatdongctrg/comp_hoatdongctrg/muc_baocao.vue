@@ -44,6 +44,11 @@ export default {};
   /* margin-left: 3%;
   float: left;
   width: calc(100% / 7); */
-  overflow: hidden;
+ overflow: hidden;
+  flex: auto;
+  display: flex;
+}
+.add-cv{
+  flex: auto;
 }
 </style>

@@ -5,14 +5,17 @@
 		/>
 		<CompFooter/>
 		<BreadCrumb
-		class="brc"
 		 />
-		<!-- <Homepage /> -->
-		<!-- <CongViecGiao />	 -->
+		<!-- <Homepage />  -->
+		 <!-- <CongViecGiao />	 -->
 		<!-- <ThemCongViec /> -->
 		<!-- <BcTongHop /> -->
 		<!-- <TheoDoiCtrg /> -->
-		<NtCongViec/>
+		<!-- <NtCongViec/>   -->
+		<!-- <NtVatLieu /> -->
+		<!-- <GsNhanLuc /> -->
+		<!-- <GsThietBi /> -->
+		<GsThiNghiem />
 	</div>
 </template>
 
@@ -27,6 +30,10 @@ import ThemCongViec from './pages/congviec/themcv'
 import BcTongHop from './pages/baocao/baochoatdongctrg/bc_tonghop'
 import TheoDoiCtrg from './pages/baocao/baochoatdongctrg/theodoithicong'
 import NtCongViec from './pages/baocao/baochoatdongctrg/nghiemthucongviec'
+import NtVatLieu from './pages/baocao/baochoatdongctrg/nghiemthuvatlieu'
+import GsNhanLuc from './pages/baocao/baochoatdongctrg/gsatnhanluc'
+import GsThietBi from './pages/baocao/baochoatdongctrg/gsatthietbi'
+import GsThiNghiem from './pages/baocao/baochoatdongctrg/gsatthinghiem'
 export default {
 	name: 'app',
 	data () {
@@ -44,16 +51,20 @@ export default {
 		ThemCongViec,
 		BcTongHop,
 		TheoDoiCtrg,
-		NtCongViec
+		NtCongViec,
+		NtVatLieu,
+		GsNhanLuc,
+		GsThietBi,
+		GsThiNghiem,
 	}
 }
 </script>
 
-<style>
+<style >
 #app,html{
-	background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg");
+	/* background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg");
 	background-repeat: repeat;
-	position: relative;
+	position: relative; */
 }
 
 </style>

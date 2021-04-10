@@ -2,10 +2,10 @@
 	<div class="comp-header">
 		<b-button-toolbar aria-label="Toolbar with button groups and dropdown menu">
 			<div class="logo-box">
-              <img 
+              <!-- <img 
 			  width="32" height="32"
 			  src="src/assets/logo.png" 
-			  alt="">
+			  alt=""> -->
             </div>
 			<b-dropdown class="ultilyti" right text="Tiện ich">
 				<b-dropdown-item>Thêm việc mới</b-dropdown-item>

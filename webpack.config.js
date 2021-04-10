@@ -2,13 +2,15 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
+
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './public'),
     publicPath: '/public/',
     filename: 'build.js'
   },
-  module: {  
+  module: {
+
     rules: [
       {
         test: /\.css$/,
@@ -16,7 +18,8 @@ module.exports = {
           'vue-style-loader',
           'css-loader'
         ],
-      },      {
+      }, 
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
@@ -35,7 +38,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           // name: '[name].[ext]?[hash]'
-          name: function(file) {
+          name: function (file) {
             return 'assets/[name].[ext]?[hash]';
           }
         }

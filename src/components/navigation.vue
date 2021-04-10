@@ -59,7 +59,7 @@
 	 
 	</b-button-toolbar>
 </div> -->
-    <b-navbar type="dark" variant="info">
+    <b-navbar type="dark" variant="info" class="nav-nav">
       <b-navbar-nav>
         <b-nav-item href="#">Trang Chủ </b-nav-item>
 
@@ -130,14 +130,17 @@ export default {
 <style >
 .nav_tvgs .navbar {
   height: 40px;
+  width: 100%;
 }
+/* .nav-nav{
+  position: fixed;
+
+z-index: 1;
+} */
 .nav_tvgs {
   padding-top: 15px;
 }
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-}
+
 .navbar-dark .navbar-nav .nav-link {
   color: #000;
 }
