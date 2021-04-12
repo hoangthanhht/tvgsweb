@@ -9,7 +9,9 @@
         <div class="select-datecv baocao-congviec">
           <b-form-select v-model="selected" :options="options"></b-form-select>
         </div>
-
+        <div>
+          <p>{{ currentValue.text }}</p>
+        </div>
         <div class="select-nhansu baocao-congviec">
           <div>
             <b-dropdown id="dropdown-form" text="Theo nhân sự" ref="dropdown">
@@ -124,7 +126,7 @@ export default {
           Văn_bản_phát_hành: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
       ],
-      selected: ["b"], // Array reference
+      selected: "g", // Array reference
       options: [
         { value: "a", text: "This is First option" },
         { value: "b", text: "Default Selected Option" },
@@ -135,6 +137,13 @@ export default {
         { value: "g", text: "This is option g" },
       ],
     };
+  },
+    computed: {
+    currentValue() {
+      // console.log(this.options.find(option => option.value === this.selected).text)
+      return this.options.find(option => option.value === this.selected)
+      
+    }
   },
   components: {
     MucBC,

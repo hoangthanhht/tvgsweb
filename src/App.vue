@@ -15,7 +15,8 @@
 		<!-- <NtVatLieu /> -->
 		<!-- <GsNhanLuc /> -->
 		<!-- <GsThietBi /> -->
-		<GsThiNghiem />
+		<!-- <GsThiNghiem /> -->
+		<Popupctrg />
 	</div>
 </template>
 
@@ -34,6 +35,7 @@ import NtVatLieu from './pages/baocao/baochoatdongctrg/nghiemthuvatlieu'
 import GsNhanLuc from './pages/baocao/baochoatdongctrg/gsatnhanluc'
 import GsThietBi from './pages/baocao/baochoatdongctrg/gsatthietbi'
 import GsThiNghiem from './pages/baocao/baochoatdongctrg/gsatthinghiem'
+import Popupctrg from './components/pop-up/pop-up-baocao/pop-up-theodoictrg'
 export default {
 	name: 'app',
 	data () {
@@ -56,6 +58,7 @@ export default {
 		GsNhanLuc,
 		GsThietBi,
 		GsThiNghiem,
+		Popupctrg
 	}
 }
 </script>
