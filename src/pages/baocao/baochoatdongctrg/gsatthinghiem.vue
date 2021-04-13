@@ -67,8 +67,11 @@
 				></v-select>
 			</div>
 
-			<div class="select-duan theodoi-thicong">
-				<v-select :options="options" v-model="selectedBank"></v-select>
+			<div class="theodoi-thicong">
+				<v-select 
+				class="select-duan"
+				:options="options" 
+				v-model="selectedBank"></v-select>
 			</div>
 			<!-- <div>
 				<button v-on:click="directToBank">dfdksfk</button>
@@ -114,38 +117,36 @@ export default {
 			items: [
 				{
 					Tên_vật_liệu:
-						"Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
+						"Xi măng ,Thép sàn tầng mái",
 					Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
 					TS_Kỹ_thuật: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					Thí_nghiệm: "Nguyễn Như Tùng",
-					Đánh_giá: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+					Thí_nghiệm: "Nguyễn Như Hưng",
+					Đánh_giá: "Phạm Văn Nghĩa, Vũ Văn Đại",
 					Kết_quả: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					Người_thực_hiện: "Nguyễn Như Tùng",
-					Ghi_chú: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+					Người_thực_hiện: "Nguyễn Như Hưng",
+					Ghi_chú: "Trần Văn Quang Hoàng Văn Thịnh",
+				},
+						{
+					Tên_vật_liệu:
+						"Xika , Sơn ngoài nhà, Gioăng chống thấm bể",
+					Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+					TS_Kỹ_thuật: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+					Thí_nghiệm: "Nguyễn Như Hưng",
+					Đánh_giá: "Phạm Văn Nghĩa, Vũ Văn Đại",
+					Kết_quả: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+					Người_thực_hiện: "Nguyễn Như Hưng",
+					Ghi_chú: "Trần Văn Quang Hoàng Văn Thịnh",
 				},
 				{
-					isActive: false,
 					Tên_vật_liệu:
-						"Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
+						"Gạch xây, gạch ốp lát tầng 4,5",
 					Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
 					TS_Kỹ_thuật: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					Thí_nghiệm: "Nguyễn Như Tùng",
-					Đánh_giá: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+					Thí_nghiệm: "Nguyễn Như Hưng",
+					Đánh_giá: "Phạm Văn Nghĩa, Vũ Văn Đại",
 					Kết_quả: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					Người_thực_hiện: "Nguyễn Như Tùng",
-					Ghi_chú: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-				},
-				{
-					isActive: false,
-					Tên_vật_liệu:
-						"Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-					Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					TS_Kỹ_thuật: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					Thí_nghiệm: "Nguyễn Như Tùng",
-					Đánh_giá: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-					Kết_quả: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					Người_thực_hiện: "Nguyễn Như Tùng",
-					Ghi_chú: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+					Người_thực_hiện: "Nguyễn Như Hưng",
+					Ghi_chú: "Trần Văn Quang Hoàng Văn Thịnh",
 				},
 			],
 		 
@@ -169,6 +170,7 @@ export default {
 } */
 .select-duan {
 	width: 200px;
+	background-color: #fff;
 }
 #vs1__combobox {
 	background-color: cyan;

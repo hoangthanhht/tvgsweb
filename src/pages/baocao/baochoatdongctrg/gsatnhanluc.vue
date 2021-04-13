@@ -38,84 +38,52 @@
       </div>
     </div>
     <!-- block 3 -->
-    <div class="block-select">
+     <div class="block-select">
       <div class="btn-add-cv theodoi-thicong">
         <b-button size="sm" class="mb-2 icon-tvgs">
           <b-icon icon="plus" aria-hidden="true"></b-icon> Thêm
         </b-button>
       </div>
-      <div>
+
+      <div class="theodoi-thicong">
         <form action="">
           <input
-            style="height: 38px"
+            style="height: 34px;width :150px"
+            type="date"
+            id="birthday"
+            name="birthday"
+          />
+        </form>
+      </div >
+      <div class="theodoi-thicong">
+        <form action="">
+          <input
+            style="height: 34px;width :150px"
             type="date"
             id="birthday"
             name="birthday"
           />
         </form>
       </div>
-      <div>
-        <form action="">
-          <input
-            style="height: 38px"
-            type="date"
-            id="birthday"
-            name="birthday"
-          />
-        </form>
-      </div>
-      <div class="select-nhansu theodoi-thicong">
-        <b-dropdown id="dropdown-form" text="Theo nhân sự" ref="dropdown">
-          <b-dropdown-form>
-            <b-form-group>
-              <b-form-input> </b-form-input>
-              <div>
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                  multiple
-                  :select-size="4"
-                ></b-form-select>
-              </div>
-            </b-form-group>
-          </b-dropdown-form>
-        </b-dropdown>
+      <div class="theodoi-thicong">
+        <v-select
+          class="select-duan"
+          :options="['Canada', 'United States']"
+        ></v-select>
       </div>
 
-      <div class="select-duan theodoi-thicong">
-        <b-dropdown id="dropdown-form" text="Theo dự án" ref="dropdown">
-          <b-dropdown-form>
-            <b-form-group>
-              <b-form-input> </b-form-input>
-              <div>
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                  multiple
-                  :select-size="4"
-                ></b-form-select>
-              </div>
-            </b-form-group>
-          </b-dropdown-form>
-        </b-dropdown>
+      <div class="theodoi-thicong">
+        <v-select
+          class="select-duan"
+          :options="['Canada', 'United States']"
+        ></v-select>
       </div>
 
-      <div class="select-loai theodoi-thicong">
-        <b-dropdown id="dropdown-form" text="Theo dự án" ref="dropdown">
-          <b-dropdown-form>
-            <b-form-group>
-              <b-form-input> </b-form-input>
-              <div>
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                  multiple
-                  :select-size="4"
-                ></b-form-select>
-              </div>
-            </b-form-group>
-          </b-dropdown-form>
-        </b-dropdown>
+      <div class="theodoi-thicong">
+        <v-select
+          class="select-duan"
+          :options="['Canada', 'United States']"
+        ></v-select>
       </div>
 
       <div class="search-baoc theodoi-thicong">
@@ -249,7 +217,7 @@ export default {
   top: auto;
 }
 .btn-add-cv {
-  height: 38px;
+  height: 34px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -258,16 +226,20 @@ export default {
   justify-content: space-between;
 }
 .icon-tvgs {
-  height: 38px;
+  height: 34px;
 }
 /* .search-baoc .form-control{
   height: 38px;
 } */
 .search-baoc input[type="search"] {
-  height: 38px;
+  height: 34px;
 }
 .baoc-theodoi {
   margin-right: 10px;
   margin-left: 10px;
+}
+.select-duan {
+  width: 200px;
+  background-color: #fff;
 }
 </style>

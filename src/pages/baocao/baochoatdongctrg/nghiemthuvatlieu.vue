@@ -44,85 +44,60 @@
           <b-icon icon="plus" aria-hidden="true"></b-icon> Thêm
         </b-button>
       </div>
-      <div>
-        <input type="text" placeholder="Thông số kỹ thuật" style="height: 38px;width :140px"/>
+      <div class="theodoi-thicong">
+        <input
+          type="text"
+          placeholder="Thông số kỹ thuật"
+          style="height: 34px;width :90px"
+        />
       </div>
 
-      <div>
-        <input type="text" placeholder="Tên nhà thầu" style="height: 38px;width :140px"/>
+      <div class="theodoi-thicong">
+        <input
+          type="text"
+          placeholder="Tên nhà thầu"
+          style="height: 34px ;width :90px"
+        />
       </div>
-      <div>
+      <div class="theodoi-thicong">
         <form action="">
           <input
-            style="height: 38px;width :140px"
+            style="height: 34px;width :150px"
+            type="date"
+            id="birthday"
+            name="birthday"
+          />
+        </form>
+      </div >
+      <div class="theodoi-thicong">
+        <form action="">
+          <input
+            style="height: 34px;width :150px"
             type="date"
             id="birthday"
             name="birthday"
           />
         </form>
       </div>
-      <div>
-        <form action="">
-          <input
-            style="height: 38px;width :140px"
-            type="date"
-            id="birthday"
-            name="birthday"
-          />
-        </form>
-      </div>
-      <div class="select-nhansu theodoi-thicong">
-        <b-dropdown id="dropdown-form" text="Theo nhân sự" ref="dropdown">
-          <b-dropdown-form>
-            <b-form-group>
-              <b-form-input> </b-form-input>
-              <div>
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                  multiple
-                  :select-size="4"
-                ></b-form-select>
-              </div>
-            </b-form-group>
-          </b-dropdown-form>
-        </b-dropdown>
+      <div class="theodoi-thicong">
+        <v-select
+          class="select-duan"
+          :options="['Canada', 'United States']"
+        ></v-select>
       </div>
 
-      <div class="select-duan theodoi-thicong">
-        <b-dropdown id="dropdown-form" text="Theo dự án" ref="dropdown">
-          <b-dropdown-form>
-            <b-form-group>
-              <b-form-input> </b-form-input>
-              <div>
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                  multiple
-                  :select-size="4"
-                ></b-form-select>
-              </div>
-            </b-form-group>
-          </b-dropdown-form>
-        </b-dropdown>
+      <div class="theodoi-thicong">
+        <v-select
+          class="select-duan"
+          :options="['Canada', 'United States']"
+        ></v-select>
       </div>
 
-      <div class="select-loai theodoi-thicong">
-        <b-dropdown id="dropdown-form" text="Theo dự án" ref="dropdown">
-          <b-dropdown-form>
-            <b-form-group>
-              <b-form-input> </b-form-input>
-              <div>
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                  multiple
-                  :select-size="4"
-                ></b-form-select>
-              </div>
-            </b-form-group>
-          </b-dropdown-form>
-        </b-dropdown>
+      <div class="theodoi-thicong">
+        <v-select
+          class="select-duan"
+          :options="['Canada', 'United States']"
+        ></v-select>
       </div>
 
       <div class="search-baoc theodoi-thicong">
@@ -174,8 +149,7 @@ export default {
 
           Đơn_vị: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
           Khối_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Lấy_mẫu:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
           Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
@@ -190,8 +164,7 @@ export default {
 
           Đơn_vị: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
           Khối_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Lấy_mẫu:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
           Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
@@ -206,8 +179,7 @@ export default {
 
           Đơn_vị: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
           Khối_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Lấy_mẫu:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Đánh_giá: "Nguyễn Như Tùng",
           Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
         },
@@ -260,7 +232,7 @@ export default {
   top: auto;
 }
 .btn-add-cv {
-  height: 38px;
+  height: 34px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -268,17 +240,24 @@ export default {
   display: flex;
   justify-content: space-between;
 }
+.theodoi-thicong{
+}
 .icon-tvgs {
-  height: 38px;
+  height: 34px;
 }
 /* .search-baoc .form-control{
   height: 38px;
 } */
 .search-baoc input[type="search"] {
-  height: 38px;
+  height: 34px;
 }
 .baoc-theodoi {
   margin-right: 10px;
   margin-left: 10px;
 }
+.select-duan {
+  width: 150px;
+  background-color: #fff;
+}
+
 </style>

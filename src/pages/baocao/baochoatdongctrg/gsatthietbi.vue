@@ -45,22 +45,11 @@
         </b-button>
       </div>
 
-      <div class="select-loai theodoi-thicong">
-        <b-dropdown id="dropdown-form" text="Theo dự án" ref="dropdown">
-          <b-dropdown-form>
-            <b-form-group>
-              <b-form-input> </b-form-input>
-              <div>
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                  multiple
-                  :select-size="4"
-                ></b-form-select>
-              </div>
-            </b-form-group>
-          </b-dropdown-form>
-        </b-dropdown>
+      <div class="theodoi-thicong">
+        <v-select
+          class="select-duan"
+          :options="['Canada', 'United States']"
+        ></v-select>
       </div>
 
       <div class="search-baoc theodoi-thicong">
@@ -161,7 +150,10 @@ export default {
 /* .clear{
   clear: both;
 } */
-
+.select-duan {
+  width: 200px;
+  background-color: #fff;
+}
 .gr-card {
   display: flex;
   justify-content: space-between;
@@ -187,7 +179,7 @@ export default {
   top: auto;
 }
 .btn-add-cv {
-  height: 38px;
+  height: 34px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -196,13 +188,13 @@ export default {
   justify-content: space-between;
 }
 .icon-tvgs {
-  height: 38px;
+  height: 34px;
 }
 /* .search-baoc .form-control{
   height: 38px;
 } */
 .search-baoc input[type="search"] {
-  height: 38px;
+  height: 34px;
 }
 .baoc-theodoi {
   margin-right: 10px;

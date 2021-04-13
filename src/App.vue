@@ -16,7 +16,11 @@
 		<!-- <GsNhanLuc /> -->
 		<!-- <GsThietBi /> -->
 		<!-- <GsThiNghiem /> -->
-		<Popupctrg />
+		<!-- <Popupctrg /> -->
+		<!-- <NhatTrinh /> -->
+		<!-- <BaoCaoQuanLy /> -->
+		<!-- <DanhSachHoSo  /> -->
+		<HoSoNgthu />
 	</div>
 </template>
 
@@ -36,6 +40,10 @@ import GsNhanLuc from './pages/baocao/baochoatdongctrg/gsatnhanluc'
 import GsThietBi from './pages/baocao/baochoatdongctrg/gsatthietbi'
 import GsThiNghiem from './pages/baocao/baochoatdongctrg/gsatthinghiem'
 import Popupctrg from './components/pop-up/pop-up-baocao/pop-up-theodoictrg'
+import NhatTrinh from './pages/baocao/nhat_trinh/nhat_trinh'
+import BaoCaoQuanLy from './pages/baocao/bao_cao_qly/bao_cao_quan_ly'
+import DanhSachHoSo from './pages/hoso/danh_sach_ho_so/danh_sach_ho_so'
+import HoSoNgthu from './pages/hoso/them_ho_so/ho_so_ngthu'
 export default {
 	name: 'app',
 	data () {
@@ -58,16 +66,21 @@ export default {
 		GsNhanLuc,
 		GsThietBi,
 		GsThiNghiem,
-		Popupctrg
+		Popupctrg,
+		NhatTrinh,
+		BaoCaoQuanLy,
+		DanhSachHoSo,
+		HoSoNgthu
 	}
 }
 </script>
 
 <style >
 #app,html{
-	/* background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg");
+	/* background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg"); */
+	background-color: rgb(204, 204, 204);
 	background-repeat: repeat;
-	position: relative; */
+	position: relative;
 }
 
 </style>

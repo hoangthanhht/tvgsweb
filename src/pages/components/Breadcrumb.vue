@@ -11,15 +11,15 @@
       return {
         items: [
           {
-            text: 'Trang chủ',
+            text: 'Trang chủ',  
             href: '#'
           },
           {
-            text: 'Quản lý nhân sự',
+            text: 'Báo cáo hoạt động công trường',
             href: '#'
           },
           {
-            text: 'Cập nhật thông tin nhân sự',
+            text: 'Giám sát thí nghiệm vật liệu',
             active: true
           }
         ]

@@ -1,177 +1,226 @@
 <template>
-  <div class="home-page">
-  <div class="col">
-  <b-card >
-    <b-tabs card>
-      <b-tab title="Tab 1" active>
-        <b-card-text>Tab contents 1</b-card-text>
-      </b-tab>
-      <b-tab title="Tab 2">
-        <b-card-text>Tab contents 2</b-card-text>
-      </b-tab>
-    </b-tabs>
-  </b-card>
-</div>
+	<div class="home-page">
 
-<div class="col">
-   <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card
-      </b-card-text>
-    </b-card>
-     <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card
-      </b-card-text>
-    </b-card>
-     <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card
-      </b-card-text>
-    </b-card>
-     <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card
-      </b-card-text>
-    </b-card>
-    <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card
-      </b-card-text>
-    </b-card>
-     <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card .
-      </b-card-text>
-    </b-card> 
-    <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card .
-      </b-card-text>
-    </b-card> 
-    <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card .
-      </b-card-text>
-    </b-card>
-        <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card .
-      </b-card-text>
-    </b-card>
-        <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card .
-      </b-card-text>
-    </b-card>
-        <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card .
-      </b-card-text>
-    </b-card>
-        <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card .
-      </b-card-text>
-    </b-card>
-        <b-card title="Title" class="card-tvgs">
-      <b-card-text>
-        This is a wider card .
-      </b-card-text>
-    </b-card>
-    
-    
+		<div class="gr-info">
+		<div class="gr-card">
+			<div class="card-tvgs">
+				<b-card title="315">
+					<b-card-text>Móng + Tầng hầm</b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="501">
+					<b-card-text> Kết cấu thân </b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="457">
+					<b-card-text> Hoàn thiện kiến trúc </b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="174">
+					<b-card-text> Hoàn thiện ME </b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="27">
+					<b-card-text> Hạ tầng cảnh quan </b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="14">
+					<b-card-text> Khác </b-card-text>
+				</b-card>
+			</div>
+		</div>
 
-</div>
-     
+		<div class="gr-card">
+			<div class="card-tvgs">
+				<b-card title="315">
+					<b-card-text>LÀNG VIỆT KIỀU</b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="501">
+					<b-card-text> CEN - HIBRAND </b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="457">
+					<b-card-text> Homeland N023 </b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="174">
+					<b-card-text> vườn sen </b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="27">
+					<b-card-text> Công trình hỗn hợp </b-card-text>
+				</b-card>
+			</div>
+			<div class="card-tvgs">
+				<b-card title="14">
+					<b-card-text> Khác </b-card-text>
+				</b-card>
+			</div>
+		</div>
 
-    <div class="col-md-4">
-      <div class="card-box">
-		<div class="title-employee">Thông tin</div>
-        <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>
-        <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>
-        <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>
-        <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>
-        <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>
-      </div>
-      <!-- end card-box-->
-      <div class="card-box">
-        <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>
-            <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>    <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>    <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>    <b-card
-          header="featured"
-          header-tag="header"
-          footer-tag="footer"
-          title="Title"
-        >
-          <b-card-text>Header and footers using props.</b-card-text>
-        </b-card>
-      </div>
-      <!-- end card-box-->
-    </div>
-  </div>
+		</div>
+		 
+		<div class="dash-board">
+			<div class="dash-board-user">
+				<h4>Danh sách công việc</h4>
+				<div >
+					<h5>Hồ sơ thanh toán đợt 8- MeLinh Plaza</h5>
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="clock" animation="spin" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							Bắt đầu: 10:50 04/11/2019,
+                            Kết thúc: 17:00 05/11/2019
+						</div>
+					</div>
+
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="flag-fill" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							<i>Quá hạn</i>
+                            <i>Quan trọng và khẩn cấp</i>
+						</div>
+					</div>
+
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="people-fill" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							<p>Trần Văn Mạnh, Vũ Nhật Nam</p>
+						</div>
+					</div>
+				</div>
+
+				<div >
+					<h5>Hồ sơ thanh toán đợt 8- MeLinh Plaza</h5>
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="clock" animation="spin" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							Bắt đầu: 10:50 04/11/2019,
+                            Kết thúc: 17:00 05/11/2019
+						</div>
+					</div>
+
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="flag-fill" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							<i>Quá hạn</i>
+                            <i>Quan trọng và khẩn cấp</i>
+						</div>
+					</div>
+
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="people-fill" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							<p>Trần Văn Mạnh, Vũ Nhật Nam</p>
+						</div>
+					</div>
+				</div>
+
+				<div >
+					<h5>Hồ sơ thanh toán đợt 8- MeLinh Plaza</h5>
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="clock" animation="spin" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							Bắt đầu: 10:50 04/11/2019,
+                            Kết thúc: 17:00 05/11/2019
+						</div>
+					</div>
+
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="flag-fill" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							<i>Quá hạn</i>
+                            <i>Quan trọng và khẩn cấp</i>
+						</div>
+					</div>
+
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="people-fill" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							<p>Trần Văn Mạnh, Vũ Nhật Nam</p>
+						</div>
+					</div>
+				</div>
+
+				<div >
+					<h5>Hồ sơ thanh toán đợt 8- MeLinh Plaza</h5>
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="clock" animation="spin" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							Bắt đầu: 10:50 04/11/2019,
+                            Kết thúc: 17:00 05/11/2019
+						</div>
+					</div>
+
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="flag-fill" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							<i>Quá hạn</i>
+                            <i>Quan trọng và khẩn cấp</i>
+						</div>
+					</div>
+
+					<div class="icon-homepage">
+						<div>
+							<b-icon icon="people-fill" font-scale="0.9" shift-v="8"></b-icon>
+						</div>
+
+						<div>
+							<p>Trần Văn Mạnh, Vũ Nhật Nam</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dash-board-law">
+
+			</div>
+
+		</div>
+	</div>
 </template>
 
 <script>
@@ -179,56 +228,109 @@ export default {};
 </script>
 
 <style scoped>
-.columnb {
-  float: left;
-  padding-left: 8px;
-  padding-right: 8px;
+.dash-board{
+	background-color: #fff;
+	margin-left: 10px;
+}
+.gr-card {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-clip: border-box;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+.card {
+	border: none;
+}
+.card-tvgs {
+	overflow: hidden;
+}
+.card-tvgs .card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.home-page{
+	display: flex;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.gr-info{
+ flex: 0 0 66.6666667%;
+}
+.icon-homepage{
+	display: flex;
+	align-content: stretch;
+}
+.icon-homepage .b-icon.bi {
+	position: relative;
+	align-items: flex-start;
+	margin: 10px;
+	top: 10%;
+}
+.dash-board-user{
+	max-height: 500px;
+	overflow-y: hidden;
+	padding: 15px;
+}
+.dash-board-user:hover{
+	overflow-y: scroll;
+	
+}
+
+/* .columnb {
+	float: left;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 .home-page{
 	position: relative;
 }
 .col {
-  width: 70%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #000;
-  background-clip: content-box;
-  background-color: #fff;
+	width: 70%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #000;
+	background-clip: content-box;
+	background-color: #fff;
 }
 
 .col-md-4 {
-  width: 30%;
-  position: absolute;
-  right: 0;
-  top: 20px;
+	width: 30%;
+	position: absolute;
+	right: 0;
+	top: 20px;
 }
 .card-box {
-  height: 300px;
-  overflow-y: hidden;
-  margin-top: 50px;
-  margin-bottom: 50px;
+	height: 300px;
+	overflow-y: hidden;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .card-box:hover {
-  overflow-y: scroll;
+	overflow-y: scroll;
 }
 .title-employee{
 	font-size: 20px;
 }
 .text-secondary {
-    color: #000 !important;
+		color: #000 !important;
 }
 .text-muted {
-    color: #000 !important;
-     -webkit-line-clamp: 1 !important;  
+		color: #000 !important;
+		 -webkit-line-clamp: 1 !important;  
 	
 }
 .card-tvgs{
-  width: calc(70%/3.9);
-  height: 150px;
-  float: left;
-  margin: 1%
+	width: calc(70%/3.9);
+	height: 150px;
+	float: left;
+	margin: 1%
 }
 .nav-tabs{
 	background-color:#fff;
-}
+} */
 </style>
