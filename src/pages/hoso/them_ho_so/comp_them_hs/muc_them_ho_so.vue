@@ -1,27 +1,33 @@
 <template>
   <div class="muchoso">
     <div class="btn-muchs">
-      <b-button 
+      <!-- <b-button 
       @click="handleClick"
       v-bind:class="{ active: isActive }"
       size="sm" 
-      class="mb-2 add-cv"> Hồ Sơ Nghiệm Thu </b-button>
+      class="mb-2 add-cv"> Hồ Sơ Nghiệm Thu </b-button> -->
+      <router-link to="/them-ho-so" tag="b-button" class="add-cv">Hồ Sơ Nghiệm Thu</router-link>
+
     </div>
 
     <div class="btn-muchs">
-      <b-button 
-       @click="handleClick"
-     v-bind:class="{ active: isActive }"
-      size="sm" 
-      class="mb-2 add-cv"> Hồ Sơ Thiết Kế </b-button>
-    </div>
-
-    <div class="btn-muchs">
-      <b-button 
+      <!-- <b-button 
        @click="handleClick"
       v-bind:class="{ active: isActive }"
       size="sm" 
-      class="mb-2 add-cv"> Loại Hồ Sơ Khác </b-button>
+      class="mb-2 add-cv"> Hồ Sơ Thiết Kế </b-button> -->
+      <router-link to="/ho-so-thiet-ke" tag="b-button" class="add-cv">Hồ Sơ Thiết Kế</router-link>
+
+    </div>
+
+    <div class="btn-muchs">
+      <!-- <b-button 
+       @click="handleClick"
+      v-bind:class="{ active: isActive }"
+      size="sm" 
+      class="mb-2 add-cv"> Loại Hồ Sơ Khác </b-button> -->
+      <router-link to="/ho-so-khac" tag="b-button" class="add-cv">Loại Hồ Sơ Khác</router-link>
+
     </div>
   </div>
 </template>
@@ -34,10 +40,13 @@ export default {
     }
    
   },
+  props:{
+    isActive:{type:Boolean,default:false}
+  },
   methods:{
     handleClick(){
-      console.log(e);
-      isActive = !isActive;
+      console.log('comp con');
+      this.$emit('handleClick')
     }
   },
 
@@ -60,6 +69,9 @@ export default {
 }
 .add-cv {
   flex: auto;
+}
+.add-cv.active {
+  background-color:darkviolet !important;
 }
 
 </style>

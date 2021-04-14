@@ -1,6 +1,6 @@
 <template>
-  <div class="nav_tvgs">
-    <!-- <div class="nav">
+	<div class="nav_tvgs">
+		<!-- <div class="nav">
 	<b-button-toolbar aria-label="Toolbar with button groups and dropdown menu">
 	 
 		<b-dropdown class="mx-1 page-home" right text="Trang chủ">
@@ -59,123 +59,138 @@
 	 
 	</b-button-toolbar>
 </div> -->
-    <b-navbar type="dark" variant="info" class="nav-nav">
-      <b-navbar-nav>
-        <b-nav-item href="#">Trang Chủ </b-nav-item>
+		<b-navbar type="dark" variant="info" class="nav-nav">
+			<b-navbar-nav>
+				<!-- <b-nav-item class="router-link-exact-active" href="#">Trang Chủ</b-nav-item> -->
+				<router-link to="/" tag="b-nav-item" >Trang Chủ</router-link>
+				<!-- Navbar dropdowns -->
+				<b-nav-item-dropdown text="Công Việc" left>
+					<!-- <b-dropdown-item href="#">Công việc được giao</b-dropdown-item> -->
+					<router-link to="/cong-viec-giao" tag="b-dropdown-item" >Công việc được giao</router-link>
+					<!-- <b-dropdown-item href="#">Thêm công việc mới</b-dropdown-item> -->
+					 <router-link to="/them-cong-viec" tag="b-dropdown-item" >Thêm công việc mới</router-link>
+				</b-nav-item-dropdown>
 
-        <!-- Navbar dropdowns -->
-        <b-nav-item-dropdown text="Công Việc" left>
-          <b-dropdown-item href="#">Công việc được giao</b-dropdown-item>
-          <b-dropdown-item href="#">Thêm công việc mới</b-dropdown-item>
-        </b-nav-item-dropdown>
+				<b-nav-item-dropdown text="Báo Cáo" left>
+					<!-- <b-dropdown-item href="#">Báo cáo hoạt động công trường</b-dropdown-item> -->
+					<router-link to="/bao-cao-hoat-dong-cong-truong" tag="b-dropdown-item" >Báo cáo hoạt động công trường</router-link>
+					<b-dropdown-item href="#">Báo cáo quản lý hồ sơ</b-dropdown-item>
+					<!-- <router-link to="/bao-cao-hoat-dong-cong-truong" tag="b-dropdown-item" >Báo cáo quản lý hồ sơ</router-link> -->
+					
+					<!-- <b-dropdown-item href="#">Nhật trình</b-dropdown-item> -->
+					<router-link to="/nhat-trinh" tag="b-dropdown-item" >Nhật trình</router-link>
+					
+					<!-- <b-dropdown-item href="#">Báo cáo tháng</b-dropdown-item> -->
+					<router-link to="/bao-cao-thang" tag="b-dropdown-item" >Báo cáo tháng</router-link>
+					
+					<!-- <b-dropdown-item href="#">Báo cáo khối quản lý</b-dropdown-item> -->
+					<router-link to="/bao-cao-quan-ly" tag="b-dropdown-item" >Báo cáo khối quản lý</router-link>
 
-        <b-nav-item-dropdown text="Báo Cáo" left>
-          <b-dropdown-item href="#"
-            >Báo cáo hoạt động công trường</b-dropdown-item
-          >
-          <b-dropdown-item href="#">Báo cáo quản lý hồ sơ</b-dropdown-item>
-          <b-dropdown-item href="#">Nhật trình</b-dropdown-item>
-          <b-dropdown-item href="#">Báo cáo tháng</b-dropdown-item>
-          <b-dropdown-item href="#">Báo cáo khối quản lý</b-dropdown-item>
-        </b-nav-item-dropdown>
+				</b-nav-item-dropdown>
 
-        <b-nav-item-dropdown text="Văn Bản & Tài Liệu" left>
-          <b-dropdown-item href="#">Quản lý văn bản</b-dropdown-item>
-          <b-dropdown-item href="#">Thêm văn bản mới</b-dropdown-item>
-          <b-dropdown-item href="#"
-            >Danh sách văn bản pháp luật</b-dropdown-item
-          >
-          <b-dropdown-item href="#">Thêm văn bản pháp luật</b-dropdown-item>
-        </b-nav-item-dropdown>
+				<b-nav-item-dropdown text="Văn Bản & Tài Liệu" left>
+					<b-dropdown-item href="#">Quản lý văn bản</b-dropdown-item>
+					<b-dropdown-item href="#">Thêm văn bản mới</b-dropdown-item>
+					<b-dropdown-item href="#"
+						>Danh sách văn bản pháp luật</b-dropdown-item
+					>
+					<b-dropdown-item href="#">Thêm văn bản pháp luật</b-dropdown-item>
+				</b-nav-item-dropdown>
 
-        <b-nav-item-dropdown text="Hồ Sơ" left>
-          <b-dropdown-item href="#">Danh sách hồ sơ</b-dropdown-item>
-          <b-dropdown-item href="#">Thêm hồ sơ</b-dropdown-item>
-        </b-nav-item-dropdown>
+				<b-nav-item-dropdown text="Hồ Sơ" left>
+					<!-- <b-dropdown-item href="#">Danh sách hồ sơ</b-dropdown-item> -->
+					<router-link to="/danh-sach-ho-so" tag="b-dropdown-item" >Danh sách hồ sơ</router-link>
 
-        <b-nav-item-dropdown text="Hợp Đồng" left>
-          <b-dropdown-item href="#">Danh sách hợp đồng</b-dropdown-item>
-          <b-dropdown-item href="#">Thêm hợp đồng mới</b-dropdown-item>
-        </b-nav-item-dropdown>
+					<!-- <b-dropdown-item href="#">Thêm hồ sơ</b-dropdown-item> -->
+					<router-link to="/them-ho-so" tag="b-dropdown-item" >Thêm hồ sơ</router-link>
 
-        <b-nav-item-dropdown text="Nhân Sự" left>
-          <b-dropdown-item href="#">Danh sách phòng ban</b-dropdown-item>
-          <b-dropdown-item href="#">Danh sách nhân viên</b-dropdown-item>
-          <b-dropdown-item href="#">Danh sách chức danh</b-dropdown-item>
-          <b-dropdown-item href="#">Thông tin của tôi</b-dropdown-item>
-          <b-dropdown-item href="#">Chấm công của tôi</b-dropdown-item>
-          <b-dropdown-item href="#">Chấm công</b-dropdown-item>
-        </b-nav-item-dropdown>
+				</b-nav-item-dropdown>
 
-        <b-nav-item-dropdown text="Hệ Thống" left>
-          <b-dropdown-item href="#">Lịch sử truy cập</b-dropdown-item>
-          <b-dropdown-item href="#">Quản lý danh mục</b-dropdown-item>
-          <b-dropdown-item href="#">Quản lý danh mục vật liệu</b-dropdown-item>
-          <b-dropdown-item href="#">Quản lý đơn vị tính</b-dropdown-item>
-          <b-dropdown-item href="#">Quản lý dự án</b-dropdown-item>
-        </b-nav-item-dropdown>
+				<b-nav-item-dropdown text="Hợp Đồng" left>
+					<b-dropdown-item href="#">Danh sách hợp đồng</b-dropdown-item>
+					<!-- <b-dropdown-item href="#">Thêm hợp đồng mới</b-dropdown-item> -->
+					<router-link to="/them-hop-dong" tag="b-dropdown-item" >Thêm hợp đồng mới</router-link>
 
-        <b-nav-item href="#">Dự Án </b-nav-item>
-      </b-navbar-nav>
-    </b-navbar>
-  </div>
+				</b-nav-item-dropdown>
+
+				<b-nav-item-dropdown text="Nhân Sự" left>
+					<b-dropdown-item href="#">Danh sách phòng ban</b-dropdown-item>
+					<b-dropdown-item href="#">Danh sách nhân viên</b-dropdown-item>
+					<b-dropdown-item href="#">Danh sách chức danh</b-dropdown-item>
+					<b-dropdown-item href="#">Thông tin của tôi</b-dropdown-item>
+					<b-dropdown-item href="#">Chấm công của tôi</b-dropdown-item>
+					<b-dropdown-item href="#">Chấm công</b-dropdown-item>
+				</b-nav-item-dropdown>
+
+				<b-nav-item-dropdown text="Hệ Thống" left>
+					<b-dropdown-item href="#">Lịch sử truy cập</b-dropdown-item>
+					<b-dropdown-item href="#">Quản lý danh mục</b-dropdown-item>
+					<b-dropdown-item href="#">Quản lý danh mục vật liệu</b-dropdown-item>
+					<b-dropdown-item href="#">Quản lý đơn vị tính</b-dropdown-item>
+					<b-dropdown-item href="#">Quản lý dự án</b-dropdown-item>
+				</b-nav-item-dropdown>
+
+				<b-nav-item href="#">Dự Án </b-nav-item>
+			</b-navbar-nav>
+		</b-navbar>
+	</div>
 </template>
 
 <script>
 export default {
-  name: "navi-tvgs",
+	name: "navi-tvgs",
 };
 </script>
 
 <style >
 .nav_tvgs .navbar {
-  height: 40px;
-  width: 100%;
+	height: 40px;
+	width: 100%;
 }
 /* .nav-nav{
-  position: fixed;
+	position: fixed;
 
 z-index: 1;
 } */
 .nav_tvgs {
-  padding-top: 15px;
+	padding-top: 15px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #000;
+	color: #000;
 }
 nav li {
-  padding-left: 20px;
-  align-items: center;
+	padding-left: 20px;
+	align-items: center;
 }
 /* .nav {
-  background-color: indigo;
-  margin-top: 10px;
+	background-color: indigo;
+	margin-top: 10px;
 }
 .nav-tvgs {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 .nav-tvgs:hover .dropdown-menu {
-  display: block;
+	display: block;
 }
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  z-index: 1;
-  list-style: none;
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	z-index: 1;
+	list-style: none;
 }
 .nav-tvgs > .btn-secondary {
-  background-color: indigo;
-  color: #fff;
-  border: none;
-  margin-left: 20px;
+	background-color: indigo;
+	color: #fff;
+	border: none;
+	margin-left: 20px;
 }
 .page-home > .btn-secondary {
-  background-color: indigo;
-  color: #fff;
-  border: none;
-  margin-left: 5px;
+	background-color: indigo;
+	color: #fff;
+	border: none;
+	margin-left: 5px;
 } */
 </style>
