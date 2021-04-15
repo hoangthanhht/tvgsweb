@@ -66,25 +66,28 @@
 				</form>
 			</div>
 				<div class="theodoi-thicong">
-				<v-select
-					class="select-duan"
-					:options="['Canada', 'United States']"
-				></v-select>
-			</div>
+        <v-select
+		placeholder="Theo dự án"
+          class="select-duan"
+          :options="['Dự án A', 'Dự án B']"
+        ></v-select>
+      </div>
 
-		 	<div class="theodoi-thicong">
-				<v-select
-					class="select-duan"
-					:options="['Canada', 'United States']"
-				></v-select>
-			</div>
+      <div class="theodoi-thicong">
+        <v-select
+		placeholder="Theo nhân sự"
+          class="select-duan"
+          :options="['Nguyễn Văn A', 'Nguyễn Văn B']"
+        ></v-select>
+      </div>
 
-			<div class="theodoi-thicong">
-				<v-select
-					class="select-duan"
-					:options="['Canada', 'United States']"
-				></v-select>
-			</div>
+      <div class="theodoi-thicong">
+        <v-select
+		placeholder="Loại"
+          class="select-duan"
+          :options="['Móng', 'Hầm','Thân','Hoàn thiện']"
+        ></v-select>
+      </div>
 
 			<div class="search-baoc theodoi-thicong">
 				<b-input-group size="sm" class="mb-2 icon-tvgs">
@@ -123,30 +126,32 @@ export default {
 				{
 					isActive: false,
 					Đối_tượng_nghiệm_thu:
-						"Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-					Ảnh: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+						"Phần hầm B1,Xây tầng 3",
+					Ảnh: "",
 					Thời_điểm_thực_hiện:
-						"Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					Đánh_giá: "Nguyễn Như Tùng",
-					Người_nghiệm_thu: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+						"Bắt đầu: 10:30 04/04/2021,Kết thúc: 17:00 05/04/2021",
+					Đánh_giá: "Nguyễn Như Thế",
+					Người_nghiệm_thu: "Vũ Đức T Nguyễn Hồng Q Trịnh Thị T",
 				},
 				{
 					isActive: false,
-					Đối_tượng_nghiệm_thu: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-					Ảnh: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+					Đối_tượng_nghiệm_thu:
+						"Phần hầm B1,Xây tầng 3",
+					Ảnh: "",
 					Thời_điểm_thực_hiện:
-						"Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					Đánh_giá: "Nguyễn Như Tùng",
-					Người_nghiệm_thu: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+						"Bắt đầu: 10:30 04/04/2021,Kết thúc: 17:00 05/04/2021",
+					Đánh_giá: "Nguyễn Như Thế",
+					Người_nghiệm_thu: "Vũ Đức T Nguyễn Hồng Q Trịnh Thị T",
 				},
 				{
 					isActive: false,
-					Đối_tượng_nghiệm_thu: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-					Ảnh: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+					Đối_tượng_nghiệm_thu:
+						"Phần hầm B1,Xây tầng 3",
+					Ảnh: "",
 					Thời_điểm_thực_hiện:
-						"Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-					Đánh_giá: "Nguyễn Như Tùng",
-					Người_nghiệm_thu: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+						"Bắt đầu: 10:30 04/04/2021,Kết thúc: 17:00 05/04/2021",
+					Đánh_giá: "Nguyễn Như Thế",
+					Người_nghiệm_thu: "Vũ Đức T Nguyễn Hồng Q Trịnh Thị T",
 				},
 			],
 			selected: ["b"], // Array reference
@@ -182,6 +187,7 @@ export default {
 	background-clip: border-box;
 	background-color: #fff;
 	margin-bottom: 10px;
+	margin-top: 15px;
 }
 .card {
 	border: none;
@@ -220,5 +226,8 @@ export default {
 .baoc-theodoi {
 	margin-right: 10px;
 	margin-left: 10px;
+}
+.table-theodoitc{
+	background-color: #fff;
 }
 </style>

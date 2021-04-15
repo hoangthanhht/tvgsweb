@@ -37,10 +37,13 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
+          // name: '[path][name].[ext]',
           // name: '[name].[ext]?[hash]'
-          name: function (file) {
-            return 'assets/[name].[ext]?[hash]';
-          }
+          // name: function (file) {
+          //   return '/images/[name].[ext]?[hash]';
+          //   // return '/images/[hash].[ext]';
+          // }
+          outputPath: '/public/images/'
         }
       }
     ]

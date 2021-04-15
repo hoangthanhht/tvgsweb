@@ -186,7 +186,7 @@ export default {
   top: auto;
 }
 .hs-gr6 {
-  background-color: indigo;
+  background-color: #00a53c;
   height: 32px;
   width: 100%;
   position: fixed;

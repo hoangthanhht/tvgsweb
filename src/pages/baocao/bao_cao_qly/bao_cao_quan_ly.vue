@@ -9,21 +9,22 @@
 
       <div class="theodoi-thicong">
         <v-select
+          placeholder="Theo nhân sự"
           class="select-duan"
-          :options="options"
+          :options="['Nguyễn Văn A','Nguyễn Văn B']"
           v-model="selectedBank"
         ></v-select>
       </div>
 
       <div class="select-cbb">
-        <b-form-select v-model="selected" :options="options"></b-form-select>
+        <b-form-select v-model="selected1" :options="options1"></b-form-select>
       </div>
 
       <div class="select-cbb">
-        <b-form-select v-model="selected" :options="options"></b-form-select>
+        <b-form-select v-model="selected2" :options="options2"></b-form-select>
       </div>
       <div class="select-cbb">
-        <b-form-select v-model="selected" :options="options"></b-form-select>
+        <b-form-select v-model="selected3" :options="options3"></b-form-select>
       </div>
 
       <div class="search-congv">
@@ -66,8 +67,21 @@ export default {
         {
           isActive: false,
           Tên: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Kế_hoạch: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Thực_hiện: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Kế_hoạch: "Bắt đầu: 10:30 04/04/2021,Kết thúc: 17:00 05/04/2021",
+          Thực_hiện: "Bắt đầu: 10:30 04/04/2021,Kết thúc: 17:00 05/04/2021",
+          Người_đề_xuất: "Nguyễn Như Vậy",
+          Người_phối_hợp: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Yêu_cầu_công_việc: "trình ký Mr.Tuân, nộp hồ sơ lên Euro",
+          Uu_tiên: "Quan trọng và khẩn cấp",
+          Kết_quả: "Đã hoàn thành",
+          Tình_trạng: "Quá hạn",
+          Lưu_ý: "Chưa cập nhật",
+        },
+        {
+          isActive: false,
+          Tên: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Kế_hoạch: "Bắt đầu: 10:30 04/04/2021,Kết thúc: 17:00 05/04/2021",
+          Thực_hiện: "Bắt đầu: 10:30 04/04/2021,Kết thúc: 17:00 05/04/2021",
           Người_đề_xuất: "Nguyễn Như Tùng",
           Người_phối_hợp: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
           Yêu_cầu_công_việc: "trình ký Mr.Tuân, nộp hồ sơ lên Euro",
@@ -79,21 +93,8 @@ export default {
         {
           isActive: false,
           Tên: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Kế_hoạch: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Thực_hiện: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Người_đề_xuất: "Nguyễn Như Tùng",
-          Người_phối_hợp: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Yêu_cầu_công_việc: "trình ký Mr.Tuân, nộp hồ sơ lên Euro",
-          Uu_tiên: "Quan trọng và khẩn cấp",
-          Kết_quả: "Đã hoàn thành",
-          Tình_trạng: "Quá hạn",
-          Lưu_ý: "Chưa cập nhật",
-        },
-        {
-          isActive: false,
-          Tên: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Kế_hoạch: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Thực_hiện: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Kế_hoạch: "Bắt đầu: 10:30 04/04/2021,Kết thúc: 17:00 05/04/2021",
+          Thực_hiện: "Bắt đầu: 10:30 04/04/2021,Kết thúc: 17:00 05/04/2021",
           Người_đề_xuất: "Nguyễn Như Tùng",
           Người_phối_hợp: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
           Yêu_cầu_công_việc: "trình ký Mr.Tuân, nộp hồ sơ lên Euro",
@@ -113,12 +114,39 @@ export default {
         { value: "f", text: "This is option f" },
         { value: "g", text: "This is option g" },
       ],
+
+          selected1: "1", // Array reference
+      options1: [
+        { value: "1", text: "Chọn mức độ ưu tiên" },
+        { value: "a", text: "Quan trọng và khẩn cấp" },
+        { value: "b", text: "Quan trọng nhưng không khẩn cấp" },
+        { value: "c", text: "Khẩn cấp nhưng không quan trọng" },
+        { value: "d", text: "Không quan trọng và không khẩn cấp" },
+      ],
+       selected2: "2", // Array reference
+      options2: [
+        { value: "2", text: "Tình trạng công việc" },
+        { value: "a", text: "Chưa khởi động" },
+        { value: "b", text: "Đang thực hiện" },
+        { value: "c", text: "Quá hạn" },
+        { value: "d", text: "Đã phê duyệt" },
+      ],
+       selected3: "3", // Array reference
+      options3: [
+        { value: "3", text: "Kết quả công việc" },
+        { value: "a", text: "Đã hoàn thành" },
+        { value: "b", text: "Chưa hoàn thành" },
+
+      ],
     };
   },
 };
 </script>
 
 <style scoped>
+.table-cv{
+  background-color: #fff;
+}
 .search-congv input[type="search"] {
   height: 34px;
 }

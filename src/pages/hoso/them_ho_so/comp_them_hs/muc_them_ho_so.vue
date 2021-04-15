@@ -73,5 +73,7 @@ export default {
 .add-cv.active {
   background-color:darkviolet !important;
 }
-
+.router-link-exact-active{
+  background-color: #00a53c;
+}
 </style>

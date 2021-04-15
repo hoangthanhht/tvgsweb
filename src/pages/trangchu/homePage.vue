@@ -38,32 +38,32 @@
 		<div class="gr-card">
 			<div class="card-tvgs">
 				<b-card title="315">
-					<b-card-text>LÀNG VIỆT KIỀU</b-card-text>
+					<b-card-text>KHÁCH SẠN MASECO</b-card-text>
 				</b-card>
 			</div>
 			<div class="card-tvgs">
 				<b-card title="501">
-					<b-card-text> CEN - HIBRAND </b-card-text>
+					<b-card-text> KHÁCH SẠN MARRIOTT </b-card-text>
 				</b-card>
 			</div>
 			<div class="card-tvgs">
 				<b-card title="457">
-					<b-card-text> Homeland N023 </b-card-text>
+					<b-card-text> KHÁCH SẠN SHERATON </b-card-text>
 				</b-card>
 			</div>
 			<div class="card-tvgs">
 				<b-card title="174">
-					<b-card-text> vườn sen </b-card-text>
+					<b-card-text> TÒA THÁP NGÔI SAO </b-card-text>
 				</b-card>
 			</div>
 			<div class="card-tvgs">
 				<b-card title="27">
-					<b-card-text> Công trình hỗn hợp </b-card-text>
+					<b-card-text> SAI GON PEARL </b-card-text>
 				</b-card>
 			</div>
 			<div class="card-tvgs">
 				<b-card title="14">
-					<b-card-text> Khác </b-card-text>
+					<b-card-text> VIETCOMBANK TOWER </b-card-text>
 				</b-card>
 			</div>
 		</div>
@@ -74,15 +74,15 @@
 			<div class="dash-board-user">
 				<h4>Danh sách công việc</h4>
 				<div >
-					<h5>Hồ sơ thanh toán đợt 8- MeLinh Plaza</h5>
+					<h5>Hồ sơ thanh toán đợt 8- SAI GON PEARL</h5>
 					<div class="icon-homepage">
 						<div>
 							<b-icon icon="clock" animation="spin" font-scale="0.9" shift-v="8"></b-icon>
 						</div>
 
 						<div>
-							Bắt đầu: 10:50 04/11/2019,
-                            Kết thúc: 17:00 05/11/2019
+							Bắt đầu: 10:50 04/04/2021,
+                            Kết thúc: 17:00 05/04/2021
 						</div>
 					</div>
 
@@ -109,15 +109,15 @@
 				</div>
 
 				<div >
-					<h5>Hồ sơ thanh toán đợt 8- MeLinh Plaza</h5>
+					<h5>Hồ sơ thanh toán đợt 8- SAI GON PEARL</h5>
 					<div class="icon-homepage">
 						<div>
 							<b-icon icon="clock" animation="spin" font-scale="0.9" shift-v="8"></b-icon>
 						</div>
 
 						<div>
-							Bắt đầu: 10:50 04/11/2019,
-                            Kết thúc: 17:00 05/11/2019
+							Bắt đầu: 10:50 04/04/2021,
+                            Kết thúc: 17:00 05/04/2021
 						</div>
 					</div>
 
@@ -144,15 +144,15 @@
 				</div>
 
 				<div >
-					<h5>Hồ sơ thanh toán đợt 8- MeLinh Plaza</h5>
+					<h5>Hồ sơ thanh toán đợt 8- SAI GON PEARL</h5>
 					<div class="icon-homepage">
 						<div>
 							<b-icon icon="clock" animation="spin" font-scale="0.9" shift-v="8"></b-icon>
 						</div>
 
 						<div>
-							Bắt đầu: 10:50 04/11/2019,
-                            Kết thúc: 17:00 05/11/2019
+							Bắt đầu: 10:50 04/04/2021,
+                            Kết thúc: 17:00 05/04/2021
 						</div>
 					</div>
 
@@ -179,15 +179,15 @@
 				</div>
 
 				<div >
-					<h5>Hồ sơ thanh toán đợt 8- MeLinh Plaza</h5>
+					<h5>Hồ sơ thanh toán đợt 8- SAI GON PEARL</h5>
 					<div class="icon-homepage">
 						<div>
 							<b-icon icon="clock" animation="spin" font-scale="0.9" shift-v="8"></b-icon>
 						</div>
 
 						<div>
-							Bắt đầu: 10:50 04/11/2019,
-                            Kết thúc: 17:00 05/11/2019
+							Bắt đầu: 10:50 04/04/2021,
+                            Kết thúc: 17:00 05/04/2021
 						</div>
 					</div>
 

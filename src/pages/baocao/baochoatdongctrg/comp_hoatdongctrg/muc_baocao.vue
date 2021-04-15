@@ -51,11 +51,12 @@ export default {};
   /* margin-left: 3%;
   float: left;
   width: calc(100% / 7); */
- overflow: hidden;
-  flex: auto;
-  display: flex;
+
 }
 .add-cv{
   flex: auto;
+}
+.router-link-exact-active{
+  background-color: #00a53c;
 }
 </style>

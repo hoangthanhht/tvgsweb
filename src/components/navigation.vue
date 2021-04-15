@@ -59,7 +59,7 @@
 	 
 	</b-button-toolbar>
 </div> -->
-		<b-navbar type="dark" variant="info" class="nav-nav">
+		<b-navbar type="dark" class="nav-nav">
 			<b-navbar-nav>
 				<!-- <b-nav-item class="router-link-exact-active" href="#">Trang Chủ</b-nav-item> -->
 				<router-link to="/" tag="b-nav-item" >Trang Chủ</router-link>
@@ -146,6 +146,7 @@ export default {
 .nav_tvgs .navbar {
 	height: 40px;
 	width: 100%;
+	background-color: #00a53c;
 }
 /* .nav-nav{
 	position: fixed;

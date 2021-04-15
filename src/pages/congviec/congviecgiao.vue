@@ -9,21 +9,22 @@
 
       <div class="theodoi-thicong">
         <v-select
+          placeholder="Theo nhân sự"
           class="select-duan"
-          :options="options"
+          :options="opvselect"
           v-model="selectedBank"
         ></v-select>
       </div>
 
       <div class="select-cbb">
-        <b-form-select v-model="selected" :options="options"></b-form-select>
+        <b-form-select v-model="selected1" :options="options1"></b-form-select>
       </div>
 
       <div class="select-cbb">
-        <b-form-select v-model="selected" :options="options"></b-form-select>
+        <b-form-select v-model="selected2" :options="options2"></b-form-select>
       </div>
       <div class="select-cbb">
-        <b-form-select v-model="selected" :options="options"></b-form-select>
+        <b-form-select v-model="selected3" :options="options3"></b-form-select>
       </div>
 
       <div class="search-congv">
@@ -65,12 +66,12 @@ export default {
       items: [
         {
           isActive: false,
-          Tên: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Tên: "Hồ sơ thanh toán đợt 8- Khách sạn Premier Best Western",
           Kế_hoạch: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Thực_hiện: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Người_đề_xuất: "Nguyễn Như Tùng",
-          Người_phối_hợp: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Yêu_cầu_công_việc: "trình ký Mr.Tuân, nộp hồ sơ lên Euro",
+          Người_đề_xuất: "Nguyễn Văn A",
+          Người_phối_hợp: "Nguyễn Văn B,Nguyễn Văn C",
+          Yêu_cầu_công_việc: "trình ký Mr.Tuân",
           Uu_tiên: "Quan trọng và khẩn cấp",
           Kết_quả: "Đã hoàn thành",
           Tình_trạng: "Quá hạn",
@@ -78,12 +79,12 @@ export default {
         },
         {
           isActive: false,
-          Tên: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Tên: "Hồ sơ thanh toán đợt 8- Khách sạn Premier Best Western",
           Kế_hoạch: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Thực_hiện: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Người_đề_xuất: "Nguyễn Như Tùng",
-          Người_phối_hợp: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Yêu_cầu_công_việc: "trình ký Mr.Tuân, nộp hồ sơ lên Euro",
+          Người_đề_xuất: "Nguyễn Văn A",
+          Người_phối_hợp: "Nguyễn Văn B,Nguyễn Văn C",
+          Yêu_cầu_công_việc: "trình ký Mr.Tuân",
           Uu_tiên: "Quan trọng và khẩn cấp",
           Kết_quả: "Đã hoàn thành",
           Tình_trạng: "Quá hạn",
@@ -91,27 +92,43 @@ export default {
         },
         {
           isActive: false,
-          Tên: "Hồ sơ thanh toán đợt 8- MeLinh Plaza",
+          Tên: "Hồ sơ thanh toán đợt 8- Khách sạn Premier Best Western",
           Kế_hoạch: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
           Thực_hiện: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Người_đề_xuất: "Nguyễn Như Tùng",
-          Người_phối_hợp: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Yêu_cầu_công_việc: "trình ký Mr.Tuân, nộp hồ sơ lên Euro",
+          Người_đề_xuất: "Nguyễn Văn A",
+          Người_phối_hợp: "Nguyễn Văn B,Nguyễn Văn C",
+          Yêu_cầu_công_việc: "trình ký Mr.Tuân",
           Uu_tiên: "Quan trọng và khẩn cấp",
           Kết_quả: "Đã hoàn thành",
           Tình_trạng: "Quá hạn",
           Lưu_ý: "Chưa cập nhật",
         },
       ],
-      selected: ["b"], // Array reference
-      options: [
-        { value: "a", text: "This is First option" },
-        { value: "b", text: "Default Selected Option" },
-        { value: "c", text: "This is another option" },
-        { value: "d", text: "This one is disabled", disabled: true },
-        { value: "e", text: "This is option e" },
-        { value: "f", text: "This is option f" },
-        { value: "g", text: "This is option g" },
+      opvselect:['Nguyễn Văn A',
+       'Nguyễn Văn B',
+       ],
+      selected1: "1", // Array reference
+      options1: [
+        { value: "1", text: "Chọn mức độ ưu tiên" },
+        { value: "a", text: "Quan trọng và khẩn cấp" },
+        { value: "b", text: "Quan trọng nhưng không khẩn cấp" },
+        { value: "c", text: "Khẩn cấp nhưng không quan trọng" },
+        { value: "d", text: "Không quan trọng và không khẩn cấp" },
+      ],
+       selected2: "2", // Array reference
+      options2: [
+        { value: "2", text: "Tình trạng công việc" },
+        { value: "a", text: "Chưa khởi động" },
+        { value: "b", text: "Đang thực hiện" },
+        { value: "c", text: "Quá hạn" },
+        { value: "d", text: "Đã phê duyệt" },
+      ],
+       selected3: "3", // Array reference
+      options3: [
+        { value: "3", text: "Kết quả công việc" },
+        { value: "a", text: "Đã hoàn thành" },
+        { value: "b", text: "Chưa hoàn thành" },
+
       ],
     };
   },
@@ -145,9 +162,15 @@ export default {
 .select-cbb .custom-select{
 	height: 34px;
 }
+.select-cbb{
+  max-width: 200px;
+}
 .header-page-giaocv {
   margin-left: 10px;
   margin-right: 10px;
+}
+.table-cv{
+  background-color: #fff;
 }
 /* .btn-secondary:hover {
   color: #fff;

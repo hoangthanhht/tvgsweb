@@ -65,24 +65,20 @@
           />
         </form>
       </div>
+
       <div class="theodoi-thicong">
         <v-select
+        placeholder="Theo nhân lực"
           class="select-duan"
-          :options="['Canada', 'United States']"
+          :options="['Hoàng Văn A', 'Vũ Văn V']"
         ></v-select>
       </div>
 
       <div class="theodoi-thicong">
         <v-select
+        placeholder="Theo dự án"
           class="select-duan"
-          :options="['Canada', 'United States']"
-        ></v-select>
-      </div>
-
-      <div class="theodoi-thicong">
-        <v-select
-          class="select-duan"
-          :options="['Canada', 'United States']"
+          :options="['Dự án A', 'Dự án B']"
         ></v-select>
       </div>
 
@@ -126,47 +122,77 @@ export default {
         {
           isActive: false,
           Hạng_mục_công_việc:
-            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Số_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "Thi công khu vực cao tầng",
+          Số_lượng: "Hà Đô 45	SL yêu cầu: 144 SL thực tế: 97",
           Bảo_hiểm:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Nội_Quy_ATLĐ: "Nguyễn Như Tùng",
+            "Có",
+          Nội_Quy_ATLĐ: "Tuân thủ",
 
-          Ảnh: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Nhận_xét: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ảnh: "",
+          Nhận_xét: "Thiếu 47 so với biểu đồ nhân lực",
           Ngày_kiểm_đếm:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Người_kiểm_đếm: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+            "08:39 12/03/2021",
+          Người_kiểm_đếm: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
         },
-    {
+        {
           isActive: false,
           Hạng_mục_công_việc:
-            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Số_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "Thi công khu vực cao tầng",
+          Số_lượng: "Hà Đô 45	SL yêu cầu: 144 SL thực tế: 97",
           Bảo_hiểm:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Nội_Quy_ATLĐ: "Nguyễn Như Tùng",
+            "Có",
+          Nội_Quy_ATLĐ: "Tuân thủ",
 
-          Ảnh: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Nhận_xét: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ảnh: "",
+          Nhận_xét: "Thiếu 47 so với biểu đồ nhân lực",
           Ngày_kiểm_đếm:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Người_kiểm_đếm: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+            "08:39 12/03/2021",
+          Người_kiểm_đếm: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
         },
-     {
+        {
           isActive: false,
           Hạng_mục_công_việc:
-            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Số_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "Thi công khu vực cao tầng",
+          Số_lượng: "Hà Đô 45	SL yêu cầu: 144 SL thực tế: 97",
           Bảo_hiểm:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Nội_Quy_ATLĐ: "Nguyễn Như Tùng",
+            "Có",
+          Nội_Quy_ATLĐ: "Tuân thủ",
 
-          Ảnh: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Nhận_xét: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ảnh: "",
+          Nhận_xét: "Thiếu 47 so với biểu đồ nhân lực",
           Ngày_kiểm_đếm:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Người_kiểm_đếm: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+            "08:39 12/03/2021",
+          Người_kiểm_đếm: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
+        },
+                {
+          isActive: false,
+          Hạng_mục_công_việc:
+            "Thi công khu vực cao tầng",
+          Số_lượng: "Hà Đô 45	SL yêu cầu: 144 SL thực tế: 97",
+          Bảo_hiểm:
+            "Có",
+          Nội_Quy_ATLĐ: "Tuân thủ",
+
+          Ảnh: "",
+          Nhận_xét: "Thiếu 47 so với biểu đồ nhân lực",
+          Ngày_kiểm_đếm:
+            "08:39 12/03/2021",
+          Người_kiểm_đếm: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
+        },
+                {
+          isActive: false,
+          Hạng_mục_công_việc:
+            "Thi công khu vực cao tầng",
+          Số_lượng: "Hà Đô 45	SL yêu cầu: 144 SL thực tế: 97",
+          Bảo_hiểm:
+            "Có",
+          Nội_Quy_ATLĐ: "Tuân thủ",
+
+          Ảnh: "",
+          Nhận_xét: "Thiếu 47 so với biểu đồ nhân lực",
+          Ngày_kiểm_đếm:
+            "08:39 12/03/2021",
+          Người_kiểm_đếm: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
         },
       ],
       selected: ["b"], // Array reference
@@ -199,6 +225,7 @@ export default {
   background-clip: border-box;
   background-color: #fff;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 .card {
   border: none;
@@ -240,6 +267,9 @@ export default {
 }
 .select-duan {
   width: 200px;
+  background-color: #fff;
+}
+.table-theodoitc{
   background-color: #fff;
 }
 </style>

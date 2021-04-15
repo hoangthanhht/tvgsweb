@@ -172,10 +172,14 @@
     <div class="add-gr4">
       <div class="add-gr41">
         <b-tabs content-class="mt-3">
-          <b-tab title="First" active><p>I'm the first tab</p></b-tab>
-          <b-tab title="Second"><p>I'm the second tab</p></b-tab>
+          <b-tab title="Ghi Chú" active><p>Sau khi thêm bản ghi bạn có thể sử dụng chức năng ghi chú
+Giúp bạn ghi lại những gì liên quan đến bản ghi này theo từng giai đoạn, thời gian khác nhau
+Nội dung sẽ được hiển thị theo format mẫu bên dưới.</p></b-tab>
+          <b-tab title="Lịch Sử"><p>Dưới đây là lịch sử các lần cập nhật dữ liệu
+Giúp bạn xem được ai đã cập nhật thông tin? cập nhật vào lúc nào? và cập nhật những gì?
+Nội dung sẽ được hiển thị theo format mẫu bên dưới.</p></b-tab>
         </b-tabs>
-      </div>
+      </div>  
       <div class="add-gr41">
         <p>
           Tên nhân viên ghi chú Thời điểm ghi chú Đây là mẫu format ghi chú. Nội
@@ -233,7 +237,7 @@ export default {
   top: auto;
 }
 .add-gr5 {
-  background-color: indigo;
+  background-color: #00a53c;
   height: 32px;
   width: 100%;
   position: fixed;

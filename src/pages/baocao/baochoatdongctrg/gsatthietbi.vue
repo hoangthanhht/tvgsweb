@@ -47,8 +47,9 @@
 
       <div class="theodoi-thicong">
         <v-select
+        placeholder="Theo dự án"
           class="select-duan"
-          :options="['Canada', 'United States']"
+          :options="['Dự án A', 'Dự án B']"
         ></v-select>
       </div>
 
@@ -91,41 +92,54 @@ export default {
         {
           isActive: false,
           Tên_thiết_bị:
-            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Ngày: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "Máy đào bánh lốp : Hitachi- ex100WD-2",
+          Ngày: "Kiểm định: 09:00 13/03/2019 Hết hạn: 23:55 13/03/2020",
           Người_vận_hành:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Tình_trạng: "Nguyễn Như Tùng",
-          Đánh_giá: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "",
+          Tình_trạng: "Bình thường",
+          Đánh_giá: "BPTC: Phù hợp An toàn: Đảm bảo",
 
-          Ảnh: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Kiểm_tra: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ảnh: "",
+          Kiểm_tra: "Ngày KT: 16:29 02/08/2019 Người KT: Lưu Hoàng Hòa [Duyệt: Nguyễn Hồng Q]",
         },
         {
           isActive: false,
           Tên_thiết_bị:
-            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Ngày: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "Máy đào bánh lốp : Hitachi- ex100WD-2",
+          Ngày: "Kiểm định: 09:00 13/03/2019 Hết hạn: 23:55 13/03/2020",
           Người_vận_hành:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Tình_trạng: "Nguyễn Như Tùng",
-          Đánh_giá: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "",
+          Tình_trạng: "Bình thường",
+          Đánh_giá: "BPTC: Phù hợp An toàn: Đảm bảo",
 
-          Ảnh: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Kiểm_tra: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ảnh: "",
+          Kiểm_tra: "Ngày KT: 16:29 02/08/2019 Người KT: Lưu Hoàng Hòa [Duyệt: Nguyễn Hồng Q]",
         },
         {
           isActive: false,
           Tên_thiết_bị:
-            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Ngày: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "Máy đào bánh lốp : Hitachi- ex100WD-2",
+          Ngày: "Kiểm định: 09:00 13/03/2019 Hết hạn: 23:55 13/03/2020",
           Người_vận_hành:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Tình_trạng: "Nguyễn Như Tùng",
-          Đánh_giá: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "",
+          Tình_trạng: "Bình thường",
+          Đánh_giá: "BPTC: Phù hợp An toàn: Đảm bảo",
 
-          Ảnh: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Kiểm_tra: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+          Ảnh: "",
+          Kiểm_tra: "Ngày KT: 16:29 02/08/2019 Người KT: Lưu Hoàng Hòa [Duyệt: Nguyễn Hồng Q]",
+        },
+                {
+          isActive: false,
+          Tên_thiết_bị:
+            "Máy đào bánh lốp : Hitachi- ex100WD-2",
+          Ngày: "Kiểm định: 09:00 13/03/2019 Hết hạn: 23:55 13/03/2020",
+          Người_vận_hành:
+            "",
+          Tình_trạng: "Bình thường",
+          Đánh_giá: "BPTC: Phù hợp An toàn: Đảm bảo",
+
+          Ảnh: "",
+          Kiểm_tra: "Ngày KT: 16:29 02/08/2019 Người KT: Lưu Hoàng Hòa [Duyệt: Nguyễn Hồng Q]",
         },
       ],
       selected: ["b"], // Array reference
@@ -161,6 +175,7 @@ export default {
   background-clip: border-box;
   background-color: #fff;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 .card {
   border: none;
@@ -199,5 +214,8 @@ export default {
 .baoc-theodoi {
   margin-right: 10px;
   margin-left: 10px;
+}
+.table-theodoitc{
+  background-color:  #fff;
 }
 </style>

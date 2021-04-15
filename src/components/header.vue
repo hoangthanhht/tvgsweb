@@ -21,7 +21,9 @@
 					placeholder="Search for..."
 				/>
 				<span class="input-group-append">
-					<button  class="btn btn-info" type="button">
+					<button
+					class="btn btn-info" 
+					type="button">
 						Search!
 					</button>
 				</span>
@@ -50,6 +52,11 @@ export default {
 </script>
 
 <style >
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #00a53c;
+    border-color: #00a53c;
+}
 .acount > .btn-secondary {
 	background-color: #fff;
 	color: #000;
@@ -84,13 +91,21 @@ cursor: pointer;
 	width: auto;
 	left: 30%;
 	right: 20%;
-
 	position: absolute;
 }
 .b-icon.bi {
 	top: 25%;
 	position: absolute;
 	right: 20%;
+	
+}
+.btn.btn-info {
+    color: #fff;
+    background-color: #00a53c ;
+    border-color: #00a53c;
+}
+.text-info {
+    color: #00a53c !important;
 }
 .b-icon.bi:hover {
 	cursor: pointer;

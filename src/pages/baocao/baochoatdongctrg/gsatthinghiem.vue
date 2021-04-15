@@ -62,15 +62,17 @@
 
 			<div class="theodoi-thicong">
 				<v-select
+				placeholder="Theo nhân sự"
 					class="select-duan"
-					:options="['Canada', 'United States']"
+					:options="['Nguyễn Văn B', 'Bùi Văn A']"
 				></v-select>
 			</div>
 
 			<div class="theodoi-thicong">
 				<v-select 
+				placeholder="Theo dự án"
 				class="select-duan"
-				:options="options" 
+				:options="['Dự án B', 'Dự án A']"
 				v-model="selectedBank"></v-select>
 			</div>
 			<!-- <div>
@@ -148,6 +150,17 @@ export default {
 					Người_thực_hiện: "Nguyễn Như Hưng",
 					Ghi_chú: "Trần Văn Quang Hoàng Văn Thịnh",
 				},
+						{
+					Tên_vật_liệu:
+						"Gạch xây, gạch ốp lát tầng 4,5",
+					Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+					TS_Kỹ_thuật: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+					Thí_nghiệm: "Nguyễn Như Hưng",
+					Đánh_giá: "Phạm Văn Nghĩa, Vũ Văn Đại",
+					Kết_quả: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+					Người_thực_hiện: "Nguyễn Như Hưng",
+					Ghi_chú: "Trần Văn Quang Hoàng Văn Thịnh",
+				},
 			],
 		 
 		};
@@ -183,6 +196,7 @@ export default {
 	background-clip: border-box;
 	background-color: #fff;
 	margin-bottom: 10px;
+	margin-top: 15px;
 }
 .card {
 	border: none;
@@ -221,5 +235,8 @@ export default {
 .baoc-theodoi {
 	margin-right: 10px;
 	margin-left: 10px;
+}
+.table-theodoitc{
+	background-color: #fff;
 }
 </style>

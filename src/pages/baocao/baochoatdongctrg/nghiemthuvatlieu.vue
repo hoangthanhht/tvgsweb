@@ -81,22 +81,25 @@
       </div>
       <div class="theodoi-thicong">
         <v-select
+        placeholder="Người thực hiện"
           class="select-duan"
-          :options="['Canada', 'United States']"
+          :options="['Nguyễn văn C', 'Nguyễn văn D']"
         ></v-select>
       </div>
 
       <div class="theodoi-thicong">
         <v-select
+        placeholder="Dự án"
           class="select-duan"
-          :options="['Canada', 'United States']"
+          :options="['Dự án A', 'Dự án B']"
         ></v-select>
       </div>
 
       <div class="theodoi-thicong">
         <v-select
+        placeholder="Loại"
           class="select-duan"
-          :options="['Canada', 'United States']"
+          :options="['Xi măng', 'Thép','Gạch']"
         ></v-select>
       </div>
 
@@ -141,58 +144,78 @@ export default {
         {
           isActive: false,
           Tên_vật_liệu:
-            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Loại_vật_liệu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "Xi măng ",
+          Loại_vật_liệu: "Thi công thô, và hoàn thiện tầng 4",
           Thông_số_kỹ_thuật:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Ngày_nhập: "Nguyễn Như Tùng",
+            "40kg/bao",
+          Ngày_nhập: "15:31 02/03/2021",
 
-          Đơn_vị: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Khối_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Đánh_giá: "Nguyễn Như Tùng",
-          Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Đơn_vị: "Bao",
+          Khối_lượng: "KL Nhập: 350KL Lũy kế: 350",
+          Lấy_mẫu: "Bắt đầu: 10:30 04/03/2021,Kết thúc: 17:00 05/03/2021",
+          Đánh_giá: "Nguyễn Như Thế",
+          Người_thực_hiện: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
         },
-        {
+         {
           isActive: false,
           Tên_vật_liệu:
-            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Loại_vật_liệu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "Xi măng ",
+          Loại_vật_liệu: "Thi công thô, và hoàn thiện tầng 4",
           Thông_số_kỹ_thuật:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Ngày_nhập: "Nguyễn Như Tùng",
+            "40kg/bao",
+          Ngày_nhập: "15:31 02/03/2021",
 
-          Đơn_vị: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Khối_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Đánh_giá: "Nguyễn Như Tùng",
-          Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Đơn_vị: "Bao",
+          Khối_lượng: "KL Nhập: 350KL Lũy kế: 350",
+          Lấy_mẫu: "Bắt đầu: 10:30 04/03/2021,Kết thúc: 17:00 05/03/2021",
+          Đánh_giá: "Nguyễn Như Thế",
+          Người_thực_hiện: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
         },
-        {
+       {
           isActive: false,
           Tên_vật_liệu:
-            "Hồ sơ thanh toán đợt 8- MeLinh Plaza Hồ sơ thanh toán đợt 8- MeLinh PlazaHồ sơ thanh toán đợt 8- MeLinh Plaza",
-          Loại_vật_liệu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
+            "Xi măng ",
+          Loại_vật_liệu: "Thi công thô, và hoàn thiện tầng 4",
           Thông_số_kỹ_thuật:
-            "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Ngày_nhập: "Nguyễn Như Tùng",
+            "40kg/bao",
+          Ngày_nhập: "15:31 02/03/2021",
 
-          Đơn_vị: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
-          Khối_lượng: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Lấy_mẫu: "Bắt đầu: 10:30 04/11/2019,Kết thúc: 17:00 05/11/2019",
-          Đánh_giá: "Nguyễn Như Tùng",
-          Người_thực_hiện: "Vũ Đức Tuân Nguyễn Hồng Quang Trịnh Thị Tuyến",
+          Đơn_vị: "Bao",
+          Khối_lượng: "KL Nhập: 350KL Lũy kế: 350",
+          Lấy_mẫu: "Bắt đầu: 10:30 04/03/2021,Kết thúc: 17:00 05/03/2021",
+          Đánh_giá: "Nguyễn Như Thế",
+          Người_thực_hiện: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
         },
-      ],
-      selected: ["b"], // Array reference
-      options: [
-        { value: "a", text: "This is First option" },
-        { value: "b", text: "Default Selected Option" },
-        { value: "c", text: "This is another option" },
-        { value: "d", text: "This one is disabled", disabled: true },
-        { value: "e", text: "This is option e" },
-        { value: "f", text: "This is option f" },
-        { value: "g", text: "This is option g" },
+               {
+          isActive: false,
+          Tên_vật_liệu:
+            "Xi măng ",
+          Loại_vật_liệu: "Thi công thô, và hoàn thiện tầng 4",
+          Thông_số_kỹ_thuật:
+            "40kg/bao",
+          Ngày_nhập: "15:31 02/03/2021",
+
+          Đơn_vị: "Bao",
+          Khối_lượng: "KL Nhập: 350KL Lũy kế: 350",
+          Lấy_mẫu: "Bắt đầu: 10:30 04/03/2021,Kết thúc: 17:00 05/03/2021",
+          Đánh_giá: "Nguyễn Như Thế",
+          Người_thực_hiện: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
+        },
+               {
+          isActive: false,
+          Tên_vật_liệu:
+            "Xi măng ",
+          Loại_vật_liệu: "Thi công thô, và hoàn thiện tầng 4",
+          Thông_số_kỹ_thuật:
+            "40kg/bao",
+          Ngày_nhập: "15:31 02/03/2021",
+
+          Đơn_vị: "Bao",
+          Khối_lượng: "KL Nhập: 350KL Lũy kế: 350",
+          Lấy_mẫu: "Bắt đầu: 10:30 04/03/2021,Kết thúc: 17:00 05/03/2021",
+          Đánh_giá: "Nguyễn Như Thế",
+          Người_thực_hiện: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
+        },
       ],
     };
   },
@@ -206,7 +229,9 @@ export default {
 /* .clear{
   clear: both;
 } */
-
+.table-theodoitc{
+  background-color: #fff;
+}
 .gr-card {
   display: flex;
   justify-content: space-between;
@@ -214,6 +239,7 @@ export default {
   background-clip: border-box;
   background-color: #fff;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 .card {
   border: none;
