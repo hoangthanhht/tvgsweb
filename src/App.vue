@@ -1,41 +1,59 @@
 <template>
-	<div id="app">
-		<CompHeader />
-		<CompNavi 
-		/>
-		<CompFooter/>
-		<BreadCrumb
-		 />
-		 <router-view></router-view>
-		 <!-- <router-link to="/foo">Go to Foo</router-link> -->
-		<!-- <Homepage />  -->
-		 <!-- <CongViecGiao />	 -->
-		<!-- <ThemCongViec /> -->
-		<!-- <BcTongHop /> -->
-		<!-- <TheoDoiCtrg /> -->
-		<!-- <NtCongViec/>   -->
-		<!-- <NtVatLieu /> -->
-		<!-- <GsNhanLuc /> -->
-		<!-- <GsThietBi /> -->
-		<!-- <GsThiNghiem /> -->
-		<!-- <Popupctrg /> -->
-		<!-- <NhatTrinh /> -->
-		<!-- <BaoCaoQuanLy /> -->
-		<!-- <DanhSachHoSo  /> -->
-		<!-- <HoSoNgthu /> -->
-		<!-- <HoSoTke /> -->
-		<!-- <HoSoKhac /> -->
-		<!-- <Login /> -->
-		<!-- <ThemHDong /> -->
-	</div>
+  <div id="app">
+    <CompHeader />
+    <CompNavi />
+    <CompFooter />
+    <BreadCrumb 
+	
+	/>
+    <transition name="slide-fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
+    <!-- <router-link to="/foo">Go to Foo</router-link> -->
+    <!-- <Homepage />  -->
+    <!-- <CongViecGiao />	 -->
+    <!-- <ThemCongViec /> -->
+    <!-- <BcTongHop /> -->
+    <!-- <TheoDoiCtrg /> -->
+    <!-- <NtCongViec/>   -->
+    <!-- <NtVatLieu /> -->
+    <!-- <GsNhanLuc /> -->
+    <!-- <GsThietBi /> -->
+    <!-- <GsThiNghiem /> -->
+    <!-- <Popupctrg /> -->
+    <!-- <NhatTrinh /> -->
+    <!-- <BaoCaoQuanLy /> -->
+    <!-- <DanhSachHoSo  /> -->
+    <!-- <HoSoNgthu /> -->
+    <!-- <HoSoTke /> -->
+    <!-- <HoSoKhac /> -->
+    <!-- <Login /> -->
+    <!-- <ThemHDong /> -->
+    <!-- <Page403 /> -->
+    <div  class="mt-3">
+      <b-pagination
+        align="right"
+        :per-page="3"
+        v-model="currentPage"
+        pills
+        :total-rows="rows"
+        size="lg"
+      ></b-pagination>
+    <input
+  v-bind:value="searchText"
+  v-on:input="searchText = $event.target.value"
+  v-on:onchange="cha"
+>
+    </div>
+  </div>
 </template>
 
 <script>
-import CompHeader from './components/header'
-import CompNavi from './components/navigation'
-import CompFooter from './components/footer'
-import BreadCrumb from './pages/components/Breadcrumb'
-import Homepage from './pages/trangchu/homePage'
+import CompHeader from "./components/header";
+import CompNavi from "./components/navigation";
+import CompFooter from "./components/footer";
+import BreadCrumb from "./pages/components/Breadcrumb";
+import Homepage from "./pages/trangchu/homePage";
 // import CongViecGiao from './pages/congviec/congviecgiao'
 // import ThemCongViec from './pages/congviec/themcv'
 // import BcTongHop from './pages/baocao/baochoatdongctrg/bc_tonghop'
@@ -53,48 +71,90 @@ import Homepage from './pages/trangchu/homePage'
 // import HoSoTke from './pages/hoso/them_ho_so/ho_so_tke'
 // import HoSoKhac from './pages/hoso/them_ho_so/ho_so_khac'
 // import Login from './pages/users/login-logout'
- //import ThemHDong from './pages/hopdong/them_hop_dong/them_hop_dong'
+//import ThemHDong from './pages/hopdong/them_hop_dong/them_hop_dong'
+import Page403 from "./pages/components/page_error";
+
 export default {
-	name: 'app',
-	data () {
-		return {
-			
-		}
-	},
-	components: {
-		CompHeader,
-		CompNavi,
-		CompFooter,
-		BreadCrumb,
-		Homepage,
-		// CongViecGiao,
-		// ThemCongViec,
-		// BcTongHop,
-		// TheoDoiCtrg,
-		// NtCongViec,
-		// NtVatLieu,
-		// GsNhanLuc,
-		// GsThietBi,
-		// GsThiNghiem,
-		// Popupctrg,
-		// NhatTrinh,
-		// BaoCaoQuanLy,
-		// DanhSachHoSo,
-		// HoSoNgthu,
-		// HoSoTke,
-		// HoSoKhac,
-		// Login,
-		// ThemHDong
-	}
-}
+  name: "app",
+  data() {
+    return {
+      searchText:"",
+      currentPage: 1,
+      rows: 20,
+      currentPage: 1,
+    };
+  },
+  methods: {
+    cha(e) {
+      console.log("current", this.e);
+    },
+  },
+  components: {
+    CompHeader,
+    CompNavi,
+    CompFooter,
+    BreadCrumb,
+    Homepage,
+    Page403,
+    // CongViecGiao,
+    // ThemCongViec,
+    // BcTongHop,
+    // TheoDoiCtrg,
+    // NtCongViec,
+    // NtVatLieu,
+    // GsNhanLuc,
+    // GsThietBi,
+    // GsThiNghiem,
+    // Popupctrg,
+    // NhatTrinh,
+    // BaoCaoQuanLy,
+    // DanhSachHoSo,
+    // HoSoNgthu,
+    // HoSoTke,
+    // HoSoKhac,
+    // Login,
+    // ThemHDong
+  },
+};
 </script>
 
 <style >
-#app,html{
-	/* background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg"); */
-	background-color: rgb(204, 204, 204);
-	background-repeat: repeat;
-	position: relative;
+#app,
+html {
+  /* background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg"); */
+  background-color: rgb(204, 204, 204);
+  background-repeat: repeat;
+  position: relative;
+}
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+/* .v-leave-active, .v-enter-active{
+	transition: all 0.2s ease;
+} */
+/* .v-enter{
+	opacity: 0;
+	transform: scale(1.1);
+}
+.v-enter-to{
+	opacity: 1;
+	transform: scale(1);
 }
 
+.v-leave{
+	opacity: 1;
+	transform: scale(1);
+}
+.v-leave-to{
+	opacity: 0;
+	transform: scale(1.1);
+} */
 </style>

@@ -39,11 +39,11 @@ module.exports = {
         options: {
           // name: '[path][name].[ext]',
           // name: '[name].[ext]?[hash]'
-          // name: function (file) {
-          //   return '/images/[name].[ext]?[hash]';
-          //   // return '/images/[hash].[ext]';
-          // }
-          outputPath: '/public/images/'
+          name: function (file) {
+            return '/images/[name].[ext]?[hash]';
+            // return '/images/[hash].[ext]';
+          }
+          //outputPath: '/public/images/'
         }
       }
     ]

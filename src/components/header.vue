@@ -4,7 +4,7 @@
 			<div class="logo-box">
               <img 
 			  height="32"
-			  src="src/assets/apave.png" 
+			  src="../assets/apave.png" 
 			  alt="">
             </div>
 			<b-dropdown class="ultilyti" right text="Tiện ich">
@@ -13,6 +13,7 @@
 				<!-- <b-dropdown-item>Báo cáo công trình</b-dropdown-item> -->
 				<router-link to="/bao-cao-hoat-dong-cong-truong" tag="b-dropdown-item" >Báo cáo công trình</router-link>
 				<b-dropdown-item>Chấm công</b-dropdown-item>
+				<b-dropdown-divider></b-dropdown-divider>
 				<b-dropdown-item>Gmail</b-dropdown-item>
 				<b-dropdown-item>Dân trí</b-dropdown-item>
 			</b-dropdown>
@@ -35,6 +36,7 @@
 				<b-dropdown-item>Tài khoản</b-dropdown-item>
 				<b-dropdown-item>Cá nhân</b-dropdown-item>
 				<!-- <b-dropdown-item>Đăng xuất</b-dropdown-item> -->
+				<b-dropdown-divider></b-dropdown-divider>
 				<router-link to="/logout" tag="b-dropdown-item" >Đăng xuất</router-link>
 
 			</b-dropdown>
