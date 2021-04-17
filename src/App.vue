@@ -3,9 +3,8 @@
     <CompHeader />
     <CompNavi />
     <CompFooter />
-    <BreadCrumb 
-	
-	/>
+    <BreadCrumb />
+
     <transition name="slide-fade" mode="out-in">
       <router-view></router-view>
     </transition>
@@ -30,21 +29,7 @@
     <!-- <Login /> -->
     <!-- <ThemHDong /> -->
     <!-- <Page403 /> -->
-    <div  class="mt-3">
-      <b-pagination
-        align="right"
-        :per-page="3"
-        v-model="currentPage"
-        pills
-        :total-rows="rows"
-        size="lg"
-      ></b-pagination>
-    <input
-  v-bind:value="searchText"
-  v-on:input="searchText = $event.target.value"
-  v-on:onchange="cha"
->
-    </div>
+
   </div>
 </template>
 
@@ -78,16 +63,20 @@ export default {
   name: "app",
   data() {
     return {
-      searchText:"",
+		 options1: [
+        { value: "1", text: "Chọn mức độ ưu tiên" },
+        { value: "a", text: "Quan trọng và khẩn cấp" },
+        { value: "b", text: "Quan trọng nhưng không khẩn cấp" },
+        { value: "c", text: "Khẩn cấp nhưng không quan trọng" },
+        { value: "d", text: "Không quan trọng và không khẩn cấp" },
+      ],
+		day:null,
+      searchText: "",
       currentPage: 1,
       rows: 20,
-      currentPage: 1,
     };
   },
   methods: {
-    cha(e) {
-      console.log("current", this.e);
-    },
   },
   components: {
     CompHeader,

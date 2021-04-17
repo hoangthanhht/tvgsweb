@@ -51,11 +51,13 @@
           :fields="fields"
         ></b-table>
       </div>
+      <ComPagi />
     </div>
   </div>
 </template>
 
 <script>
+import ComPagi from '../../components/pagination'
 import MucBC from "./comp_hoatdongctrg/muc_baocao";
 export default {
   data() {
@@ -126,6 +128,7 @@ export default {
   },
   components: {
     MucBC,
+    ComPagi
   },
 };
 </script>

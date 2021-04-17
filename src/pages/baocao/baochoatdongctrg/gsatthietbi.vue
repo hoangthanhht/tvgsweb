@@ -70,10 +70,12 @@
     <div class="table-theodoitc">
       <b-table striped hover bordered :items="items" :fields="fields"></b-table>
     </div>
+    <ComPagi/>
   </div>
 </template>
 
 <script>
+import ComPagi from '../../components/pagination'
 import MucBC from "./comp_hoatdongctrg/muc_baocao";
 export default {
   data() {
@@ -156,6 +158,7 @@ export default {
   },
   components: {
     MucBC,
+    ComPagi
   },
 };
 </script>

@@ -73,7 +73,8 @@
 				placeholder="Theo dự án"
 				class="select-duan"
 				:options="['Dự án B', 'Dự án A']"
-				v-model="selectedBank"></v-select>
+				v-model="selectedBank">
+				</v-select>
 			</div>
 			<!-- <div>
 				<button v-on:click="directToBank">dfdksfk</button>
@@ -95,10 +96,12 @@
 		<div class="table-theodoitc">
 			<b-table striped hover bordered :items="items" :fields="fields"></b-table>
 		</div>
+		<ComPagi/>
 	</div>
 </template>
 
 <script>
+import ComPagi from '../../components/pagination'
 import MucBC from "./comp_hoatdongctrg/muc_baocao";
 export default {
 	data() {
@@ -167,6 +170,7 @@ export default {
 	},
 	components: {
 		MucBC,
+		ComPagi
 	},
 	 methods: {// lấy ra giá trị đã chọn 
 		directToBank() {

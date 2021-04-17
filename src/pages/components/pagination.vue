@@ -1,5 +1,6 @@
 <template>
-	<div>
+  <!-- <div>
+
 			 <ul class="pagination">
 		<li 
 			class="pagination-item"
@@ -62,106 +63,137 @@
 			</button>
 		</li>
 	</ul>
-	</div>
+	</div> -->
+
+  <div class="mt-3">
+    <b-pagination
+      align="right"
+      :per-page="3"
+      v-model="currentPage"
+      pills
+      :total-rows="rows"
+      size="lg"
+    ></b-pagination>
+  </div>
 </template>
 
 <script>
-export default {
- props: {
-		maxVisibleButtons: {
-			type: Number,
-			required: false,
-			default: 5
-		},
-		totalPages: {
-			type: Number,
-			required: true
-		},
-		total: {
-			type: Number,
-			required: true
-		},
-		perPage: {
-			type: Number,
-			required: true
-		},
-		currentPage: {
-			type: Number,
-			required: true
-		},
+// export default {
+//   props: {
+//     maxVisibleButtons: {
+//       type: Number,
+//       required: false,
+//       default: 5,
+//     },
+//     totalPages: {
+//       type: Number,
+//       required: true,
+//     },
+//     total: {
+//       type: Number,
+//       required: true,
+//     },
+//     perPage: {
+//       type: Number,
+//       required: true,
+//     },
+//     currentPage: {
+//       type: Number,
+//       required: true,
+//     },
+//   },
+//   computed: {
+//     startPage() {
+//       if (this.currentPage === 1) {
+//         return 1;
+//       }
+
+//       if (this.currentPage === this.totalPages) {
+//         return this.totalPages - this.maxVisibleButtons + 1;
+//       }
+
+//       return this.currentPage - 1;
+//     },
+//     endPage() {
+//       return Math.min(
+//         this.startPage + this.maxVisibleButtons - 1,
+//         this.totalPages
+//       );
+//     },
+//     pages() {
+//       const range = [];
+
+//       for (let i = this.startPage; i <= this.endPage; i += 1) {
+//         range.push({
+//           name: i,
+//           isDisabled: i === this.currentPage,
+//         });
+//       }
+
+//       return range;
+//     },
+//     isInFirstPage() {
+//       return this.currentPage === 1;
+//     },
+//     isInLastPage() {
+//       return this.currentPage === this.totalPages;
+//     },
+//   },
+//   methods: {
+//     onClickFirstPage() {
+//       this.$emit("pagechanged", 1);
+//     },
+//     onClickPreviousPage() {
+//       this.$emit("pagechanged", this.currentPage - 1);
+//     },
+//     onClickPage(page) {
+//       this.$emit("pagechanged", page);
+//     },
+//     onClickNextPage() {
+//       console.log("total", this.totalPages);
+//       this.$emit("pagechanged", this.currentPage + 1);
+//     },
+//     onClickLastPage() {
+//       this.$emit("pagechanged", this.totalPages);
+//     },
+//     isPageActive(page) {
+//       return this.currentPage === page;
+//     },
+//   },
+// };
+export default{
+	name: "comp-pagi",
+	data() {
+		return {
+			searchText:"",
+			currentPage: 1,
+			rows: 20,
+			currentPage: 1,
+		};
 	},
-	computed: {
-		startPage() {
-			if (this.currentPage === 1) {
-				return 1;
-			}
-
-			if (this.currentPage === this.totalPages) { 
-				return this.totalPages - this.maxVisibleButtons + 1;
-			}
-
-			return this.currentPage - 1;
-
-		},
-		endPage() {
-			
-			return Math.min(this.startPage + this.maxVisibleButtons - 1, this.totalPages);
-			
-		},
-		pages() {
-			const range = [];
-
-			for (let i = this.startPage; i <= this.endPage; i+= 1 ) {
-				range.push({
-					name: i,
-					isDisabled: i === this.currentPage 
-				});
-			}
-
-			return range;
-		},
-		isInFirstPage() {
-			return this.currentPage === 1;
-		},
-		isInLastPage() {
-			return this.currentPage === this.totalPages;
-		},
-	},
-	methods: {
-		onClickFirstPage() {
-			this.$emit('pagechanged', 1);
-		},
-		onClickPreviousPage() {
-			this.$emit('pagechanged', this.currentPage - 1);
-		},
-		onClickPage(page) {
-			this.$emit('pagechanged', page);
-		},
-		onClickNextPage() {
-			console.log('total',this.totalPages)
-			this.$emit('pagechanged', this.currentPage + 1);
-		},
-		onClickLastPage() {
-			this.$emit('pagechanged', this.totalPages);    
-		},
-		isPageActive(page) {
-			return this.currentPage === page;
-		},
-	}
 }
+
+
 </script>
 
 <style>
-.pagination {
-	list-style-type: none;
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #00a53c;
+    border-color: #00a53c;
+}
+/* .pagination {
+  list-style-type: none;
 }
 
 .pagination-item {
-	display: inline-block;
-}
+  display: inline-block;
+} */
 
-.active {
-	background-color: #4AAE9B;
-	color: #ffffff;
-}
+/* .active {
+  background-color: #4aae9b;
+  color: #ffffff;
+} */
 </style>

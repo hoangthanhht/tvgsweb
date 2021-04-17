@@ -46,7 +46,7 @@
 
 <script>
 export default {
-	name: "tvgs",
+	name: "tvgs-header",
 	data() {
 		return {};
 	},

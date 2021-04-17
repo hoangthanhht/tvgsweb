@@ -40,10 +40,13 @@
     <div class="table-cv">
       <b-table striped hover bordered :items="items" :fields="fields" :text-center="true"></b-table>
     </div>
+  <ComPagi/>
   </div>
 </template>
 
 <script>
+import ComPagi from '../../components/pagination'
+
 export default {
   data() {
     return {
@@ -96,7 +99,9 @@ export default {
       ],
     };
   },
-
+  components:{
+    ComPagi,
+  }
 
 };
 </script>
