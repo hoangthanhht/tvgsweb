@@ -26,6 +26,10 @@ import HoSoKhac from './pages/hoso/them_ho_so/ho_so_khac'
 import ThemHDong from './pages/hopdong/them_hop_dong/them_hop_dong'
 import Login from './pages/users/login-logout'
 import Page403 from './pages/components/page_error'
+import DSChucDanh from './pages/nhansu/danh_sach_chuc_danh'
+import DSNhanVien from './pages/nhansu/danh_sach_nhan_vien'
+import ThongTinNhVien from './pages/nhansu/thong_tin_nhan_su'
+import ChamCongCaNhan from './pages/nhansu/cham_cong_ca_nhan'
 
 Vue.use(VueRouter)
 
@@ -51,6 +55,10 @@ const routes = [
     { path: '/them-hop-dong', component: ThemHDong },
     { path: '/logout', component: Login },
     { path: '*', component: Page403 },
+    { path: '/danh-sach-chuc-danh', component: DSChucDanh },
+    { path: '/danh-sach-nhan-vien', component: DSNhanVien },
+    { path: '/thong-tin-nhan-su', component: ThongTinNhVien },
+    { path: '/cham-cong-ca-nhan', component: ChamCongCaNhan },
   ]
   
   const router = new VueRouter({

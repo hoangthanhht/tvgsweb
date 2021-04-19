@@ -154,7 +154,7 @@ export default {
 
           Đơn_vị: "Bao",
           Khối_lượng: "KL Nhập: 350KL Lũy kế: 350",
-          Lấy_mẫu: "Bắt đầu: 10:30 04/03/2021,Kết thúc: 17:00 05/03/2021",
+          Lấy_mẫu: "Bắt đầu: 10:30 04/03/2021,Kếtthúc: 17:00 05/03/2021",
           Đánh_giá: "Nguyễn Như Thế",
           Người_thực_hiện: "Vũ Đức  Nguyễn Hồng Quan Trịnh Thị T",
         },

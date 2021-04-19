@@ -115,10 +115,17 @@
 
 				<b-nav-item-dropdown text="Nhân Sự" left>
 					<b-dropdown-item href="#">Danh sách phòng ban</b-dropdown-item>
-					<b-dropdown-item href="#">Danh sách nhân viên</b-dropdown-item>
-					<b-dropdown-item href="#">Danh sách chức danh</b-dropdown-item>
-					<b-dropdown-item href="#">Thông tin của tôi</b-dropdown-item>
-					<b-dropdown-item href="#">Chấm công của tôi</b-dropdown-item>
+					<!-- <b-dropdown-item href="#">Danh sách nhân viên</b-dropdown-item> -->
+					<router-link to="/danh-sach-nhan-vien" tag="b-dropdown-item" >Danh sách nhân viên</router-link>
+
+					<!-- <b-dropdown-item href="#">Danh sách chức danh</b-dropdown-item> -->
+					<router-link to="/danh-sach-chuc-danh" tag="b-dropdown-item" >Danh sách chức danh</router-link>
+					<!-- <b-dropdown-item href="#">Thông tin của tôi</b-dropdown-item> -->
+					<router-link to="/thong-tin-nhan-su" tag="b-dropdown-item" >Thông tin của tôi</router-link>
+
+					<!-- <b-dropdown-item href="#">Chấm công của tôi</b-dropdown-item> -->
+					<router-link to="/cham-cong-ca-nhan" tag="b-dropdown-item" >Chấm công của tôi</router-link>
+					
 					<b-dropdown-item href="#">Chấm công</b-dropdown-item>
 				</b-nav-item-dropdown>
 

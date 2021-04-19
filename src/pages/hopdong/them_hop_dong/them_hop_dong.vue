@@ -166,8 +166,6 @@ export default {
 }
 
 
-
-
 .them-hd {
   margin-left: 10px;
   margin-right: 10px;
@@ -188,7 +186,7 @@ h5{
   top: auto;
 }
 .hs-gr6 {
-  background-color: indigo;
+  background-color: #00a53c;
   height: 32px;
   width: 100%;
   position: fixed;
