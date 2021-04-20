@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-chamcongcanhan">
     <div class="block1">
       <h4>Bảng chấm công nhân viên Nguyễn Văn Gì</h4>
       <div class="search-congv">
@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="block3">
       <b-table-simple bordered hover small caption-top responsive>
         <b-thead>
           <b-tr>
@@ -63,38 +63,69 @@
             <b-th>Chấm công</b-th>
           </b-tr>
         </b-thead>
-        <b-tbody>
-          <b-tr  >
+        <b-tbody class="block3__bodytb">
+          <b-tr>
             <b-td rowspan="3">1</b-td>
             <b-td rowspan="3">Nguyễn Hồng</b-td>
             <b-td rowspan="3" class="text-center">12-04-2021</b-td>
             <b-td>Sáng</b-td>
-            <b-td variant="danger" ></b-td>
-            
+            <b-td class="block3__bodytb--dachamcong"></b-td>
           </b-tr>
           <b-tr>
             <b-td>Chiều</b-td>
-            <b-td variant="danger" ></b-td>
+            <b-td class="block3__bodytb--daxacnhan"></b-td>
           </b-tr>
           <b-tr>
             <b-td>Tối</b-td>
-            <b-td variant="danger" ></b-td>
+            <b-td class="block3__bodytb--nghi"></b-td>
           </b-tr>
-         
-               <b-tr>
-            <b-td rowspan="3">1</b-td>
+
+          <b-tr>
+            <b-td rowspan="3">2</b-td>
             <b-td rowspan="3">Nguyễn Hồng</b-td>
             <b-td rowspan="3" class="text-center">12-04-2021</b-td>
             <b-td>Sáng</b-td>
-            <b-td variant="danger" ></b-td>
+            <b-td class="block3__bodytb--nghicophep"></b-td>
           </b-tr>
           <b-tr>
             <b-td>Chiều</b-td>
-            <b-td variant="danger" ></b-td>
+            <b-td class="block3__bodytb--xinxacnhan"></b-td>
           </b-tr>
           <b-tr>
             <b-td>Tối</b-td>
-            <b-td variant="danger" ></b-td>
+            <b-td class="block3__bodytb--xinxacnhan" ></b-td>
+          </b-tr>
+
+                  <b-tr>
+            <b-td rowspan="3">3</b-td>
+            <b-td rowspan="3">Nguyễn Hồng</b-td>
+            <b-td rowspan="3" class="text-center">12-04-2021</b-td>
+            <b-td>Sáng</b-td>
+            <b-td class="block3__bodytb--dachamcong"></b-td>
+          </b-tr>
+          <b-tr>
+            <b-td>Chiều</b-td>
+            <b-td class="block3__bodytb--daxacnhan"></b-td>
+          </b-tr>
+          <b-tr>
+            <b-td>Tối</b-td>
+            <b-td class="block3__bodytb--nghi"></b-td>
+          </b-tr>
+
+                  <b-tr>
+            <b-td rowspan="3">4</b-td>
+            <b-td rowspan="3">Nguyễn Hồng</b-td>
+            <b-td rowspan="3" class="text-center">12-04-2021</b-td>
+            <b-td>Sáng</b-td>
+            <b-td class="block3__bodytb--dachamcong"></b-td>
+          </b-tr>
+          <b-tr>
+            <b-td>Chiều</b-td>
+            <b-td class="block3__bodytb--daxacnhan"></b-td>
+          </b-tr>
+          <b-tr>
+            <b-td>Tối</b-td>
+            <b-td class="block3__bodytb--nghi"></b-td>
           </b-tr>
         </b-tbody>
       </b-table-simple>
@@ -107,6 +138,28 @@ export default {};
 </script>
 
 <style scoped>
+.container-chamcongcanhan{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.block3{
+  background-color: #fff;
+}
+.block3__bodytb--dachamcong {
+  background-color: #6658dd;
+}
+.block3__bodytb--daxacnhan {
+  background-color: #7fff00;
+}
+.block3__bodytb--nghi {
+  background-color: #f1556c;
+}
+.block3__bodytb--nghicophep {
+  background-color: #f7b84b;
+}
+.block3__bodytb--xinxacnhan {
+  background-color: #19c491;
+}
 .b-icon.bi {
   position: relative;
   left: 0.5px;

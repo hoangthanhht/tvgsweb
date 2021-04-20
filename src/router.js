@@ -30,6 +30,7 @@ import DSChucDanh from './pages/nhansu/danh_sach_chuc_danh'
 import DSNhanVien from './pages/nhansu/danh_sach_nhan_vien'
 import ThongTinNhVien from './pages/nhansu/thong_tin_nhan_su'
 import ChamCongCaNhan from './pages/nhansu/cham_cong_ca_nhan'
+import ChamCongNhanVien from './pages/nhansu/cham_cong_nhan_vien'
 
 Vue.use(VueRouter)
 
@@ -59,6 +60,8 @@ const routes = [
     { path: '/danh-sach-nhan-vien', component: DSNhanVien },
     { path: '/thong-tin-nhan-su', component: ThongTinNhVien },
     { path: '/cham-cong-ca-nhan', component: ChamCongCaNhan },
+    { path: '/cham-cong-nhan-vien', component: ChamCongNhanVien },
+    { path: 'www.google.com' },
   ]
   
   const router = new VueRouter({
