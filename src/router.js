@@ -31,6 +31,12 @@ import DSNhanVien from './pages/nhansu/danh_sach_nhan_vien'
 import ThongTinNhVien from './pages/nhansu/thong_tin_nhan_su'
 import ChamCongCaNhan from './pages/nhansu/cham_cong_ca_nhan'
 import ChamCongNhanVien from './pages/nhansu/cham_cong_nhan_vien'
+import Maseco from './pages/trangchu/compduan/maseco'
+import Marriot from './pages/trangchu/compduan/marriot'
+import Sheraton from './pages/trangchu/compduan/sheraton'
+import Pearl from './pages/trangchu/compduan/sg_pearl'
+import Ngoisao from './pages/trangchu/compduan/thap_ngoi_sao'
+import Vietcombank from './pages/trangchu/compduan/vietcombank'
 
 Vue.use(VueRouter)
 
@@ -61,7 +67,12 @@ const routes = [
     { path: '/thong-tin-nhan-su', component: ThongTinNhVien },
     { path: '/cham-cong-ca-nhan', component: ChamCongCaNhan },
     { path: '/cham-cong-nhan-vien', component: ChamCongNhanVien },
-    { path: 'www.google.com' },
+    { path: '/ma-se-co', component:Maseco},
+    { path: '/mar-ri-ot', component:Marriot},
+    { path: '/she-ra-ton', component:Sheraton},
+    { path: '/sg-pearl', component:Pearl},
+    { path: '/thap-ngoi-sao', component:Ngoisao},
+    { path: '/vietcombank', component:Vietcombank},
   ]
   
   const router = new VueRouter({

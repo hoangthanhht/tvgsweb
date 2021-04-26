@@ -174,7 +174,7 @@ export default {
 	margin-left: 0;
 }
 .nav_tvgs .navbar {
-	height: 40px;
+	height: 60px;
 	width: 100%;
 	background-color: #00a53c;
 }
