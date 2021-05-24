@@ -4,10 +4,11 @@
     <CompNavi />
     <CompFooter />
     <BreadCrumb />
-
-    <transition name="slide-fade" mode="out-in">
+    <BaocaoGS/>
+    <!-- <transition name="slide-fade" mode="out-in">
       <router-view></router-view>
-    </transition>
+    </transition> -->
+
     <!-- <router-link to="/foo">Go to Foo</router-link> -->
     <!-- <Homepage />  -->
     <!-- <CongViecGiao />	 -->
@@ -39,6 +40,7 @@ import CompNavi from "./components/navigation";
 import CompFooter from "./components/footer";
 import BreadCrumb from "./pages/components/Breadcrumb";
 import Homepage from "./pages/trangchu/homePage";
+import BaocaoGS from "./components/baocaogs";
 // import CongViecGiao from './pages/congviec/congviecgiao'
 // import ThemCongViec from './pages/congviec/themcv'
 // import BcTongHop from './pages/baocao/baochoatdongctrg/bc_tonghop'
@@ -89,6 +91,7 @@ export default {
     BreadCrumb,
     Homepage,
     Page403,
+    BaocaoGS
     // CongViecGiao,
     // ThemCongViec,
     // BcTongHop,
