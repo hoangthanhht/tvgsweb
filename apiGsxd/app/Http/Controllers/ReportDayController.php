@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Models\Post;
+use App\Models\ReportDay;
 
-class PostController extends Controller
+class ReportDayController extends Controller
 {
     public function index()
     {
@@ -36,13 +36,14 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'title' => 'required',
-            'description' => 'required'
+            'contentJson' => 'required',
+            'dateBaocao' => 'required'
         ]);
  
-        $post = new Post();
-        $post->title = $request->title;
-        $post->description = $request->description;
+        $post = new ReportDay();
+        $post->contentJson = $request->contentJson;
+        $post->dateBaocao = $request->dateBaocao;
+        $post->imgBase64 = $request->imgBase64;
  
         if (auth()->user()->posts()->save($post))
             return response()->json([

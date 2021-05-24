@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostsTable extends Migration
+class CreateReportDaysTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('report_days', function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->text('title');
-            $table->longText('description');
+            $table->longText('contentJson'); // cột name có kiểu là varchar và giới hạn là 150 ký tự
+            $table->text('dateBaocao'); // cột description có kiểu là text và có thể để NULL
+            $table->longText('imgBase64')->nullable(); // cột price có kiểu là integer
             $table->timestamps();
-
             $table->foreign('user_id')->references('id')->on('users');  
         });
     }
@@ -31,6 +31,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('report_days');
     }
 }

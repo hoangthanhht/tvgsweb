@@ -12,7 +12,7 @@ class PassportAuthController extends Controller
     public function register(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required|min:4',
+            //'name' => 'required|min:4',
             'email' => 'required|email',
             'password' => 'required|min:8',
         ]);
@@ -42,7 +42,8 @@ class PassportAuthController extends Controller
             $token = auth()->user()->createToken('LaravelAuthApp')->accessToken;
             return response()->json(['token' => $token], 200);
         } else {
-            return response()->json(['error' => 'Unauthorised'], 401);
+            return response()->json(['error' => 'Mật khẩu hoặc password không đúng'], 401);
+
         }
     }   
 }
