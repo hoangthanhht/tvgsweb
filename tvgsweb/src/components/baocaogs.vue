@@ -1,449 +1,443 @@
 <template>
   <div>
-    <div class="col-md-3">
-      <input
-        v-on:change="handleChange"
-        class="form-control"
-        type="file"
-        id="input"
-        accept=".xls,.xlsx"
-      />
-    </div>
     <div class="col-md-2">
-      <button v-on:click="handleClick" class="" id="button">
-        TaoBaoCao
-      </button>
-      <button v-on:click="handleClickPost" class="" id="buttonp">
+      <button v-on:click="handleClick" class="" id="button">Xem Bao Cao</button>
+      <!-- <button v-on:click="handleClickPost" class="" id="buttonp">
         test
       </button>
       <button v-on:click="handleClickGet" class="" id="buttong">
         GetAPI
-      </button>
+      </button> -->
     </div>
-
-    <table
-
-      border="0"
-      cellpadding="0"
-      cellspacing="0"
-      width="889"
-      class="xl6831113"
-      style="border-collapse: collapse; table-layout: fixed; width: 668pt"
-    >
-      <colgroup>
-        <col
-          class="xl6931113"
-          width="44"
-          style="mso-width-source: userset; mso-width-alt: 1609; width: 33pt"
-        />
-        <col
-          class="xl6931113"
-          width="99"
-          style="mso-width-source: userset; mso-width-alt: 3620; width: 74pt"
-        />
-        <col
-          class="xl6931113"
-          width="61"
-          style="mso-width-source: userset; mso-width-alt: 2230; width: 46pt"
-        />
-        <col
-          class="xl6931113"
-          width="89"
-          style="mso-width-source: userset; mso-width-alt: 3254; width: 67pt"
-        />
-        <col
-          class="xl6931113"
-          width="92"
-          style="mso-width-source: userset; mso-width-alt: 3364; width: 69pt"
-        />
-        <col
-          class="xl6931113"
-          width="101"
-          style="mso-width-source: userset; mso-width-alt: 3693; width: 76pt"
-        />
-        <col
-          class="xl6931113"
-          width="44"
-          style="mso-width-source: userset; mso-width-alt: 1609; width: 33pt"
-        />
-        <col
-          class="xl6931113"
-          width="66"
-          style="mso-width-source: userset; mso-width-alt: 2413; width: 50pt"
-        />
-        <col
-          class="xl6931113"
-          width="59"
-          style="mso-width-source: userset; mso-width-alt: 2157; width: 44pt"
-        />
-        <col
-          class="xl6931113"
-          width="32"
-          style="mso-width-source: userset; mso-width-alt: 1170; width: 24pt"
-        />
-        <col
-          class="xl6931113"
-          width="65"
-          span="2"
-          style="mso-width-source: userset; mso-width-alt: 2377; width: 49pt"
-        />
-        <col
-          class="xl6931113"
-          width="72"
-          style="mso-width-source: userset; mso-width-alt: 2633; width: 54pt"
-        />
-      </colgroup>
-      <tbody>
-        <tr height="51" style="mso-height-source: userset; height: 38.45pt">
-          <td
-            colspan="13"
-            height="51"
-            class="xl13431113"
-            width="889"
-            style="
-              border-right: 0.5pt solid black;
-              height: 38.45pt;
-              width: 668pt;
-            "
-          >
-            <a name="RANGE!A1:M54">BÁO CÁO NGÀY TƯ VẤN GIÁM SÁT</a>
-          </td>
-        </tr>
-        <tr height="35" class="rowDay" style="mso-height-source: userset; height: 26.45pt">
-
-            <a name="RANGE!M2">Ngày 08 tháng 04 năm 2020</a>
-
-        </tr>
-        <tr height="29" style="mso-height-source: userset; height: 21.95pt">
-          <td
-            height="29"
-            class="xl7331113"
-            colspan="2"
-            style="height: 21.95pt; border-right: 0.5pt solid black"
-          >
-            Dự án:
-          </td>
-          <td class="xl7531113" colspan="6">
-            XÂY DỰNG TÒA NHÀ CÔNG TY CP GIÁ XÂY DỰNG
-          </td>
-          <td class="xl7631113">&nbsp;</td>
-          <td class="xl7631113">&nbsp;</td>
-          <td class="xl7631113">&nbsp;</td>
-          <td class="xl7631113">&nbsp;</td>
-          <td class="xl7731113">&nbsp;</td>
-        </tr>
-        <tr height="32" style="mso-height-source: userset; height: 24pt">
-          <td
-            height="32"
-            class="xl7331113"
-            colspan="2"
-            style="height: 24pt; border-right: 0.5pt solid black"
-          >
-            Địa điểm:
-          </td>
-          <td class="xl7531113" colspan="4">
-            Số 124, Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội
-          </td>
-          <td class="xl7631113" style="border-top: none">&nbsp;</td>
-          <td class="xl7631113" style="border-top: none">&nbsp;</td>
-          <td class="xl7631113" style="border-top: none">&nbsp;</td>
-          <td class="xl7631113" style="border-top: none">&nbsp;</td>
-          <td class="xl7631113" style="border-top: none">&nbsp;</td>
-          <td class="xl7631113" style="border-top: none">&nbsp;</td>
-          <td class="xl7731113" style="border-top: none">&nbsp;</td>
-        </tr>
-        <tr height="84" style="mso-height-source: userset; height: 63.6pt">
-          <td
-            height="84"
-            class="xl7331113"
-            colspan="2"
-            style="height: 63.6pt; border-right: 0.5pt solid black"
-          >
-            Nơi nhận:
-          </td>
-          <td
-            colspan="11"
-            class="xl13731113"
-            width="746"
-            style="border-right: 0.5pt solid black; width: 561pt"
-          >
-            - Chủ đầu tư<br />
-            - Ban quản lý dự án<br />
-            - Đồng gửi Văn phòng Công ty TVGS
-          </td>
-        </tr>
-        <tr height="32" style="mso-height-source: userset; height: 24pt">
-          <td height="32" class="xl7831113" colspan="6" style="height: 24pt">
-            <a name="RANGE!A6">{{ mucArr[0]}}</a>
-          </td>
-          <td class="xl8031113" style="border-top: none">&nbsp;</td>
-          <td class="xl8031113" style="border-top: none">&nbsp;</td>
-          <td class="xl8031113" style="border-top: none">&nbsp;</td>
-          <td class="xl8031113" style="border-top: none">&nbsp;</td>
-          <td class="xl8031113" style="border-top: none">&nbsp;</td>
-          <td class="xl8031113" style="border-top: none">&nbsp;</td>
-          <td class="xl8131113" style="border-top: none">&nbsp;</td>
-        </tr>
-        <tr height="32" style="mso-height-source: userset; height: 24pt">
-          <td
-            height="32"
-            class="xl8231113"
-            style="height: 24pt; border-top: none"
-          >
-            &nbsp;
-          </td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8331113" style="border-top: none">&nbsp;</td>
-          <td class="xl8431113" style="border-top: none">&nbsp;</td>
-        </tr>
-        <tr height="32" style="mso-height-source: userset; height: 24pt">
-          <td height="32" class="xl8531113" colspan="6" style="height: 24pt">
-            <a name="RANGE!A8">{{ mucArr[1]}}</a>
-          </td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8731113" style="border-top: none">&nbsp;</td>
-        </tr>
-		<template
-		 v-for="(itemArr, index) in tenNT"      
-		>
-        <tr
-		  :key="index"
-          class="xl8831113"
-          height="22"
-          style="height: 16.5pt"
-        >
-          <td height="22" class="xl8931113" colspan="2" style="height: 16.5pt">
-			      {{ itemArr}}
-          </td>
-          <td class="xl9131113">&nbsp;</td>
-		 
-        </tr>
-		<template
-		  v-for="(itemArr1, index1) in getTencvNthu(itemArr)"
-		>
-		<tr 
-		
-		:key="'A' + index1 + index"
-          class="mucngthu"
-          height="22"
-          style="height: 16.5pt"
-		>
-		<td height="22" class="tdcontent" colspan="2" style="height: 16.5pt">
-			  {{ itemArr1}}
-          </td>
-	
-		</tr>
-
-		<tr
-		v-for="(itemArr2, index2) in getNdcvNthu(itemArr,itemArr1)"
-		:key="'B' + index1 + index + index2"
-          class="noidung"
-          height="22"
-          style="height: 16.5pt"
-			>
-			<td height="22" class="tdcontent" colspan="2" style="height: 16.5pt">
-			  {{ itemArr2}}
-          </td>
-        </tr>
-	
-
-		</template>
-		</template>
-		  <tr height="32" style="mso-height-source: userset; height: 24pt">
-          <td height="32" class="xl8531113" colspan="6" style="height: 24pt">
-            <a name="RANGE!A8">{{ mucArr[2]}}</a>
-          </td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8731113" style="border-top: none">&nbsp;</td>
-        </tr>
-        <tr
-
-          class="xl8831113"
-          height="22"
-          style="height: 16.5pt"
-        >
-          <td height="22" class="xl8931113" colspan="2" style="height: 16.5pt">
-       
-          </td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9131113">&nbsp;</td>
-        </tr>
-
-			  <tr height="32" style="mso-height-source: userset; height: 24pt">
-          <td height="32" class="xl8531113" colspan="6" style="height: 24pt">
-            <a name="RANGE!A8">{{ mucArr[3]}}</a>
-          </td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8631113" style="border-top: none">&nbsp;</td>
-          <td class="xl8731113" style="border-top: none">&nbsp;</td>
-        </tr>
-        <tr
-
-          class="xl8831113"
-          height="22"
-          style="height: 16.5pt"
-        >
-          <td height="22" class="xl8931113" colspan="2" style="height: 16.5pt">
-       
-          </td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9031113">&nbsp;</td>
-          <td class="xl9131113">&nbsp;</td>
-        </tr>
-
-
-        <tr
-          class="xl11031113"
-          height="32"
-          style="mso-height-source: userset; height: 24pt"
-        >
-          <td height="32" class="xl7831113" colspan="4" style="height: 24pt">
-            <a name="RANGE!A40">{{ mucArr[4]}}</a>
-          </td>
-          <td class="xl7931113" style="border-top: none">&nbsp;</td>
-          <td class="xl7931113" style="border-top: none">&nbsp;</td>
-          <td
-            class="xl10831113"
+    <div contenteditable="true" class="baocao">
+      <table
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        width="889"
+        class="xl6831113"
+        style="border-collapse: collapse; table-layout: fixed; width: 668pt"
+      >
+        <colgroup>
+          <col
+            class="xl6931113"
             width="44"
-            style="border-top: none; width: 33pt"
+            style="mso-width-source: userset; mso-width-alt: 1609; width: 33pt"
+          />
+          <col
+            class="xl6931113"
+            width="99"
+            style="mso-width-source: userset; mso-width-alt: 3620; width: 74pt"
+          />
+          <col
+            class="xl6931113"
+            width="61"
+            style="mso-width-source: userset; mso-width-alt: 2230; width: 46pt"
+          />
+          <col
+            class="xl6931113"
+            width="89"
+            style="mso-width-source: userset; mso-width-alt: 3254; width: 67pt"
+          />
+          <col
+            class="xl6931113"
+            width="92"
+            style="mso-width-source: userset; mso-width-alt: 3364; width: 69pt"
+          />
+          <col
+            class="xl6931113"
+            width="101"
+            style="mso-width-source: userset; mso-width-alt: 3693; width: 76pt"
+          />
+          <col
+            class="xl6931113"
+            width="44"
+            style="mso-width-source: userset; mso-width-alt: 1609; width: 33pt"
+          />
+          <col
+            class="xl6931113"
+            width="66"
+            style="mso-width-source: userset; mso-width-alt: 2413; width: 50pt"
+          />
+          <col
+            class="xl6931113"
+            width="59"
+            style="mso-width-source: userset; mso-width-alt: 2157; width: 44pt"
+          />
+          <col
+            class="xl6931113"
+            width="32"
+            style="mso-width-source: userset; mso-width-alt: 1170; width: 24pt"
+          />
+          <col
+            class="xl6931113"
+            width="65"
+            span="2"
+            style="mso-width-source: userset; mso-width-alt: 2377; width: 49pt"
+          />
+          <col
+            class="xl6931113"
+            width="72"
+            style="mso-width-source: userset; mso-width-alt: 2633; width: 54pt"
+          />
+        </colgroup>
+        <tbody>
+          <tr height="51" style="mso-height-source: userset; height: 38.45pt">
+            <td
+              colspan="13"
+              height="51"
+              class="xl13431113"
+              width="889"
+              style="
+                border-right: 0.5pt solid black;
+                height: 38.45pt;
+                width: 668pt;
+              "
+            >
+              <a contenteditable="true" name="RANGE!A1:M54">BÁO CÁO NGÀY TƯ VẤN GIÁM SÁT</a>
+            </td>
+          </tr>
+          <tr
+            height="35"
+            class="rowDay"
+            style="mso-height-source: userset; height: 26.45pt"
           >
-            &nbsp;
-          </td>
-          <td class="xl7931113" style="border-top: none">&nbsp;</td>
-          <td class="xl7931113" style="border-top: none">&nbsp;</td>
-          <td class="xl7931113" style="border-top: none">&nbsp;</td>
-          <td class="xl7931113" style="border-top: none">&nbsp;</td>
-          <td class="xl7931113" style="border-top: none">&nbsp;</td>
-          <td class="xl10931113" style="border-top: none">&nbsp;</td>
-        </tr>
-		<tr class="image_report">
-			<img 
-			v-for="(item,index) in imgArr"
-			:key="index"
-			class="image_item" 
-			v-bind:src="getStringUrl(index)" 
-			alt="">
-		</tr>
+            <a name="RANGE!M2">Ngày 08 tháng 04 năm 2020</a>
+          </tr>
+          <tr height="29" style="mso-height-source: userset; height: 21.95pt">
+            <td
+              height="29"
+              class="xl7331113"
+              colspan="2"
+              style="height: 21.95pt; border-right: 0.5pt solid black"
+            >
+              Dự án:
+            </td>
+            <td class="xl7531113" colspan="6">
+              XÂY DỰNG TÒA NHÀ CÔNG TY CP GIÁ XÂY DỰNG
+            </td>
+            <td class="xl7631113">&nbsp;</td>
+            <td class="xl7631113">&nbsp;</td>
+            <td class="xl7631113">&nbsp;</td>
+            <td class="xl7631113">&nbsp;</td>
+            <td class="xl7731113">&nbsp;</td>
+          </tr>
+          <tr height="32" style="mso-height-source: userset; height: 24pt">
+            <td
+              height="32"
+              class="xl7331113"
+              colspan="2"
+              style="height: 24pt; border-right: 0.5pt solid black"
+            >
+              Địa điểm:
+            </td>
+            <td class="xl7531113" colspan="4">
+              Số 124, Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội
+            </td>
+            <td class="xl7631113" style="border-top: none">&nbsp;</td>
+            <td class="xl7631113" style="border-top: none">&nbsp;</td>
+            <td class="xl7631113" style="border-top: none">&nbsp;</td>
+            <td class="xl7631113" style="border-top: none">&nbsp;</td>
+            <td class="xl7631113" style="border-top: none">&nbsp;</td>
+            <td class="xl7631113" style="border-top: none">&nbsp;</td>
+            <td class="xl7731113" style="border-top: none">&nbsp;</td>
+          </tr>
+          <tr height="84" style="mso-height-source: userset; height: 63.6pt">
+            <td
+              height="84"
+              class="xl7331113"
+              colspan="2"
+              style="height: 63.6pt; border-right: 0.5pt solid black"
+            >
+              Nơi nhận:
+            </td>
+            <td
+              colspan="11"
+              class="xl13731113"
+              width="746"
+              style="border-right: 0.5pt solid black; width: 561pt"
+            >
+              - Chủ đầu tư<br />
+              - Ban quản lý dự án<br />
+              - Đồng gửi Văn phòng Công ty TVGS
+            </td>
+          </tr>
+          <tr height="32" style="mso-height-source: userset; height: 24pt">
+            <td height="32" class="xl7831113" colspan="6" style="height: 24pt">
+              <a name="RANGE!A6">{{ mucArr[0] }}</a>
+            </td>
+            <td class="xl8031113" style="border-top: none">&nbsp;</td>
+            <td class="xl8031113" style="border-top: none">&nbsp;</td>
+            <td class="xl8031113" style="border-top: none">&nbsp;</td>
+            <td class="xl8031113" style="border-top: none">&nbsp;</td>
+            <td class="xl8031113" style="border-top: none">&nbsp;</td>
+            <td class="xl8031113" style="border-top: none">&nbsp;</td>
+            <td class="xl8131113" style="border-top: none">&nbsp;</td>
+          </tr>
+          <tr height="32" style="mso-height-source: userset; height: 24pt">
+            <td
+              height="32"
+              class="xl8231113"
+              style="height: 24pt; border-top: none"
+            >
+              &nbsp;
+            </td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8331113" style="border-top: none">&nbsp;</td>
+            <td class="xl8431113" style="border-top: none">&nbsp;</td>
+          </tr>
+          <tr height="32" style="mso-height-source: userset; height: 24pt">
+            <td height="32" class="xl8531113" colspan="6" style="height: 24pt">
+              <a name="RANGE!A8">{{ mucArr[1] }}</a>
+            </td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8731113" style="border-top: none">&nbsp;</td>
+          </tr>
+          <template v-for="(itemArr, index) in tenNT">
+            <tr
+              :key="index"
+              class="xl8831113"
+              height="22"
+              style="height: 16.5pt"
+            >
+              <td
+                height="22"
+                class="xl8931113"
+                colspan="2"
+                style="height: 16.5pt"
+              >
+                {{ itemArr }}
+              </td>
+              <td class="xl9131113">&nbsp;</td>
+            </tr>
+            <template v-for="(itemArr1, index1) in getTencvNthu(itemArr)">
+              <tr
+                :key="'A' + index1 + index"
+                class="mucngthu"
+                height="22"
+                style="height: 16.5pt"
+              >
+                <td
+                  height="22"
+                  class="tdcontent"
+                  colspan="2"
+                  style="height: 16.5pt"
+                >
+                  {{ itemArr1 }}
+                </td>
+              </tr>
 
+              <tr
+                v-for="(itemArr2, index2) in getNdcvNthu(itemArr, itemArr1)"
+                :key="'B' + index1 + index + index2"
+                class="noidung"
+                height="22"
+                style="height: 16.5pt"
+              >
+                <td
+                  height="22"
+                  class="tdcontent"
+                  colspan="2"
+                  style="height: 16.5pt"
+                >
+                  {{ itemArr2 }}
+                </td>
+              </tr>
+            </template>
+          </template>
+          <tr height="32" style="mso-height-source: userset; height: 24pt">
+            <td height="32" class="xl8531113" colspan="6" style="height: 24pt">
+              <a name="RANGE!A8">{{ mucArr[2] }}</a>
+            </td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8731113" style="border-top: none">&nbsp;</td>
+          </tr>
+          <tr class="xl8831113" height="22" style="height: 16.5pt">
+            <td
+              height="22"
+              class="xl8931113"
+              colspan="2"
+              style="height: 16.5pt"
+            ></td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9131113">&nbsp;</td>
+          </tr>
 
-        <tr height="22" style="height: 16.5pt">
-          <td height="22" class="xl12231113" style="height: 16.5pt">&nbsp;</td>
-          <td class="xl12331113"></td>
-          <td class="xl12331113"></td>
-          <td class="xl12331113"></td>
-          <td class="xl12331113"></td>
-          <td class="xl12331113"></td>
-          <td class="xl12331113"></td>
-          <td
-            colspan="6"
-            class="xl12331113"
-            align="center"
-            style="border-right: 0.5pt solid black"
+          <tr height="32" style="mso-height-source: userset; height: 24pt">
+            <td height="32" class="xl8531113" colspan="6" style="height: 24pt">
+              <a name="RANGE!A8">{{ mucArr[3] }}</a>
+            </td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8631113" style="border-top: none">&nbsp;</td>
+            <td class="xl8731113" style="border-top: none">&nbsp;</td>
+          </tr>
+          <tr class="xl8831113" height="22" style="height: 16.5pt">
+            <td
+              height="22"
+              class="xl8931113"
+              colspan="2"
+              style="height: 16.5pt"
+            ></td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9031113">&nbsp;</td>
+            <td class="xl9131113">&nbsp;</td>
+          </tr>
+
+          <tr
+            class="xl11031113"
+            height="32"
+            style="mso-height-source: userset; height: 24pt"
           >
-            THAY MẶT ĐOÀN TƯ VẤN GIÁM SÁT
-          </td>
-        </tr>
-        <tr height="32" style="mso-height-source: userset; height: 24pt">
-          <td height="32" class="xl12531113" style="height: 24pt">&nbsp;</td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td
-            colspan="6"
-            class="xl12331113"
-            align="center"
-            style="border-right: 0.5pt solid black"
-          >
-            Trưởng đoàn tư vấn giám sát
-          </td>
-        </tr>
-        <tr height="22" style="height: 16.5pt">
-          <td height="22" class="xl12531113" style="height: 16.5pt">&nbsp;</td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl11831113"></td>
-          <td class="xl12631113">&nbsp;</td>
-        </tr>
+            <td height="32" class="xl7831113" colspan="4" style="height: 24pt">
+              <a name="RANGE!A40">{{ mucArr[4] }}</a>
+            </td>
+            <td class="xl7931113" style="border-top: none">&nbsp;</td>
+            <td class="xl7931113" style="border-top: none">&nbsp;</td>
+            <td
+              class="xl10831113"
+              width="44"
+              style="border-top: none; width: 33pt"
+            >
+              &nbsp;
+            </td>
+            <td class="xl7931113" style="border-top: none">&nbsp;</td>
+            <td class="xl7931113" style="border-top: none">&nbsp;</td>
+            <td class="xl7931113" style="border-top: none">&nbsp;</td>
+            <td class="xl7931113" style="border-top: none">&nbsp;</td>
+            <td class="xl7931113" style="border-top: none">&nbsp;</td>
+            <td class="xl10931113" style="border-top: none">&nbsp;</td>
+          </tr>
+          <tr class="image_report">
+            <img
+              v-for="(item, index) in imgArr"
+              :key="index"
+              class="image_item"
+              v-bind:src="getStringUrl(index)"
+              alt=""
+            />
+          </tr>
 
+          <tr height="22" style="height: 16.5pt">
+            <td height="22" class="xl12231113" style="height: 16.5pt">
+              &nbsp;
+            </td>
+            <td class="xl12331113"></td>
+            <td class="xl12331113"></td>
+            <td class="xl12331113"></td>
+            <td class="xl12331113"></td>
+            <td class="xl12331113"></td>
+            <td class="xl12331113"></td>
+            <td
+              colspan="6"
+              class="xl12331113"
+              align="center"
+              style="border-right: 0.5pt solid black"
+            >
+              THAY MẶT ĐOÀN TƯ VẤN GIÁM SÁT
+            </td>
+          </tr>
+          <tr height="32" style="mso-height-source: userset; height: 24pt">
+            <td height="32" class="xl12531113" style="height: 24pt">&nbsp;</td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td
+              colspan="6"
+              class="xl12331113"
+              align="center"
+              style="border-right: 0.5pt solid black"
+            >
+              Trưởng đoàn tư vấn giám sát
+            </td>
+          </tr>
+          <tr height="22" style="height: 16.5pt">
+            <td height="22" class="xl12531113" style="height: 16.5pt">
+              &nbsp;
+            </td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl11831113"></td>
+            <td class="xl12631113">&nbsp;</td>
+          </tr>
 
-        <!--[if supportMisalignedColumns]-->
-        <!--[endif]-->
-      </tbody>
-    </table>
+          <!--[if supportMisalignedColumns]-->
+          <!--[endif]-->
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
 <script>
-import { mapGetters,mapActions } from 'vuex';
+import { mapGetters, mapActions } from "vuex";
 export default {
-  
   name: "tvgs-header",
   data() {
     return {
       url: "http://127.0.0.1:8000/api/v1/products",
       indexMuc: [],
       selectedFile: null,
-      rowObject:[], //JSON.parse(this.$store.state.listReport[0].contentJson.replace(/\\/g,"")),
+      rowObject: [], //JSON.parse(this.$store.state.listReport[0].contentJson.replace(/\\/g,"")),
       mucArr: [],
       ndcvArr: [],
-	  tenNT:[],
-	  tenCvNthu:[],
-	  imgArr :[],
+      tenNT: [],
+      tenCvNthu: [],
+      imgArr: [],
     };
   },
-  mounted(){
- 
+  created() {
+    this.getListPostHasPaging();
   },
   watch: {
     // mucArr: function (val, oldVal) {
@@ -454,22 +448,18 @@ export default {
     // },
   },
   computed: {
-	   ...mapGetters([
-            'getListPost'
-        ])
+    ...mapGetters(["getListPost"]),
   },
-//   async created() {
-//     const response = await fetch(this.url);
-//     const data = await response.json();
-//     this.rowObject = data[1].contentjson;
-//   },
+  //   async created() {
+  //     const response = await fetch(this.url);
+  //     const data = await response.json();
+  //     this.rowObject = data[1].contentjson;
+  //   },
   methods: {
-     ...mapActions([
-            'getListPostHasPaging',
-        ]),
-	// getStringUrl(index) {
-	// 	  return this.imgArr[index]
-	//   },
+    ...mapActions(["getListPostHasPaging"]),
+    getStringUrl(index) {
+      return this.imgArr[index];
+    },
     // arrayBufferToBase64(buffer) {
     //   var binary = "";
     //   var bytes = [].slice.call(new Uint8Array(buffer));
@@ -479,13 +469,13 @@ export default {
     // parseExcelFile(inputElement) {
     //   const wb = new Excel.Workbook();
     //   const reader = new FileReader();
-	//   var arrImg = [];
+    //   var arrImg = [];
     //   reader.readAsArrayBuffer(inputElement);
     //   reader.onload = () => {
     //     const buffer = reader.result;
     //     // console.log("buffer", buffer);
     //     wb.xlsx.load(buffer)
-	// 	.then((workbook) => {
+    // 	.then((workbook) => {
     //       var worksheet = wb.getWorksheet("BaoCaoNgay");
     //       for (const image of worksheet.getImages()) {
     //         const img = workbook.model.media.find(
@@ -494,60 +484,59 @@ export default {
     //         // console.log("img.buffer", img.buffer);
     //         var bf = img.buffer;
     //         var rs = `data:image/jpg;base64,${this.arrayBufferToBase64(bf)}`;
-	// 		this.imgArr.push(rs)
-            
+    // 		this.imgArr.push(rs)
+
     //       }
 
     //     });
-    //   };     
-	  
-	
+    //   };
+
     // },
     handleClickGet() {
-      this.getListPostHasPaging
       //var _this = this
-    //   fetch(this.url)
-    //     .then(function (response) {
-    //       return response.json();
-    //     })
-    //     .then((data) => {
-		// 	console.log((data[1].contentJson))
-		// 	this.rowObject = JSON.parse(data[1].contentJson);
-		// 	//console.log(this.rowObject)
-		// 	//this.imgArr = data[1].imageUrl;
-		// }); 
-		
-		// cái này dùng ơ row funtion thì mới gán vào biến của vue đc
+      //   fetch(this.url)
+      //     .then(function (response) {
+      //       return response.json();
+      //     })
+      //     .then((data) => {
+      // 	console.log((data[1].contentJson))
+      // 	this.rowObject = JSON.parse(data[1].contentJson);
+      // 	//console.log(this.rowObject)
+      // 	//this.imgArr = data[1].imageUrl;
+      // });
+      // cái này dùng ơ row funtion thì mới gán vào biến của vue đc
       // nếu dùng hàm bình thường thì this chính là cái hàm đó.nên sẽ không gán đc. còn dùng hàm arrow funtion thì nó
       // không có đối tượng this nên sẽ gán đc. nếu không muốn dùng ơ rao function thì phải đặt 1 biến trong hàm handleClickGet()
       //rồi gán biến this cho biến đó sau đó mới dùng đc bỉnh thường trong hàm callback của hàm then. khi khai báo như var _this = this
       //trên thì ta sẽ dùng được biến _this như bình thường trong then. có thể tách hàm gọi api ra như này cũng đc hoặc đưa nó vào
       // lifecycle create cũng đc
     },
-	getTencvNthu(key) {
-		console.log("key",key)
-		return Object.keys(this.rowObject[this.mucArr[1]][key])
-	},
-	getNdcvNthu(key1,key2) {
-		console.log("key1",key1)
-		console.log("key2",key2)
-		return this.rowObject[this.mucArr[1]][key1][key2]
-	},
-	handleArr() {
-     
-      this.mucArr = Object.keys(this.rowObject)
-	  this.tenNT = Object.keys(this.rowObject[this.mucArr[1]])
-	  this.tenCvNthu= Object.keys(this.rowObject[this.mucArr[1]][this.tenNT[1]])
-	  console.log("mang",this.rowObject[this.mucArr[1]][this.tenNT[1]][this.tenCvNthu[2]])
+    getTencvNthu(key) {
+      console.log("key", key);
+      return Object.keys(this.rowObject[this.mucArr[1]][key]);
+    },
+    getNdcvNthu(key1, key2) {
+      console.log("key1", key1);
+      console.log("key2", key2);
+      return this.rowObject[this.mucArr[1]][key1][key2];
+    },
+    handleArr() {
+      this.mucArr = Object.keys(this.rowObject);
+      this.tenNT = Object.keys(this.rowObject[this.mucArr[1]]);
+      this.tenCvNthu = Object.keys(
+        this.rowObject[this.mucArr[1]][this.tenNT[1]]
+      );
+      console.log(
+        "mang",
+        this.rowObject[this.mucArr[1]][this.tenNT[1]][this.tenCvNthu[2]]
+      );
       //   var indexMuc1 = indexMuc.forEach(function (rowob,index,arr) {
 
-      	
       //   })
     },
 
-
-     handleClickPost() {
-		this.handleArr();
+    handleClickPost() {
+      this.handleArr();
     },
 
     handlePostMethod(data, callBack) {
@@ -570,10 +559,15 @@ export default {
     },
     handleChange(event) {
       this.selectedFile = event.target.files[0];
-	  this.parseExcelFile(this.selectedFile)
+      this.parseExcelFile(this.selectedFile);
     },
     handleClick(event) {
-       this.rowObject = JSON.parse(this.getListPost.data[0].contentJson.replace(/\\/g,""));
+      this.rowObject = JSON.parse(
+        this.getListPost.data[0].contentJson.replace(/\\/g, "")
+      );
+      this.imgArr = JSON.parse(
+        this.getListPost.data[0].imgBase64.replace(/\\/g, "")
+      );
       this.handleArr();
       //this.getNdCvArr
     },
@@ -587,49 +581,52 @@ export default {
     //   		})
     // 	 console.log('ndcvArr',this.ndcvArr)
     //    },
-    
   },
 };
 </script>
 
 
 <style >
+.baocao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 table {
   border: 1px solid black;
 }
 .rowDay {
-	position: relative;
+  position: relative;
 }
 .rowDay a {
-	position: absolute;
-	top: 160px;
-	right: 420px;
+  position: absolute;
+  top: 160px;
+  right: 420px;
 }
 .tdcontent {
-	padding-left: 10px;
+  padding-left: 10px;
 }
 .mucngthu {
-	color: #000;
-	font-weight: 700;
-	font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .noidung {
-	 font-size: 13.5px;
-	 font-style: italic;
-	 padding-left: 4px;
+  font-size: 13.5px;
+  font-style: italic;
+  padding-left: 4px;
 }
 
 .image_report {
-	display: flex;
-	width: 889px;
-	height: 300px;
-	flex-wrap: wrap;
-
+  display: flex;
+  width: 889px;
+  height: 300px;
+  flex-wrap: wrap;
 }
 .image_item {
-	width: 50%;
-	height: 100%;
+  width: 50%;
+  height: 100%;
   padding: 10px;
 }
 .font531113 {

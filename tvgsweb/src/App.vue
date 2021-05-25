@@ -40,7 +40,7 @@ import CompNavi from "./components/navigation";
 import CompFooter from "./components/footer";
 import BreadCrumb from "./pages/components/Breadcrumb";
 import Homepage from "./pages/trangchu/homePage";
-import BaocaoGS from "./components/baocaogs";
+import BaocaoGS from "./components/baocaogsnew";
 // import CongViecGiao from './pages/congviec/congviecgiao'
 // import ThemCongViec from './pages/congviec/themcv'
 // import BcTongHop from './pages/baocao/baochoatdongctrg/bc_tonghop'
@@ -81,8 +81,9 @@ export default {
   methods: {
   },
   created(){
-    console.log(this.$store);
-    this.$store.dispatch('getListPostHasPaging');
+    
+    //this.$store.dispatch('getListPostHasPaging');
+    //console.log(this.$store.getters);
   },
   components: {
     CompHeader,
@@ -118,7 +119,7 @@ export default {
 #app,
 html {
   /* background-image: url("C:\\Users\\Admin\\Desktop\\bg3.jpg"); */
-  background-color: rgb(204, 204, 204);
+  /* background-color: rgb(204, 204, 204); */
   background-repeat: repeat;
   position: relative;
 }
