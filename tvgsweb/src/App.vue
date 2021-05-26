@@ -5,9 +5,9 @@
     <CompFooter />
     <BreadCrumb />
     <BaocaoGS/>
-    <!-- <transition name="slide-fade" mode="out-in">
+    <transition name="slide-fade" mode="out-in">
       <router-view></router-view>
-    </transition> -->
+    </transition>
 
     <!-- <router-link to="/foo">Go to Foo</router-link> -->
     <!-- <Homepage />  -->
@@ -60,7 +60,7 @@ import BaocaoGS from "./components/baocaogsnew";
 // import Login from './pages/users/login-logout'
 //import ThemHDong from './pages/hopdong/them_hop_dong/them_hop_dong'
 import Page403 from "./pages/components/page_error";
-
+import { mapActions,mapGetters } from 'vuex';
 export default {
   name: "app",
   data() {
@@ -78,13 +78,15 @@ export default {
       rows: 20,
     };
   },
-  methods: {
+ created() {
+		this.checkLogin();
+	},
+  computed: {
+    ...mapGetters(["getListPost","getTokenStorage"]),
   },
-  created(){
-    
-    //this.$store.dispatch('getListPostHasPaging');
-    //console.log(this.$store.getters);
-  },
+	methods: {
+		...mapActions([ 'checkLogin','getUserWithId' ]),
+	},
   components: {
     CompHeader,
     CompNavi,

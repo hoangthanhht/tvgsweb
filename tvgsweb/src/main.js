@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import './plugins'
-
+import './assets/style.css'
 import store from './store';
 
 import router from './router'

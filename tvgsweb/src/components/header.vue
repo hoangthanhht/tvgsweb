@@ -57,7 +57,8 @@
           font-scale="1.5"
         ></b-icon>
       </div>
-      <b-dropdown class="acount" right text="Nguyễn Thế Anh">
+	  <router-link v-if="!isLogin" to="/login" class="acount ass1-header__btn-upload ass1-btn">Login</router-link>
+      <b-dropdown v-else class="acount" right :text= currentUser.name>
         <div class="ultilyti__btnheader">
           <b-icon class="ultilyti__icon--color" icon="person-fill"></b-icon>
           <b-dropdown-item>Tài khoản</b-dropdown-item>
@@ -72,9 +73,9 @@
         <b-dropdown-divider></b-dropdown-divider>
         <div class="ultilyti__btnheader">
           <b-icon class="ultilyti__icon--color" icon="box-arrow-right"></b-icon>
-          <router-link to="/logout" tag="b-dropdown-item"
-            >Đăng xuất</router-link
-          >
+          <b-dropdown-item  tag="b-dropdown-item"
+		  v-on:click="handleLogout"
+            >Đăng xuất</b-dropdown-item >
         </div>
       </b-dropdown>
     </b-button-toolbar>
@@ -82,15 +83,39 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
 export default {
   name: "tvgs-header",
   data() {
     return {};
   },
+  computed: {
+    ...mapGetters(["isLogin", "currentUser"]),
+    getAvatar() {
+     
+      return "/public/images/403.png";
+    },
+  },
+  methods: {
+    ...mapActions(["logout"]),
+    handleLogout() {
+      var check = confirm("Bạn có thực sự muốn đăng xuất?");
+      if (check) {
+        this.logout().then((res) => {
+          this.$router.push("/login");
+        });
+      }
+    },
+  },
 };
 </script>
 
 <style >
+.logo-box img {
+  width: auto;
+  height: 32px;
+  image-rendering: auto;
+}
 .ultilyti__icon--color {
   color: #00a53c;
   margin-left: 5px;

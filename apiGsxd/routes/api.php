@@ -18,6 +18,9 @@ use App\Http\Controllers\ReportDayController;
 
 Route::post('register', [PassportAuthController::class, 'register']);
 Route::post('login', [PassportAuthController::class, 'login']);
+Route::group(['middleware' => 'auth:api'], function(){
+    Route::get('details', [PassportAuthController::class, 'details']);
+    });
 
 Route::middleware('auth:api')->group(function () {
     Route::resource('post/bcday', ReportDayController::class);

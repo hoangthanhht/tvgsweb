@@ -24,7 +24,8 @@ import HoSoNgthu from './pages/hoso/them_ho_so/ho_so_ngthu'
 import HoSoTke from './pages/hoso/them_ho_so/ho_so_tke'
 import HoSoKhac from './pages/hoso/them_ho_so/ho_so_khac'
 import ThemHDong from './pages/hopdong/them_hop_dong/them_hop_dong'
-import Login from './pages/users/login-logout'
+import Login from './pages/users/login'
+import Register from './pages/users/register'
 import Page403 from './pages/components/page_error'
 import DSChucDanh from './pages/nhansu/danh_sach_chuc_danh'
 import DSNhanVien from './pages/nhansu/danh_sach_nhan_vien'
@@ -60,7 +61,7 @@ const routes = [
     { path: '/ho-so-thiet-ke', component: HoSoTke },
     { path: '/ho-so-khac', component: HoSoKhac },
     { path: '/them-hop-dong', component: ThemHDong },
-    { path: '/logout', component: Login },
+    { path: '/login', component: Login },
     { path: '*', component: Page403 },
     { path: '/danh-sach-chuc-danh', component: DSChucDanh },
     { path: '/danh-sach-nhan-vien', component: DSNhanVien },
@@ -73,6 +74,7 @@ const routes = [
     { path: '/sg-pearl', component:Pearl},
     { path: '/thap-ngoi-sao', component:Ngoisao},
     { path: '/vietcombank', component:Vietcombank},
+    { path: '/register',component: Register},
   ]
   
   const router = new VueRouter({

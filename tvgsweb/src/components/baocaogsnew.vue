@@ -107,7 +107,7 @@ export default {
     };
   },
   created() {
-    this.getListPostHasPaging();
+    this.getListReport(this.getTokenStorage);
   },
   watch: {
     // mucArr: function (val, oldVal) {
@@ -118,7 +118,7 @@ export default {
     // },
   },
   computed: {
-    ...mapGetters(["getListPost"]),
+    ...mapGetters(["getListPost","getTokenStorage"]),
   },
   //   async created() {
   //     const response = await fetch(this.url);
@@ -126,7 +126,7 @@ export default {
   //     this.rowObject = data[1].contentjson;
   //   },
   methods: {
-    ...mapActions(["getListPostHasPaging"]),
+    ...mapActions(["getListReport"]),
     getStringUrl(index) {
       return this.imgArr[index];
     },
@@ -182,12 +182,9 @@ export default {
       // lifecycle create cũng đc
     },
     getTencvNthu(key) {
-      console.log("key", key);
       return Object.keys(this.rowObject[this.mucArr[1]][key]);
     },
     getNdcvNthu(key1, key2) {
-      console.log("key1", key1);
-      console.log("key2", key2);
       return this.rowObject[this.mucArr[1]][key1][key2];
     },
     handleArr() {
@@ -195,10 +192,6 @@ export default {
       this.tenNT = Object.keys(this.rowObject[this.mucArr[1]]);
       this.tenCvNthu = Object.keys(
         this.rowObject[this.mucArr[1]][this.tenNT[1]]
-      );
-      console.log(
-        "mang",
-        this.rowObject[this.mucArr[1]][this.tenNT[1]][this.tenCvNthu[2]]
       );
       //   var indexMuc1 = indexMuc.forEach(function (rowob,index,arr) {
 
@@ -233,10 +226,10 @@ export default {
     },
     handleClick(event) {
       this.rowObject = JSON.parse(
-        this.getListPost.data[0].contentJson.replace(/\\/g, "")
+        this.getListPost.data[1].contentJson.replace(/\\/g, "")
       );
       this.imgArr = JSON.parse(
-        this.getListPost.data[0].imgBase64.replace(/\\/g, "")
+        this.getListPost.data[1].imgBase64.replace(/\\/g, "")
       );
       this.handleArr();
       //this.getNdCvArr

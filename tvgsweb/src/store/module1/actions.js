@@ -1,12 +1,11 @@
 import axiosInstance from '../../plugins/axios';
-
+import { CONFIG_ACCESS_TOKEN } from '../../constants';
 export default {
-    async getListPostHasPaging({ commit }) {
-        
+    async getListReport({ commit },token = '') {
         var config = {
             headers:{
                 'Accept': 'application/json',
-                'Authorization' :'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNTMwMWE4YTM3NmRiZmQyNzNiYjc2MzYyNzQ5ZmVlMWRmZTMwZTMzNzFmNDkzOGE5ZTEyYzlmMDI2OTdlZjY2ODk3OGFlMGQyNDJhZGVmYzUiLCJpYXQiOjE2MjE5MDM3MzEuNzEyNzA0LCJuYmYiOjE2MjE5MDM3MzEuNzEyNzEyLCJleHAiOjE2NTM0Mzk3MzEuNjgxNjQ4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.IxraA9GZ0zK2IC_nep_RgFUN9hs5RWmWDWbmr_cHC3YF8MHWa_LUzv3x31x2YkKxbZcd6UrCV89SBgCJKkl2rjgUUHHh6PWxjvhT56_biHl1fGhB9qUD-0lLR9ejtFohs09fOVulvZxaQtNhxoJczhEhO0vWduW2OV8qe1QX2KwAr7WiXkHk6S2bJoasp4mFD35iBeW8hO3C3biGAEo93fsPsE7X4P9Yos-DPUhg2Pmz8NlxW_MH4pcxni_9N4UNCUgNrn62X4mX13VusMWuN9AgyOhNDzwOlQHzhyQOM6Xy0hDbpTajH0ogtLOC_nHLoKaVX07BvhTauFFJSKiRn97mq0IyBcdzrWWYUnNf5arWpU6-ghBGYMVcqw9v3r4MgmtW5xcwzAmivlo2XI32783pHuQns50vztAYUYDaGy7ZT-of3k3bhiFPON_CHvZESFbbpVre28yXaPMJi73qqsvstOCUM6Qs3eYDYVYWZzWu2Zas9qNkA9VmeggjJkmWM6-hbJ_vJFeYlIryT7kC5rbgpuaaqeLPN2i_iAXi677Yc5HA84iF_wT2ByrrhQgx2ipTLY25wlPAVxahIk0-r9iRvb4ldhkD9iLE6Yn7VI8ZovlzqkwlzHF0w53pRdZwjm_gmZWM9znpsSf3cmqsbVy6pI903abwh8LIiRMJ1Bs',
+                'Authorization' :'Bearer ' + token,
             }
         }
         // var data = {
@@ -14,13 +13,127 @@ export default {
         //     'password':'12345678'
         // }
         try {
-            console.log('api run');
+           
             var result = await axiosInstance.get('/post/bcday',config);
-            
              commit('SET_LIST_POSTS',result.data)
-             console.log(this.$store);
+            
         } catch(error) {
             console.log("error", error);
         }
-    }
+    },
+    async getUserWithId({ commit },token = '') {
+        var config = {
+            headers:{
+                'Accept': 'application/json',
+                'Authorization' :'Bearer ' + token,
+            }
+        }
+        try {
+           
+            var result = await axiosInstance.get('/details',config);
+            console.log('getUserWithId',result)
+            if(result.status === 200) {
+                commit('SET_USER_INFO', result.data.user);
+                return {
+                    ok: true,
+                    data: result.data.user,
+                    error: null
+                }
+            }
+            return {
+                ok: false,
+                error: result.message
+            }
+        } catch(error) {
+            
+            return {
+                ok: false,
+                error: error.message
+            }
+        }
+    },
+    async login({ commit, dispatch }, { email = '', password = '' }) {
+        // commit('SET_LOADING', true);
+        try {
+            let data = {
+                email: email,
+                password: password
+            }
+            var result  = await axiosInstance.post('/login', data);
+            // commit('SET_LOADING', false);
+            if(result.status === 200) {
+                console.log('SET_USER_INFO',result.data.user)
+                 commit('SET_USER_INFO', result.data.user);
+                 commit('SET_LOGIN_INFO', result.data);
+
+                // dispatch('getListPostsByUserId', result.data.user.USERID);
+
+                return {
+                    ok: true,
+                    error: null,
+                    data: result.data
+                }
+                
+            } else {
+                return {
+                    ok: false,
+                    error: result.data.error
+                }
+            }
+            
+        } catch(error) {
+            console.log('error');
+            
+            // commit('SET_LOADING', false);
+            return {
+                ok: false,
+                error: error.message
+            }
+        }
+    },
+    async logout({ commit }) {
+        commit('SET_LOGOUT');
+        return null
+    },
+    async checkLogin({ commit, dispatch }) {
+        try {
+            let tokenLocal = localStorage.getItem(CONFIG_ACCESS_TOKEN);
+           
+            if(tokenLocal) {
+                // let resultUser      = await dispatch('getUserById', userObj.id);
+                // let resultPostUser  = await dispatch('getListPostsByUserId', userObj.id);
+                let promiseUser         = await dispatch('getUserWithId', tokenLocal);
+                //let promisePostUser     = dispatch('getListPostsByUserId', userObj.id);
+
+                //let [resultUser, resultPostUser] = await Promise.all([ promiseUser, promisePostUser ]);
+
+                // Dòng 73 chạy 3s
+                // Dòng 74 chạy 4s
+                // Tổng lại chúng ta phải chờ 7s 
+                // Hai API trên chạy riêng lẽ được hay không?
+
+                // Nếu 2 API trên chạy đồng thời -> tổng thời gian chờ chỉ là 4s thôi
+                if(promiseUser.ok) {
+                    let data = {
+                        user: promiseUser.data,
+                        token: tokenLocal
+                    }
+                    commit('SET_LOGIN_INFO', data);
+                    return {
+                        ok: true,
+                        error: null
+                    }
+                }
+            }
+            return {
+                ok: false
+            }
+            
+        } catch(error) {
+            return {
+                ok: false,
+                error: error.message
+            }
+        }
+    },
 }
