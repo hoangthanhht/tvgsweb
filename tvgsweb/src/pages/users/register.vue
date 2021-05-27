@@ -26,7 +26,43 @@
 </template>
 
 <script>
-export default {};
+import { mapActions } from 'vuex';
+export default {
+ name: 'register',
+    data() {
+        return {
+            email: '',
+            fullname: '',
+            password: '',
+            repassword: ''
+        }
+    },
+    methods: {
+        ...mapActions(['register']),
+        handleSubmitRegister(e) {
+            let data = {
+                email: this.email,
+                fullname: this.fullname,
+                password: this.password,
+                repassword: this.repassword
+            }
+            if(data.email && data.fullname && data.password && data.repassword) {
+                this.register(data).then(res => {
+                    console.log("res = ", res);
+                    if(!res.ok) {
+                        alert(res.error); // Notification
+                    } else {
+                        this.$router.push('/');
+                        alert('Đăng ký thành công');
+                    }
+                })
+            } else {
+                alert('Nhập đầy đủ thông tin');
+            }
+        }
+    }
+
+};
 </script>
 
 <style scoped>

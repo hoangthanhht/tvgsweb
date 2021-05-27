@@ -79,13 +79,17 @@ export default {
     };
   },
  created() {
-		this.checkLogin();
+		this.checkLogin().then((res) => {
+			if (res.ok === false)
+          this.$router.push("/login");
+        });
 	},
   computed: {
-    ...mapGetters(["getListPost","getTokenStorage"]),
+    ...mapGetters(["isLogin","getListPost","getTokenStorage"]),
   },
 	methods: {
 		...mapActions([ 'checkLogin','getUserWithId' ]),
+
 	},
   components: {
     CompHeader,

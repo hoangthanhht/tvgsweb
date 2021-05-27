@@ -18,7 +18,8 @@ export default {
     },
     SET_LIST_POSTS(state, data) {
         state.listReport = data;
-    },  SET_LOGOUT(state) {
+    },  
+    SET_LOGOUT(state) {
         state[CONFIG_ACCESS_TOKEN] = '';
         state.currentUser = null;
         localStorage.removeItem(CONFIG_ACCESS_TOKEN);

@@ -225,13 +225,20 @@ export default {
       this.parseExcelFile(this.selectedFile);
     },
     handleClick(event) {
-      this.rowObject = JSON.parse(
-        this.getListPost.data[1].contentJson.replace(/\\/g, "")
-      );
-      this.imgArr = JSON.parse(
-        this.getListPost.data[1].imgBase64.replace(/\\/g, "")
-      );
-      this.handleArr();
+      if(this.getListPost.data[2].contentJson) {
+        this.rowObject = JSON.parse(
+          this.getListPost.data[2].contentJson.replace(/\\/g, "")
+        );
+         this.handleArr();
+      }
+      if(this.getListPost.data[2].imgBase64) {
+        this.imgArr = JSON.parse(
+          this.getListPost.data[2].imgBase64.replace(/\\/g, "")
+        );
+
+      }
+     
+     
       //this.getNdCvArr
     },
     //  getNdCvArr() {

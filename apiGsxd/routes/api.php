@@ -22,6 +22,6 @@ Route::group(['middleware' => 'auth:api'], function(){
     Route::get('details', [PassportAuthController::class, 'details']);
     });
 
-Route::middleware('auth:api')->group(function () {
+//Route::middleware('auth:api')->group(function () {
     Route::resource('post/bcday', ReportDayController::class);
-});
+//});

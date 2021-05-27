@@ -8,7 +8,8 @@ class ReportDayController extends Controller
 {
     public function index()
     {
-        $posts = auth()->user()->posts;
+        $posts = ReportDay::all(); // hàm all sẽ lất ra tất cả sản phẩm
+        // $posts = auth()->user()->posts;
  
         return response()->json([
             'success' => true,

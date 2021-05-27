@@ -22,12 +22,14 @@ export default {
         }
     },
     async getUserWithId({ commit },token = '') {
+        console.log('SET_USER_INFO1',token);
         var config = {
             headers:{
                 'Accept': 'application/json',
                 'Authorization' :'Bearer ' + token,
             }
         }
+       
         try {
            
             var result = await axiosInstance.get('/details',config);
@@ -60,11 +62,56 @@ export default {
                 password: password
             }
             var result  = await axiosInstance.post('/login', data);
+
+           
             // commit('SET_LOADING', false);
             if(result.status === 200) {
-                console.log('SET_USER_INFO',result.data.user)
-                 commit('SET_USER_INFO', result.data.user);
-                 commit('SET_LOGIN_INFO', result.data);
+                let resultUser  = await dispatch('getUserWithId', result.data.token);
+                commit('SET_USER_INFO', resultUser.data);
+                commit('SET_LOGIN_INFO',{ user:resultUser.data, token:result.data.token } );
+
+                // dispatch('getListPostsByUserId', result.data.user.USERID);
+
+                return {
+                    ok: true,
+                    error: null,
+                    data: result.data
+                }
+                
+            } else {
+                return {
+                    ok: false,
+                    error: result.data.error
+                }
+            }
+            
+        } catch(error) {
+            console.log('error');
+            
+            // commit('SET_LOADING', false);
+            return {
+                ok: false,
+                error: error.message
+            }
+        }
+    },
+
+    async register({ commit, dispatch }, { email = '', password = '',name }) {
+        // commit('SET_LOADING', true);
+        try {
+            let data = {
+                email: email,
+                password: password,
+                name:name
+            }
+            var result  = await axiosInstance.post('/register', data);
+
+           
+            // commit('SET_LOADING', false);
+            if(result.status === 200) {
+                let resultUser  = await dispatch('getUserWithId', result.data.token);
+                commit('SET_USER_INFO', resultUser.data);
+                commit('SET_LOGIN_INFO',{ user:resultUser.data, token:result.data.token } );
 
                 // dispatch('getListPostsByUserId', result.data.user.USERID);
 
