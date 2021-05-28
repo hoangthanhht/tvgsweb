@@ -70,7 +70,6 @@ export default {
                 commit('SET_USER_INFO', resultUser.data);
                 commit('SET_LOGIN_INFO',{ user:resultUser.data, token:result.data.token } );
 
-                // dispatch('getListPostsByUserId', result.data.user.USERID);
 
                 return {
                     ok: true,
@@ -96,24 +95,20 @@ export default {
         }
     },
 
-    async register({ commit, dispatch }, { email = '', password = '',name }) {
+    async register({ commit, dispatch }, data) {
         // commit('SET_LOADING', true);
+        console.log("data = ", data);
         try {
-            let data = {
-                email: email,
-                password: password,
-                name:name
-            }
+         
             var result  = await axiosInstance.post('/register', data);
-
-           
+            console.log('result.data.token',result)
             // commit('SET_LOADING', false);
-            if(result.status === 200) {
+             if(result.status === 200 && result.data.token) {
                 let resultUser  = await dispatch('getUserWithId', result.data.token);
+                console.log('result.data.token',result.data.token)
                 commit('SET_USER_INFO', resultUser.data);
                 commit('SET_LOGIN_INFO',{ user:resultUser.data, token:result.data.token } );
 
-                // dispatch('getListPostsByUserId', result.data.user.USERID);
 
                 return {
                     ok: true,
@@ -124,9 +119,9 @@ export default {
             } else {
                 return {
                     ok: false,
-                    error: result.data.error
+                    error: result.data.errors
                 }
-            }
+             }
             
         } catch(error) {
             console.log('error');

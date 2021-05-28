@@ -36,8 +36,8 @@ class PassportAuthController extends Controller
             if (isset($request->validator) && $request->validator->fails()) {
                 return response()->json([
                     'error_code'=> 500, 
-                    'message'   => 'The given data was invalid.', 
-                    'errors'    => $request->validator->errors()
+                    'message'   => $request->validator->errors()->first(),//$validator->errors()->first(),
+                    'errors'    => $request->validator->errors() //hoặc $validator->errors()->toArray(),
                 ]);
             }
            
@@ -55,12 +55,11 @@ class PassportAuthController extends Controller
             return response()->json(['token' => $token], 200);
             // Validate the value...
         } catch (Exception $exception) {
-            dd('123');
-           // Call report() method of App\Exceptions\Handler
-    $this->reportException($e);
-    
-    // Call render() method of App\Exceptions\Handler
-    $response = $this->renderException($request, $e);
+             // Call report() method of App\Exceptions\Handler
+            $this->reportException($e);
+            
+            // Call render() method of App\Exceptions\Handler
+            $response = $this->renderException($request, $e);
         
         }
     }
@@ -75,10 +74,12 @@ class PassportAuthController extends Controller
             'password' => $request->password
         ];
         
-        
+       
         if (auth()->attempt($data)) {
-            $user = Auth::user(); 
+            //$user = Auth::user(); 
+            
             $token = auth()->user()->createToken('LaravelAuthApp')->accessToken;
+
             return response()->json(['token' => $token], 200);
         } else {
             return response()->json(['error' => 'Mật khẩu hoặc password không đúng',

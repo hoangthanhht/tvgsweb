@@ -21,7 +21,7 @@ class ruleRegister extends FormRequest
      *
      * @return array
      */
-
+    // hàm này được ghi đè để lấy ra thông báo lỗi
     public $validator = null;
     protected function failedValidation($validator)
     {
@@ -32,12 +32,12 @@ class ruleRegister extends FormRequest
     {
         return [
             'name' => 'bail|required|min:4',
-            'email' => 'required|email',
+            'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
-           
+            
         ];
     }
-
+    // định nghĩa lại 1 trường với tên khác vd 'name'=>'newname'
     public function attributes()
     {
         return [
@@ -45,11 +45,16 @@ class ruleRegister extends FormRequest
             
         ];
     }
+    // hiện thông báo khi 1 validate nào đó không đáp ứng
     public function messages()
     {
         return [
             'name.required' => 'Tên không được bỏ trống',
-            'email.unique' => 'Email đã tồn tại',
+            'password.required' => 'Password không được bỏ trống',
+            'password.min' => 'Password ít nhất 6 ký tự',
+            'email.unique' => 'Email đã tồn tại',// khi unique không thỏa mãn thì báo ta thông bào này
+            'email.required' => 'Email không được bỏ trống',
+            'email.email' => 'Email không đúng định dạng',
            
         ];
     }

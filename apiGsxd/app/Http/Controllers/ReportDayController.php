@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ReportDay;
-
+use App\Models\User;
 class ReportDayController extends Controller
 {
     public function index()
@@ -38,14 +38,15 @@ class ReportDayController extends Controller
     {
         $this->validate($request, [
             'contentJson' => 'required',
-            'dateBaocao' => 'required'
+            'dateBaocao' => 'required',
+            'loaiBaocao' => 'required',
+            
         ]);
- 
         $post = new ReportDay();
         $post->contentJson = $request->contentJson;
         $post->dateBaocao = $request->dateBaocao;
         $post->imgBase64 = $request->imgBase64;
- 
+        $post->loaiBaocao = $request->loaiBaocao;
         if (auth()->user()->posts()->save($post))
             return response()->json([
                 'success' => true,

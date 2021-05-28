@@ -19,6 +19,7 @@ class CreateReportDaysTable extends Migration
             $table->longText('contentJson'); // cột name có kiểu là varchar và giới hạn là 150 ký tự
             $table->text('dateBaocao'); // cột description có kiểu là text và có thể để NULL
             $table->longText('imgBase64')->nullable(); // cột price có kiểu là integer
+            $table->text('loaiBaocao'); // cột price có kiểu là integer
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');  
         });
