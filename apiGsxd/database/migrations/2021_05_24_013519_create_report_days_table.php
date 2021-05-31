@@ -21,7 +21,7 @@ class CreateReportDaysTable extends Migration
             $table->longText('imgBase64')->nullable(); // cột price có kiểu là integer
             $table->text('loaiBaocao'); // cột price có kiểu là integer
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');  
+            $table->foreign('user_id')->references('id')->on('users'); 
         });
     }
 

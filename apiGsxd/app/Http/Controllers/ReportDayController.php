@@ -47,6 +47,7 @@ class ReportDayController extends Controller
         $post->dateBaocao = $request->dateBaocao;
         $post->imgBase64 = $request->imgBase64;
         $post->loaiBaocao = $request->loaiBaocao;
+        //return ReportDay::create($request->all());
         if (auth()->user()->posts()->save($post))
             return response()->json([
                 'success' => true,
