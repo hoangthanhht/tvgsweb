@@ -4,7 +4,7 @@
     <CompNavi />
     <CompFooter />
     <BreadCrumb />
-    <BaocaoGS/>
+    <!-- <BaocaoGS/> -->
     <transition name="slide-fade" mode="out-in">
       <router-view></router-view>
     </transition>
@@ -79,10 +79,10 @@ export default {
     };
   },
  created() {
-		this.checkLogin().then((res) => {
-			if (res.ok === false)
-          this.$router.push("/login");
-        });
+		// this.checkLogin().then((res) => {
+		// 	if (res.ok === false)
+    //       this.$router.push("/login");
+    //     });
 	},
   computed: {
     ...mapGetters(["isLogin","getListPost","getTokenStorage"]),

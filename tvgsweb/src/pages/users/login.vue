@@ -17,7 +17,7 @@
           >Mật khẩu:</label
         >
         <input
-		v-model="password"
+		      v-model="password"
           type="password"
           id="defaultFormLoginPasswordEx"
           class="form-control"
