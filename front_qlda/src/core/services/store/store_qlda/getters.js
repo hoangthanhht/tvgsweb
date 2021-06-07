@@ -20,4 +20,15 @@ export default {
     currentUser: state => {
         return state.currentUser;
     },
+    arrDmSearch: state => {
+        const { stringSearch } = state
+        var newArr = state.listDataDM.filter(item => {
+            let rs = item.tenMaDinhMuc.toLowerCase().includes(stringSearch.toLowerCase());
+            if(rs == false) {
+                rs = item.maDinhMuc.toLowerCase().includes(stringSearch.toLowerCase());
+            }
+            return rs;
+        });
+        return newArr;
+    }
 }

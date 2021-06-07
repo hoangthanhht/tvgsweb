@@ -15,7 +15,8 @@
           </span>
         </div>
         <input
-          v-on:keyup="onSearch"
+         :value="stringSearch"
+          v-on:input="handleSearch"
           type="text"
           class="form-control quick-search-input"
           placeholder="Search..."
@@ -37,6 +38,7 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 import KTSearchResult from "@/view/layout/extras/dropdown/SearchResult.vue";
 
 export default {
@@ -47,95 +49,19 @@ export default {
       data: [],
       loading: false,
       // dummy search result data
-      result: [
-        {
-          text: "Documents",
-          type: 0
-        },
-        {
-          svg: process.env.BASE_URL + "media/svg/files/doc.svg",
-          text: "AirPlus Requirements",
-          desc: "by Grog John",
-          type: 1
-        },
-        {
-          svg: process.env.BASE_URL + "media/svg/files/pdf.svg",
-          text: "TechNav Documentation",
-          desc: "by Mary Broun",
-          type: 1
-        },
-        {
-          svg: process.env.BASE_URL + "media/svg/files/zip.svg",
-          text: "All Framework Docs",
-          desc: "by Nick Stone",
-          type: 1
-        },
-        {
-          svg: process.env.BASE_URL + "media/svg/files/xml.svg",
-          text: "AirPlus Requirements",
-          desc: "by Tim Hardy",
-          type: 1
-        },
-        {
-          text: "Customers",
-          type: 0
-        },
-        {
-          img: process.env.BASE_URL + "media/users/300_12.jpg",
-          text: "Jimmy Curry",
-          desc: "Software Developer",
-          type: 1
-        },
-        {
-          img: process.env.BASE_URL + "media/users/300_13.jpg",
-          text: "Milena Gibson",
-          desc: "UI Designer",
-          type: 1
-        },
-        {
-          img: process.env.BASE_URL + "media/users/300_14.jpg",
-          text: "Stefan JohnStefan",
-          desc: "Marketing Manager",
-          type: 1
-        },
-        {
-          img: process.env.BASE_URL + "media/users/300_15.jpg",
-          text: "Anna Strong",
-          desc: "Software Developer",
-          type: 1
-        },
-        {
-          text: "Files",
-          type: 0
-        },
-        {
-          icon: "flaticon2-box text-danger",
-          text: "2 New items submitted",
-          desc: "Marketing Manager",
-          type: 1
-        },
-        {
-          icon: "flaticon-psd text-brand",
-          text: "79 PSD files generated",
-          desc: "by Grog John",
-          type: 1
-        },
-        {
-          icon: "flaticon2-supermarket text-warning",
-          text: "$2900 worth products sold",
-          desc: "Total 234 items",
-          type: 1
-        },
-        {
-          icon: "flaticon-safe-shield-protection text-info",
-          text: "4 New items submitted",
-          desc: "Marketing Manager",
-          type: 1
-        }
-      ]
+      
     };
   },
+  computed: {
+    ...mapState({
+      stringSearch: state=>state.storeqlda.stringSearch,// rieng doi voi map state thi phai dùng như này để  lấy state
+    }),
+  },
   methods: {
+    handleSearch(e) {
+      console.log(this.$route);
+      this.$store.dispatch('storeqlda/handleSearch',e.target.value)
+    },
     onSearch(event) {
       if (event.target.value.length > 2) {
         this.loading = true;

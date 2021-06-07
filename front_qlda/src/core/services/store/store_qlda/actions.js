@@ -25,21 +25,27 @@ export default {
             console.log("error", error);
         }
     },
-    async getUserWithId({ commit },token = '') {
-        console.log('SET_USER_INFO1',token);
-        var config = {
-            headers:{
-                'Accept': 'application/json',
-                'Authorization' :'Bearer ' + token,
-            }
+    async updateDataWithId(context, { maDinhMuc = '', tenMaDinhMuc = '',noteDinhMuc = '', idDinhMuc = '' }) {
+
+        let data = {
+            maDinhMuc: maDinhMuc,
+            tenMaDinhMuc: tenMaDinhMuc,
+            ghiChuDinhMuc:noteDinhMuc,
+            id:idDinhMuc
         }
+        console.log(data)
+        // var config = {
+        //     headers:{
+        //         'Accept': 'application/json',    
+        //     }
+        // }
        
         try {
            
-            var result = await axiosInstance.get('/details',config);
-            console.log('getUserWithId',result)
+            var result = await axiosInstance.post(`updateDataDm/${data.id}`,data);
+            console.log('updateDataWithId',result)
             if(result.status === 200) {
-                commit('SET_USER_INFO', result.data.user);
+                //commit('SET_USER_INFO', result.data.user);
                 return {
                     ok: true,
                     data: result.data.user,
@@ -58,6 +64,12 @@ export default {
             }
         }
     },
+
+    handleSearch({commit},stringSearch) {
+        commit('HANDLE_SEARCH',stringSearch)
+    },
+
+
     async login({ commit, dispatch }, { email = '', password = '' }) {
         // commit('SET_LOADING', true);
         try {
@@ -117,8 +129,6 @@ export default {
                 console.log('result.data.token',result.data.token)
                 commit('SET_USER_INFO', resultUser.data);
                 commit('SET_LOGIN_INFO',{ user:resultUser.data, token:result.data.token } );
-
-
                 return {
                     ok: true,
                     error: null,

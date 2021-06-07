@@ -22,6 +22,9 @@ export default {
         state.currentUser = null;
         localStorage.removeItem(CONFIG_ACCESS_TOKEN);
     },
+    HANDLE_SEARCH(state,stringSearch){
+        state.stringSearch = stringSearch
+    }
 }
 
 // TH nếu current = 1 -> Thay thế array gốc 

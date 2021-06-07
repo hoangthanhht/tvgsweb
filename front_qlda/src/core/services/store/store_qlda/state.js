@@ -5,4 +5,5 @@ export default {
     listDataDM:[],
     currentUser: null, // Login
     users: {}, 
+    stringSearch:''
 }
